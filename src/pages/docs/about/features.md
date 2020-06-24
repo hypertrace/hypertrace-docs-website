@@ -1,109 +1,59 @@
 ---
 title: Features
-weight: 2
+weight: 1
 template: docs
 ---
 
-<div class="note">
-  <strong>Note:</strong> This is the demo content for demonstration purpose only. The primary function of this content is to show you what this theme can do. There is a more detailed explanation in the <strong>Getting Started</strong> section.
-</div>
+# Hypertrace Features
+Hypertrace is highly efficeint platform and it comes up with many features out of the box. Hypertrace has some key benefits over other platforms. Some of the value propositions of hypertrace as compared to similar open source offerings are as follows:
+- Flow map at scale. Jaeger only supports the flowmap with all-in-one setup, which isn’t production scale. For production, one needs to run separate Spark jobs to generate the dependency graph.
+- APIs detected automatically. Flowmaps and metrics for APIs.
+- Metrics and flowmaps for Services
+- API host (or Domain) level metrics and traces
+- Basic APM product around Services and APIs 
+- API Analytics with slice & dice around APIs
+- Flexible query interface to build your own UIs
+- OLAP store is pluggable with abstractions (need to add request handlers in QueryService)
 
-### Syntax highlighting
+On high level here are some features we are looking at:
 
-You can add a language identifier to enable syntax highlighting in your code block. For example, to highlight the **JavaScript** code, specify `javascript` next to the tick marks before the fenced code block:
+- Discover Mapping
+    - Distributed Tracing & Correlation - End-to-end distributed tracing of all internal microservice/backend calls triggered by the edge API calls and web transactions
+    - Application Flow Mapping - Real-time discovery and visualization of end-to-end application topology
+- Monitor
+    - Web Transaction Monitoring - Monitor all web transactions at Web Proxies
+    - Microservice Monitoring - Monitor all internal micro-service calls
+    - Backends Monitoring - Monitor all calls to backend systems like databases or third-party services
+    - End User Monitoring - Monitor end-user calls
+- Explore (or perhaps Visualize or Investigate)
+    - Trace Filtering & Visualizations - Search & visualize any traces
+    - Advanced Slice & Dice - Create any aggregation and grouping of traces
 
-<pre>
-```javascript
-if (condition) {
-  code to run if condition is true
-} else {
-  run some other code instead
-}
-```
-</pre>
+Let's look at some features in details:
 
-The rendered output looks like this:
+## 1. Aggregations
+Hypertrace explorer provides you bunch of different ways to aggregate your API's and traces. The Search bar has so many different parameteres you can search on and you can even use multiple parameters which will give you aggregations based on specific criteria. 
 
-```javascript
-if (condition) {
-  code to run if condition is true
-} else {
-  run some other code instead
-}
-```
+## 2. Slice and dice
+Hypertrace provides you ability to slice and dice traces to derive advanced insights. 
 
-Or to highlight the **CSS** code, specify `css` next to the tick marks before the fenced code block:
+## 3. High Scalability
+Unlike most of the current open source solutions Hypertrace supports scaling out-of-the box and it can scale for large production level deployments. You can rely on Hypertrace to scale according to your business needs. 
 
-<pre>
-```css
-body {
-  background: #fff;
-  color: #666;
-  line-height: 1.66667; }
+## 4. Native suppport for different OpenCesnus, Jaeger, Zipkin and OpenTelemetry to send and receive traces
+So you have your application already instrumented for tracing with Jaeger, Zipkin or any other platform that supports and relies on OpenTracing API? No worries! Hypertrace can identify traces from this platforms and can show these traces in hypertrace with bunch of different functionalities available out-of-the box.
 
-a {
-  color: #d4a259;
-  text-decoration: underline;
-  -webkit-transition: background .3s ease, color .3s ease;
-  transition: background .3s ease, color .3s ease; }
+## 5. Multiple storage backends
+Hypertrace supports all major backend by default. 
 
-a:hover {
-  color: #1d1d1d;
-  text-decoration: none; }
-```
-</pre>
+## 6. UI you can fall in love with
+Hypertrace comes with a beutiful & Modern UI which makes every UI component more informative and useful for analysing your application.
 
-The rendered output looks like this:
+## 7. Coud Native Deployments
+Hypertrace backend is distributed as a kubernetes deployment with helm charts and installation script.
 
-```css
-body {
-  background: #fff;
-  color: #666;
-  line-height: 1.66667; }
+## 8. Observability & Multiple APM features
+Hypertrace has variour observability metrics on dashboard as well as at various places throughout the platform wherever you will need to look at them. Hypertrace supports multiple APM features out of the box like it detects frontend or customer in your application automatically.
 
-a {
-  color: #d4a259;
-  text-decoration: underline;
-  -webkit-transition: background .3s ease, color .3s ease;
-  transition: background .3s ease, color .3s ease; }
-
-a:hover {
-  color: #1d1d1d;
-  text-decoration: none; }
-```
-
-## Callouts
-
-There are two types of callouts availabale in this theme, **important** and **note**.
-
-<div class="important">
-  <strong>Important:</strong> 
-  This is an "Important" callout block of text. 
-  This block indicates a warning or caution.
-  Use it for an important message. 
-</div>
-
-<div class="note">
-  <strong>Note:</strong> 
-  This is an "Note" callout block of text. 
-  This block signifies a general note or tip.
-</div>
-
-## Tables
-
-You can build tables with markdown to help you organize information. To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate each column like in the example below.
-
-| Name | Required | Type | Description |
-| ---- | --- | --- | --- |
-| type | Required | `enum` | The type of the model. Must be one of - `page`, `config`, `data`, `object` |
-| label | Required | `string` | The label of the model |
-| description | | `string` | Description of the model. Used by some CMS. |
-| fields | | `list` of `objects` | List of Field Models |
-
-## Start using Libris theme
-
-We’ve packed this theme with powerful features to help you have awesome documentation for your current or next project.
-
-**Why not start using this theme today?**
-
-<a href="https://www.stackbit.com/" class="button">Join Stackbit</a>
+## 9. Multiple ways to build and use
+There are multiple ways you can build or deploy hypertrace and you can find details in Installation docs. 

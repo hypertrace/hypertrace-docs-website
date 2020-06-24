@@ -3,134 +3,47 @@ title: Installation
 weight: 1
 template: docs
 ---
+# Hypertrace: Installation
+Get up and running with hypertrace in your local environment
 
-<div class="note">
-  <strong>Note:</strong> 
-  This is the demo content for demonstration purpose only. The primary function of this content is to show you what this theme can do. There is a more detailed explanation in the <strong>Getting Started</strong> section.
-</div>
+## Deploying hypertrace
+There are two ways to deploy hypertrace on your system. You can either use readily available shellscript to install or you can use use classic step by step installtion!
 
-## Callouts
+### Easy way:
+1. Clone the hypertrace-helm repo on you local machine using `git clone https://github.com/Traceableai/hypertrace-helm.git`
+2. Go to the hypertrace-helm directory and run `./standalone.sh install`
 
-<hr>
+### Let's build from the source way:
 
-There are two types of callouts availabale in this theme, **note** and **important**. To add a callout to your documentation simply add the following `html` code with class `important` or `note`. Like in the example bellow. 
+- Awaiting for the access and response for team.
 
-### HTML example
+### We believe you don't need this and work in direction to ensure you won't but in case needed a way to uninstall:
 
-Copy the code and modify these blocks according to your needs.
+- Go to hypertrace-helm directory and run `./standalone.sh uninstall `
 
-```html
-<div class="important">
-  <strong>Important:</strong> 
-  This is an "Important" callout block of text.
-  This block indicates a warning or caution. 
-  Use it for an important message. 
-</div>
-```
+## Hypertrace
 
-```html
-<div class="note">
-  <strong>Note:</strong> 
-  This is a "Note" callout block of text. 
-  This block signifies a general note.
-</div>
-```
-### Live example
+Once your hypertrace installation is successful you can navigate to `http://localhost` to access Hypertarce UI. It looks something like this!
 
-<div class="important">
-  <strong>Important:</strong> 
-  This is an "Important" callout block of text. 
-  This block indicates a warning or caution.
-  Use it for an important message. 
-</div>
+| ![space-1.jpg](https://s3.amazonaws.com/fininity.tech/DT/Hypertrace.png) | 
+|:--:| 
+| *Hypertrace homepage* |
 
-<div class="note">
-  <strong>Note:</strong> 
-  This is an "Note" callout block of text. 
-  This block signifies a general note.
-</div>
+You can access variety of functionalities including Observability Dashboard, Application flow, Microservices, Web Transactions and Explorer which can help you in troubleshooting!
 
-## Code blocks
+### Ports
 
-<hr>
+Before we get started more about hypertrace let's see ports it occupies:
 
-<div class="note">
-  <strong>Note:</strong>
-  Code blocks have copy functionality. To copy the code press the grey button located in the right side top corner.
-</div>
+| Port  | Service                 |
+|-------|-------------------------|
+| 80    | Used by Hypertrace UI   |
+| 55678 | Opencensus collector    |
+| 14267 | Jaeger thrift collector |
+| 14268 | Jaeger HTTP collector   |
+| 9411  | Zipkin collector        |
 
-You can create simple code blocks by placing triple backticks <code>```</code> before and after the code block. To render a code block more readable, we recommend placing a blank line before and after code blocks.
+In case of any port collisions, users can modify the following properties in helm file (platform-services/values.yaml).
 
-<pre>```
-if (condition) {
-  code to run if condition is true
-} else {
-  run some other code instead
-}
-```
-</pre>
-
-```
-if (condition) {
-  code to run if condition is true
-} else {
-  run some other code instead
-}
-```
-
-### Syntax highlighting
-
-You can add a language identifier to enable syntax highlighting in your code block. For example, to syntax highlight **JavaScript** code, specify `javascript` next to the tick marks before the fenced code block:
-
-<pre>
-```javascript
-if (condition) {
-  code to run if condition is true
-} else {
-  run some other code instead
-}
-```
-</pre>
-
-The rendered output looks like this:
-
-```javascript
-if (condition) {
-  code to run if condition is true
-} else {
-  run some other code instead
-}
-```
-
-## Tables
-
-<hr>
-
-You can build tables with markdown to help you organize information. To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate each column like in the example below.
-
-<pre>
-| Title | Title |
-| ------| ----- |
-| Text  | Text  |
-| Text  | Text  |
-</pre>
-
-| Title | Title |
-| ------| ----- |
-| Text  | Text  |
-| Text  | Text  |
-
-<div class="note">
-  <strong>Note:</strong> 
-  Creating tables with hyphens and pipes can be time-consuming. To speed up the process, try using the <a href="http://www.tablesgenerator.com/markdown_tables" >Markdown Tables Generator</a>.
-</div>
-
-## Start using Libris theme
-
-<hr>
-
-We’ve packed this theme with powerful features to help you have awesome documentation for your current or next project.
-
-**Why not start using this theme today?**
-
-<a href="https://www.stackbit.com/" class="button">Join Stackbit</a>
+- `ingress.hosts[].paths[].port` - To change UI port
+- `oc-collector.service.ports[].targetPort` - To change collector ports

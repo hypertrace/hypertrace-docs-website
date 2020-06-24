@@ -1,5 +1,6 @@
 ---
 title: Java Zipkin
+weight: 1.3
 template: page
 ---
 # Zipkin Exporter

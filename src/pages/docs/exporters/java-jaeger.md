@@ -1,5 +1,6 @@
 ---
 title: Java Jaeger
+weight: 1.2
 template: page
 ---
 # Jaeger Exporter

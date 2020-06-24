@@ -1,5 +1,6 @@
 ---
 title: Go opencensus
+weight: 3.1
 template: page
 ---
 # OpenCensus Agent

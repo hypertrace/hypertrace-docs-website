@@ -1,5 +1,6 @@
 ---
 title: Go Jaeger
+weight: 3.2
 template: page
 ---
 # Jaeger Exporter

@@ -39,10 +39,7 @@ sections:
     image: images/3.jpg
     image_position: left
     title: Quickstart with online boutique sample
-    content: >-
-      Nam pulvinar ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet
-      cursus quis, fringilla nec sapien. Vestibulum imperdiet nunc bibendum
-      consectetur lobortis.
+    content: ''
     actions:
       - label: View Demo
         url: /docs/getting-started/index.html

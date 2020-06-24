@@ -56,7 +56,7 @@ sections:
         url: /docs/getting-started/index.html
         type: primary
       - label: Get Started
-        url: /docs/getting-started/index.html
+        url: /docs/getting-started/quickstart.html
         type: secondary
   - section_id: features-two-col
     type: section_grid

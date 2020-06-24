@@ -61,14 +61,14 @@ Copy the code and modify these blocks according to your needs.
 
 You can create simple code blocks by placing triple backticks <code>```</code> before and after the code block. To render a code block more readable, we recommend placing a blank line before and after code blocks.
 
-<pre>```
+ ```
 if (condition) {
   code to run if condition is true
 } else {
   run some other code instead
 }
 ```
-</pre>
+ 
 
 ```
 if (condition) {
@@ -82,7 +82,7 @@ if (condition) {
 
 You can add a language identifier to enable syntax highlighting in your code block. For example, to syntax highlight **JavaScript** code, specify `javascript` next to the tick marks before the fenced code block:
 
-<pre>
+ 
 ```javascript
 if (condition) {
   code to run if condition is true
@@ -90,7 +90,7 @@ if (condition) {
   run some other code instead
 }
 ```
-</pre>
+ 
 
 The rendered output looks like this:
 
@@ -108,12 +108,12 @@ if (condition) {
 
 You can build tables with markdown to help you organize information. To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate each column like in the example below.
 
-<pre>
+ 
 | Title | Title |
 | ------| ----- |
 | Text  | Text  |
 | Text  | Text  |
-</pre>
+ 
 
 | Title | Title |
 | ------| ----- |

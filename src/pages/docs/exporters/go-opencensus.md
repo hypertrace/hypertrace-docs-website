@@ -138,7 +138,7 @@ func main() {
 
 This end to end example exports stats and traces to the agent. It will require you to deploy the [OpenCensus-Agent](https://github.com/census-instrumentation/opencensus-service) in order to examine the stats and traces.
 
-<pre>
+ 
 ```go
 package main
 
@@ -262,7 +262,7 @@ func main() {
 	}
 }
 ```
-</pre>
+ 
 ### References
 
 Resource|URL

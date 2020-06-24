@@ -18,7 +18,7 @@ To create the exporter, we'll need to:
 
 * Create an exporter in code
 * Have the Zipkin endpoint available to receive traces
-<pre>
+ 
 ```go
 package main
 
@@ -49,7 +49,7 @@ func main() {
 	trace.RegisterExporter(ze)
 }
 ```
-</pre>
+ 
 ## Viewing your traces
 Please visit the Hypertrace UI endpoint [http://localhost](http://localhost)
 

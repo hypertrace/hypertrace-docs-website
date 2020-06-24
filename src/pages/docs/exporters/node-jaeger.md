@@ -28,7 +28,7 @@ npm install @opencensus/exporter-jaeger
 
 ## Creating the exporter
 Now let's use the Jaeger exporter:
-<pre>
+ 
 ```javascript
 const { logger } = require('@opencensus/core');
 const { JaegerTraceExporter } = require('@opencensus/exporter-jaeger');
@@ -47,7 +47,7 @@ const jaegerOptions = {
 const exporter = new JaegerTraceExporter(jaegerOptions);
 tracing.registerExporter(exporter).start();
 ```
-</pre>
+ 
 ## Viewing your traces
 Please visit the Hypertrace UI endpoint [http://localhost](http://localhost).
 

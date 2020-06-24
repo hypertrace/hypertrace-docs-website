@@ -47,7 +47,7 @@ If using Maven, add these to your `pom.xml` file
 ```
 
 Instrument your code with the following snippet:
-<pre>
+ 
 ```java
 package io.opencensus.tutorial.zipkin;
 
@@ -59,7 +59,7 @@ public class ZipkinTutorial {
     }
 }
 ```
-</pre>
+ 
 ## Viewing your traces
 Please visit the Hypertrace UI endpoint [http://localhost](http://localhost).
 

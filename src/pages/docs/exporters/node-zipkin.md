@@ -22,7 +22,7 @@ npm install @opencensus/exporter-zipkin
 
 ## Creating the exporter
 Now let's use the Zipkin exporter:
-<pre>
+ 
 ```javascript
 const tracing = require('@opencensus/nodejs');
 const { ZipkinTraceExporter } = require('@opencensus/exporter-zipkin');
@@ -37,7 +37,7 @@ const zipkinOptions = {
 const exporter = new ZipkinTraceExporter(zipkinOptions);
 tracing.registerExporter(exporter).start();
 ```
-</pre>
+ 
 ## Viewing your traces
 Please visit the Hypertrace UI endpoint [http://localhost](http://localhost).
 

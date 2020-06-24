@@ -12,7 +12,7 @@ template: docs
 
 You can add a language identifier to enable syntax highlighting in your code block. For example, to highlight the **JavaScript** code, specify `javascript` next to the tick marks before the fenced code block:
 
-<pre>
+ 
 ```javascript
 if (condition) {
   code to run if condition is true
@@ -20,7 +20,7 @@ if (condition) {
   run some other code instead
 }
 ```
-</pre>
+ 
 
 The rendered output looks like this:
 
@@ -34,7 +34,7 @@ if (condition) {
 
 Or to highlight the **CSS** code, specify `css` next to the tick marks before the fenced code block:
 
-<pre>
+ 
 ```css
 body {
   background: #fff;
@@ -51,7 +51,7 @@ a:hover {
   color: #1d1d1d;
   text-decoration: none; }
 ```
-</pre>
+ 
 
 The rendered output looks like this:
 

@@ -127,7 +127,7 @@ This end to end example exports stats and traces to the agent. It will require y
 
 The full code snippet can also be found on the
 [OpenCensus-Java repo](https://github.com/census-instrumentation/opencensus-java/blob/master/examples/src/main/java/io/opencensus/examples/ocagent/OcAgentExportersQuickStart.java).
-<pre>
+ 
 ``` java
 package io.opencensus.examples.ocagent;
 
@@ -412,7 +412,7 @@ public class OcAgentExportersQuickStart {
   }
 }
 ```
-</pre>
+ 
 ### References
 
 Resource|URL

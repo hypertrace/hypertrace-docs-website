@@ -50,7 +50,7 @@ If using Maven, add these to your `pom.xml` file
   </dependency>
 </dependencies>
 ```
-<pre>
+ 
 ```java
 package io.opencensus.tutorial.jaeger;
 
@@ -62,7 +62,7 @@ public class JaegerTutorial {
     }
 }
 ```
-</pre>
+ 
 ## Viewing your traces
 Please visit the Hypertrace UI endpoint [http://localhost](http://localhost).
 

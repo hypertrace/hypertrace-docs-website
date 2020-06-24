@@ -1,7 +1,7 @@
 ---
 title: Python Jaeger
 weight: 2.1
-template: page
+template: docs
 ---
 # Jaeger Exporter
 

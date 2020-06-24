@@ -1,7 +1,7 @@
 ---
 title: Python Zipkin
 weight: 2.2
-template: page
+template: docs
 ---
 # Zipkin Exporter
 

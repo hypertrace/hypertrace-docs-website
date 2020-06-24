@@ -1,7 +1,7 @@
 ---
 title: NodeJS Zipkin
 weight: 4.2
-template: page
+template: docs
 ---
 # Zipkin Exporter
 

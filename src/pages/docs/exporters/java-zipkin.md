@@ -1,7 +1,7 @@
 ---
 title: Java Zipkin
 weight: 1.3
-template: page
+template: docs
 ---
 # Zipkin Exporter
 

@@ -1,7 +1,7 @@
 ---
 title: Java OpenCensus
 weight: 1.1
-template: page
+template: docs
 ---
 # OpenCensus Agent
 

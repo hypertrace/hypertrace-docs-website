@@ -1,7 +1,7 @@
 ---
 title: NodeJS Jaeger
 weight: 4.1
-template: page
+template: docs
 ---
 # Jaeger Exporter
 

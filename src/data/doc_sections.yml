@@ -2,8 +2,17 @@ root_folder: /docs/
 sections:
   - about
   - getting-started
-  - ui-components
-  - manage-content
-  - tools
-  - faq
+  - architecture
+  - instrumentation
+  - exporters
+    - Java
+    - Python
+    - Go
+    - NodeJS
+  - deployments
+  - client libraries
+  - monitoring
+  - performance tuning guide
+  - troubleshooting
   - community
+  - faq

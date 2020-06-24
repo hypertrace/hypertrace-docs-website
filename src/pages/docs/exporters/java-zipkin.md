@@ -1,8 +1,3 @@
----
-title: Zipkin
-weight: 3
-template: docs
----
 # Zipkin Exporter
 
 ## Introduction

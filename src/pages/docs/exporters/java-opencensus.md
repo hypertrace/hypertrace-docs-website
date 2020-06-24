@@ -1,9 +1,3 @@
----
-title: OpenCensus Agent
-weight: 1
-template: docs
----
-
 # OpenCensus Agent
 
 ## Introduction

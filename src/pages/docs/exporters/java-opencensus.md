@@ -1,6 +1,6 @@
 ---
 title: Java OpenCensus
-template: docs
+template: page
 ---
 # OpenCensus Agent
 

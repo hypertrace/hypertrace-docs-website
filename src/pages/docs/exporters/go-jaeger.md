@@ -1,7 +1,6 @@
 ---
 title: Go Jaeger
-weight: 3.2
-template: docs
+template: page
 ---
 # Jaeger Exporter
 

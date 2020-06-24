@@ -1,7 +1,6 @@
 ---
 title: Go opencensus
-weight: 3.1
-template: docs
+template: page
 ---
 # OpenCensus Agent
 

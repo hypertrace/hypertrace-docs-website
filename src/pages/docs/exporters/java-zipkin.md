@@ -1,6 +1,6 @@
 ---
 title: Java Zipkin
-template: docs
+template: page
 ---
 # Zipkin Exporter
 

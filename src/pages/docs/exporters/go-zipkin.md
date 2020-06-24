@@ -1,7 +1,6 @@
 ---
 title: Go Zipkin
-weight: 3.3
-template: docs
+template: page
 ---
 # Zipkin Exporter
 

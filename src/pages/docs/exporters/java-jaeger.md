@@ -1,6 +1,6 @@
 ---
 title: Java Jaeger
-template: docs
+template: page
 ---
 # Jaeger Exporter
 

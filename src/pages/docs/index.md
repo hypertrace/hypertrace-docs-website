@@ -1,5 +1,5 @@
 ---
-title: Welcome to Libris
+title: Welcome to Hypertrace
 template: docs
 ---
 

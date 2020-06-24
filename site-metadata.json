@@ -45,6 +45,12 @@
                 "has_subnav": false
             },
             {
+                "label": "Blog",
+                "url": "/blog/",
+                "type": "link",
+                "has_subnav": false
+            },
+            {
                 "label": "Style Guide",
                 "url": "/style-guide/",
                 "type": "link",
@@ -59,7 +65,7 @@
         ]
     },
     "footer": {
-        "content": "&copy; Hypertarace . All rights reserved.",
+        "content": "&copy; Hypertrace. All rights reserved.",
         "links": [
             {
                 "label": "Made with Stackbit",
@@ -93,5 +99,5 @@
             }
         ]
     },
-    "title": "Hypertarace org"
+    "title": "Hypertrace"
 }

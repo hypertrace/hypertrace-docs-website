@@ -5,7 +5,10 @@ sections:
     type: section_hero
     title: Hypertrace
     image: images/5.jpg
-    content: 'An open-source, '
+    content: >-
+      Hypertrace is a highly scalable distributed tracing and observability
+      platform designed to ingest and analyze large volumes of production trace
+      data. 
     actions:
       - label: Get Started
         url: docs/index.html

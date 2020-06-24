@@ -1,5 +1,5 @@
 {
-    "description": "A documentation theme",
+    "description": "Open Source, Cloud Native Distributed Tracing Platform",
     "palette": "violet",
     "palettes": {
         "blue": {
@@ -28,7 +28,7 @@
         }
     },
     "header": {
-        "title": "Libris",
+        "title": "Hypertrace",
         "logo_img": "images/logo.png",
         "has_nav": true,
         "nav_links": [
@@ -92,7 +92,7 @@
             },
             {
                 "label": "GitHub",
-                "url": "https://github.com/",
+                "url": "https://github.com/hypertrace",
                 "type": "icon",
                 "icon_class": "fa-github",
                 "new_window": true

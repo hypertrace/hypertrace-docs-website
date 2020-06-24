@@ -30,7 +30,7 @@ A library-based instrumentation approach can be characterized by its reliance on
 Hypertrace supports multiple exporters as it can receive traces which are being sent to Jaeger collector, zipkin collector or opencensus collector port out of the box. So, if your application is already implemented for any of these then you are ready to rock with hypertarce. Even if your application is instrumented for any framework that uses OpenTracing API, we are good to go with hypertrace with minimal to no code changes in most cases. 
 
 If your application is not instrumented at all (which is kinda hard to find case this days), You can instrument using some auto-instrumentation agents which can inject code in your service or will use some sort of in-process agent that is imported to the runtime environment of a process and uses a system of user-defined rules. OpenTelemetry supports auto instrumentation and you can send traces from OpenTelemetry to collectors that hypertrace support and use it with hypertrace as of now. We also have java-agent which will help you in instrumenting your code. 
-
+gia
 ***
 
 Here are the articles in this section:

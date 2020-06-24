@@ -1,5 +1,5 @@
 ---
-title: Architecture
+title: Instrumentation
 excerpt: >-
   Libris is a Unibit theme created for project documentations. You can use it
   for your project.

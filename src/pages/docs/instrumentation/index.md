@@ -31,9 +31,6 @@ Hypertrace supports multiple exporters as it can receive traces which are being 
 
 If your application is not instrumented at all (which is kinda hard to find case this days), You can instrument using some auto-instrumentation agents which can inject code in your service or will use some sort of in-process agent that is imported to the runtime environment of a process and uses a system of user-defined rules. OpenTelemetry supports auto instrumentation and you can send traces from OpenTelemetry to collectors that hypertrace support and use it with hypertrace as of now. We also have java-agent which will help you in instrumenting your code. 
 
-
-
-
 ***
 
 Here are the articles in this section:

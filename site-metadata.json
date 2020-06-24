@@ -1,6 +1,6 @@
 {
     "description": "A documentation theme",
-    "palette": "blue",
+    "palette": "violet",
     "palettes": {
         "blue": {
             "sass": {

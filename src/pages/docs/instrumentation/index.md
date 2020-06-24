@@ -5,7 +5,7 @@ excerpt: >-
   for your project.
 template: docs
 ---
-# Introduction
+## Introduction
 You might have came across this word several times in documentation. Let's discuss why we need to instrument our app in the first place and then we can discuss how you can instrument your app for tracing. 
 
 ## What is Instrumentation?

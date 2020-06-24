@@ -3,17 +3,17 @@ title: Installation
 weight: 1
 template: docs
 ---
-# Hypertrace: Installation
+## Hypertrace: Installation
 Get up and running with hypertrace in your local environment
 
 ## Deploying hypertrace
 There are two ways to deploy hypertrace on your system. You can either use readily available shellscript to install or you can use use classic step by step installtion!
 
-### Easy way:
+### Easy way
 1. Clone the hypertrace-helm repo on you local machine using `git clone https://github.com/Traceableai/hypertrace-helm.git`
 2. Go to the hypertrace-helm directory and run `./standalone.sh install`
 
-### Let's build from the source way:
+### Let's build from the source way
 
 - Awaiting for the access and response for team.
 

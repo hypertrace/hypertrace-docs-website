@@ -1,11 +1,9 @@
 ---
-title: Python Jaeger
+title: Python Jaeger Exporter
 weight: 2.1
 template: docs
 ---
-# Jaeger Exporter
-
-## Introduction
+### Introduction
 Jaeger, inspired by Dapper and OpenZipkin, is a distributed tracing system released as open source by Uber Technologies.
 It is used for monitoring and troubleshooting microservices-based distributed systems, including:
 
@@ -19,7 +17,7 @@ OpenCensus Python has support for this exporter available through package [openc
 
 
 
-## Creating the exporter
+### Creating the exporter
 To create the exporter, we'll need to:
 
 * Create an exporter in code
@@ -47,8 +45,8 @@ if __name__ == "__main__":
     main()
 ```
  
-## Viewing your traces
+### Viewing your traces
 Please visit the Hypertrace UI endpoint [http://localhost](http://localhost).
 
-## Project link
+### Project link
 You can find out more about the Jaeger project at [https://www.jaegertracing.io/](https://www.jaegertracing.io/)

@@ -1,11 +1,9 @@
 ---
-title: Java Zipkin
+title: Java Zipkin Exporter
 weight: 1.3
 template: docs
 ---
-# Zipkin Exporter
-
-## Introduction
+### Introduction
 Zipkin is a distributed tracing system. It helps gather timing data needed to troubleshoot latency problems in microservice architectures.
 
 It manages both the collection and lookup of this data. Zipkin’s design is based on the Google Dapper paper.
@@ -13,7 +11,7 @@ It manages both the collection and lookup of this data. Zipkin’s design is bas
 OpenCensus Java has support for this exporter available through package [io.opencensus.exporter.trace.zipkin](https://www.javadoc.io/doc/io.opencensus/opencensus-exporter-trace-zipkin)
 
 
-## Creating the exporter
+### Creating the exporter
 To create the exporter, we'll need to:
 
 * Create an exporter in code
@@ -60,8 +58,8 @@ public class ZipkinTutorial {
 }
 ```
  
-## Viewing your traces
+## #Viewing your traces
 Please visit the Hypertrace UI endpoint [http://localhost](http://localhost).
 
-## Project link
+### Project link
 You can find out more about the Zipkin project at [https://zipkin.io/](https://zipkin.io/)

@@ -1,18 +1,16 @@
 ---
-title: NodeJS Zipkin
+title: NodeJS Zipkin Exporter
 weight: 4.2
 template: docs
 ---
-# Zipkin Exporter
-
-## Introduction
+### Introduction
 Zipkin is a distributed tracing system. It helps gather timing data needed to troubleshoot latency problems in microservice architectures.
 
 It manages both the collection and lookup of this data. Zipkin’s design is based on the Google Dapper paper.
 
 OpenCensus Node.js has support for this exporter available, distributed through NPM package [@opencensus/exporter-zipkin](https://www.npmjs.com/package/@opencensus/exporter-zipkin)
 
-## Installing the exporter
+### Installing the exporter
 You can install OpenCensus Zipkin Exporter by running these steps:
 
 ```bash
@@ -20,7 +18,7 @@ npm install @opencensus/nodejs
 npm install @opencensus/exporter-zipkin
 ```
 
-## Creating the exporter
+### Creating the exporter
 Now let's use the Zipkin exporter:
  
 ```javascript
@@ -38,8 +36,8 @@ const exporter = new ZipkinTraceExporter(zipkinOptions);
 tracing.registerExporter(exporter).start();
 ```
  
-## Viewing your traces
+### Viewing your traces
 Please visit the Hypertrace UI endpoint [http://localhost](http://localhost).
 
-## Project link
+### Project link
 You can find out more about the Zipkin project at [https://zipkin.io/](https://zipkin.io/)

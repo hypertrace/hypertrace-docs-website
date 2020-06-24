@@ -5,7 +5,7 @@ template: docs
 ---
 # Hypertrace: UI Overview
 
-## 1. Hypertrace Dashboard
+## Hypertrace Dashboard
 
 | ![space-1.jpg](https://s3.amazonaws.com/fininity.tech/DT/Hypertrace.png) | 
 |:--:| 
@@ -16,7 +16,7 @@ On the Hypertrace dashboard you can see different observability metrics such as 
 Similarly there is another panel for Top Services where you can see which service is getting the greatest number of requests, or which have higher deployment events. If you click on the service you can see which APIs are available from each particular service, traces for those APIs, as well as metrics. 
 
 
-## 1. Application flow 
+## Application flow 
 
 | ![space-1.jpg](https://s3.amazonaws.com/fininity.tech/DT/application+flow.png) | 
 |:--:| 
@@ -24,7 +24,7 @@ Similarly there is another panel for Top Services where you can see which servic
 
 Application Flow gives you an overview of the services in your applications, and the flow of traces between them. In this example, you can see the frontend is sending requests to the ad service, checkout service, shipping service and the product catalog services. And if you hover over a service, Hypertrace will highlight the trace path and other details so you can confirm that it is acting the way they are supposed to act.
 
-## 2. Microservice details
+## Microservice details
 
 | ![space-1.jpg](https://s3.amazonaws.com/fininity.tech/DT/frontendms.png) | 
 |:--:| 
@@ -35,7 +35,7 @@ In the microservices tab you will see all of the microservices from your applica
 Next, on the APIs tab, you will see a list of all of the APIs contained by the frontend microservice. Clicking on one of the APIs lets you drill down into that API. For example, clicking on /cart will display an overview that looks similar to the microservice overview, but with details specific to the /cart API. 
 
 
-## 3. Traces
+## Traces
 
 | ![space-1.jpg](https://s3.amazonaws.com/fininity.tech/DT/traces.png) | 
 |:--:| 
@@ -45,7 +45,7 @@ On the Traces tab you can see a list of traces. There can be millions of traces,
 If you click on any of the traces you will see the classic waterfall graph which shows how a trace proceeds through it’s sequence from one request to the next. Here you can see a list of requests made by a /cart trace, in the order that each request was made, and with the duration of each request. This could help you discover exactly which call in the full trace caused the slow response. 
 
 
-## 4. Explorer
+## Explorer
 
 | ![space-1.jpg](https://s3.amazonaws.com/fininity.tech/DT/explorer.png) | 
 |:--:| 

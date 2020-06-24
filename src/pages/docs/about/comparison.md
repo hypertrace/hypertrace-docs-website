@@ -4,7 +4,7 @@ weight: 2
 template: docs
 ---
 
-# Comparison: Hypertrace vs. Other open-source tracing solutions
+## Comparison: Hypertrace vs. Other open-source tracing solutions
 | Other open soure products           | Hypertrace                                                                                                                                                                                      |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | High Scalability                    | Flow map at scale. Jaeger only supports the flowmap with all-in-one setup, which isn’t production scale. For production, one needs to run separate Spark jobs to generate the dependency graph. |

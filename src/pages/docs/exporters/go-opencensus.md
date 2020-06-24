@@ -1,9 +1,8 @@
 ---
-title: Go opencensus
+title: Go opencensus Exporter
 weight: 3.1
 template: docs
 ---
-# OpenCensus Agent
 
 ### Introduction
 The OpenCensus Agent exporter aka "ocagent-exporter" enables Go applications to send the observability

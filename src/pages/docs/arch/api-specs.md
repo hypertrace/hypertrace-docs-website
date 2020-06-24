@@ -4,8 +4,6 @@ weight: 2
 template: docs
 ---
 
-# API's 
-
 ## Receivers
 
 This receiver receives spans from instrumented applications and translates them into the internal span types that are then sent to the collector/exporters.

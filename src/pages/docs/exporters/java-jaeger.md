@@ -1,11 +1,10 @@
 ---
-title: Java Jaeger
+title: Java Jaeger Exporter
 weight: 1.2
 template: docs
 ---
-# Jaeger Exporter
 
-## Introduction
+### Introduction
 Jaeger, inspired by Dapper and OpenZipkin, is a distributed tracing system released as open source by Uber Technologies.
 It is used for monitoring and troubleshooting microservices-based distributed systems, including:
 
@@ -18,7 +17,7 @@ It is used for monitoring and troubleshooting microservices-based distributed sy
 OpenCensus Java has support for this exporter available through package [io.opencensus.exporter.trace.jaeger](https://www.javadoc.io/doc/io.opencensus/opencensus-exporter-trace-jaeger)
 
 
-## Creating the exporter
+### Creating the exporter
 To create the exporter, we'll need to:
 
 * Create an exporter in code
@@ -63,8 +62,8 @@ public class JaegerTutorial {
 }
 ```
  
-## Viewing your traces
+### Viewing your traces
 Please visit the Hypertrace UI endpoint [http://localhost](http://localhost).
 
-## Project link
+### Project link
 You can find out more about the Jaeger project at [https://www.jaegertracing.io/](https://www.jaegertracing.io/)

@@ -4,7 +4,7 @@ weight: 3
 template: docs
 ---
 
-# Introduction
+## Introduction
 We are using real-time OLAP store for backend. Currently we are relying on Apache Pinot but you can plug in Druid if you want or even some Relational DB store with minimal to no code changes. We are trying to make this process more simpler going ahead. 
 
 ## Apache Pinot
@@ -16,7 +16,7 @@ Pinot is designed to deliver low latency queries on large datasets. In order to 
 
 Raw data is broken into small data shards and each shard is converted into a unit known as a segment. One or more segments together form a table, which is the logical container for querying Pinot using SQL/PQL.
 
-## Key Features:
+### Key Features:
 - A column-oriented database with various compression schemes such as Run Length, Fixed Bit Length
 - Pluggable indexing technologies - Sorted Index, Bitmap Index, Inverted Index, Star-Tree Index
 - Ability to optimize query/execution plan based on query and segment metadata
@@ -33,7 +33,7 @@ Because of the design choices made to achieve these goals, there are certain lim
 
 Pinot works very well for querying time series data with lots of Dimensions and Metrics. Example - Query (profile views, ad campaign performance, etc.) in an analytical fashion (who viewed this profile in the last weeks, how many ads were clicked per campaign).
 
-## Resources:
+### Resources:
 1. Apache pinot: https://pinot.apache.org/
 2. GitHub: https://github.com/apache/incubator-pinot 
 

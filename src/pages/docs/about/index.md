@@ -6,7 +6,7 @@ excerpt: >-
 template: docs
 ---
 
-# Introduction
+## Introduction
 It's been a while since we started moving from monolithic applications to microservices based architecture. When you look at systems today you will find that this modern distributed services are large, complex, and increasingly built upon other similarly complex distributed services. 
 
 Most of the tech giants including companies like Amazon, Netflix, started to build their systems using a monolithic architecture because back in the time it was much faster to set up a monolith and get the business moving. But over the time as business or product matures, with growing system the code gets more and more complicated. maturing projects or fat growth. With the system’s growth, the code gets more complicated. They all faced this problem and looked at microservices as a solution. One of the biggest benefits of microservices is that each microservice can be developed, scaled, and deployed separately. You can replace or upgrade any part of system independently. Everyone started adopting microservices and here we are today looking at complex modern architectures. 
@@ -29,7 +29,7 @@ Distributed tracing requires the software developers to add instrumentation to t
 If you want to know more about Distributed Tracing terminology, please visit this [page](Terminology.md).
 
 
-# What is Hypertrace?
+## What is Hypertrace?
 Hypertrace is a highly scalable distributed tracing and observability platform designed to ingest and analyze large volumes of production trace data. OpenTelemetry-based agents collect and send observability data directly from applications to Hypertrace for analysis. Data visualizations, reports, and dashboards are available in a web-based console to assist in monitoring cloud-native applications and resolving application and service performance problems.
 
 

@@ -1,11 +1,9 @@
 ---
-title: NodeJS Jaeger
+title: NodeJS Jaeger Exporter
 weight: 4.1
 template: docs
 ---
-# Jaeger Exporter
-
-## Introduction
+### Introduction
 Jaeger, inspired by Dapper and OpenZipkin, is a distributed tracing system released as open source by Uber Technologies.
 It is used for monitoring and troubleshooting microservices-based distributed systems, including:
 
@@ -17,7 +15,7 @@ It is used for monitoring and troubleshooting microservices-based distributed sy
 
 OpenCensus Node.js has support for this exporter available, distributed through NPM package [@opencensus/exporter-jaeger](https://www.npmjs.com/package/@opencensus/exporter-jaeger)
 
-## Installing the exporter
+### Installing the exporter
 You can install OpenCensus Jaeger Exporter by running these steps:
 
 ```bash
@@ -26,7 +24,7 @@ npm install @opencensus/nodejs
 npm install @opencensus/exporter-jaeger
 ```
 
-## Creating the exporter
+### Creating the exporter
 Now let's use the Jaeger exporter:
  
 ```javascript
@@ -48,8 +46,8 @@ const exporter = new JaegerTraceExporter(jaegerOptions);
 tracing.registerExporter(exporter).start();
 ```
  
-## Viewing your traces
+### Viewing your traces
 Please visit the Hypertrace UI endpoint [http://localhost](http://localhost).
 
-## Project link
+### Project link
 You can find out more about the Jaeger project at [https://www.jaegertracing.io/](https://www.jaegertracing.io/)

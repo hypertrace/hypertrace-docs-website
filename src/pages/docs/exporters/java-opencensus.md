@@ -1,18 +1,16 @@
 ---
-title: Java OpenCensus
+title: Java OpenCensus Exporter
 weight: 1.1
 template: docs
 ---
-# OpenCensus Agent
-
-## Introduction
+### Introduction
 The OpenCensus Agent exporter aka "ocagent-exporter" enables Java applications to send the observability signals
 that they've collected using OpenCensus to the [OpenCensus Agent](https://github.com/census-instrumentation/opencensus-service)
 
 This exporter connects and sends observability signals via a single HTTP/2 stream and gRPC with Protocol Buffers
 to the OpenCensus Agent. If unspecified, this exporter tries to connect to the OpenCensus Agent on port `55678`.
 
-## Purpose
+### Purpose
 It converts OpenCensus Stats and Traces into OpenCensus Proto Metrics and Traces which are then sent to the OpenCensus Agent.
 Therefore programs no longer have to enable the traditional backends' exporters for every single application.
 
@@ -30,7 +28,7 @@ deployment can safely be restarted flexibly.
 
 The same thing happens for traces.
 
-## Add the dependencies to your project
+### Add the dependencies to your project
 
 For Maven add to your pom.xml:
 ```

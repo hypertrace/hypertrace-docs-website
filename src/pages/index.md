@@ -39,7 +39,18 @@ sections:
     image: images/3.jpg
     image_position: left
     title: Quickstart with online boutique sample
-    content: ''
+    content: >-
+      Online Boutique is a cloud-native microservices demo application. Online
+      Boutique consists of a 10-tier microservices application. Online boutique
+      uses different microservices written in Go, c#, Python, Java and functions
+      as an e-commerce website app, where users can browse items, add them to
+      the cart, and purchase them.
+
+
+      This demo has various ecommerce microservices like order page, cart,
+      payment, shipping, recommendation though it doesn't operate under the
+      scale as real world ecommerce platform which can have so many reasons to
+      fail but this makes really good close to real-world case for our testing.
     actions:
       - label: View Demo
         url: /docs/getting-started/index.html

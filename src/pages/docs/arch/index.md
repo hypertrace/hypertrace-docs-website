@@ -14,7 +14,7 @@ Hypertrace has fairly complex architecture than most of the Distributed Tracing 
 Let's take a look at Hypertrace architecture and undestand each component in details.
 
 
-| ![space-1.jpg](static/architecture.png) | 
+| ![space-1.jpg](architecture.png) | 
 |:--:| 
 | *Hypertrace Architecture* |
 

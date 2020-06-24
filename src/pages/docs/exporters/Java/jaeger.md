@@ -1,3 +1,8 @@
+---
+title: Jaeger
+weight: 2
+template: docs
+---
 # Jaeger Exporter
 
 ## Introduction

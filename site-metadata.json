@@ -45,30 +45,6 @@
                 "has_subnav": false
             },
             {
-                "label": "Blog",
-                "url": "/blog/",
-                "type": "link",
-                "has_subnav": false
-            },
-            {
-                "label": "Sample Pages",
-                "url": "#",
-                "type": "link",
-                "has_subnav": true,
-                "subnav_links": [
-                    {
-                        "label": "Overview",
-                        "url": "/overview/",
-                        "type": "link"
-                    },
-                    {
-                        "label": "Showcase",
-                        "url": "/showcase/",
-                        "type": "link"
-                    }
-                ]
-            },
-            {
                 "label": "Style Guide",
                 "url": "/style-guide/",
                 "type": "link",
@@ -76,14 +52,14 @@
             },
             {
                 "label": "GitHub",
-                "url": "https://github.com/",
+                "url": "https://github.com/hypertrace",
                 "type": "primary",
                 "has_subnav": false
             }
         ]
     },
     "footer": {
-        "content": "&copy; Stackbit-Libris. All rights reserved.",
+        "content": "&copy; Hypertarace . All rights reserved.",
         "links": [
             {
                 "label": "Made with Stackbit",
@@ -117,5 +93,5 @@
             }
         ]
     },
-    "title": "Stackbit Libris Theme"
+    "title": "Hypertarace org"
 }

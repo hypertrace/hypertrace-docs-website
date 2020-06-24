@@ -27,8 +27,9 @@ sections:
             type: link
       - title: Blog
         content: >-
-          Vestibulum a nunc ut eros condimentum posuere. Nullam dapibus quis
-          nunc non interdum. Pellentesque tortor ligula, gravida ac commodo eu.
+          Read about hypertrace, it's features, instrumentation and how to get
+          your app ready for hypertrace along with various sample apps you can
+          try out of the box.
         actions:
           - label: View Posts
             url: blog/index.html

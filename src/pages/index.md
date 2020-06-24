@@ -36,7 +36,7 @@ sections:
             type: link
   - section_id: text-img
     type: section_content
-    image: images/10.jpg
+    image: images/3.jpg
     image_position: left
     title: Quickstart with online boutique sample
     content: >-

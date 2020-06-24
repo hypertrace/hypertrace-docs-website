@@ -18,7 +18,9 @@ sections:
     col_number: two
     grid_items:
       - title: Documentation
-        content: ''
+        content: >-
+          Hypertrace docs will guide you through things like getting started
+          with hypertrace and understanding it's capabilities. 
         actions:
           - label: Get Started
             url: docs/index.html

@@ -59,27 +59,27 @@ compile 'io.opencensus:opencensus-exporter-trace-ocagent:0.20.0'
 ### Register the exporter
 
 An exporter can be started by invoking `createAndRegister()`, whose signature is:
-```java
+{{<highlight java>}}
 OcAgentMetricsExporter.createAndRegister(OcAgentMetricsExporterConfiguration.builder().build());
 OcAgentTraceExporter.createAndRegister(OcAgentTraceExporterConfiguration.builder().build());
-```
+{{</highlight>}}
 
 ### Options
 Options allow you to customize the exporter.
 Options use a builder pattern which allows optional functional options.
-```java
+{{<highlight java>}}
 OcAgentTraceExporterConfiguration.builder().setEndPoint("localhost:55678").setUseInsecure(true).build();
-```
+{{</highlight>}}
 
 #### Custom address
 This option allows one to talk to an OpenCensus Agent running on a customized address.
 The customized address could be anything that is resolvable by
 [io.grpc.NameResolver](https://grpc.io/grpc-java/javadoc/io/grpc/NameResolver.html).
 
-```
+{{<highlight java>}}
 OcAgentMetricsExporterConfiguration.builder().setEndPoint("zookeeper://zk.example.com:9900/ocagent").build();
 OcAgentTraceExporterConfiguration.builder().setEndPoint("zookeeper://zk.example.com:9900/ocagent").build();
-```
+{{</highlight>}}
 
 #### Insecure
 This option allows one to talk to the OpenCensus Agent without mutual TLS.
@@ -87,10 +87,10 @@ This option allows one to talk to the OpenCensus Agent without mutual TLS.
 This option is mutually exclusive to [SSL Context](#ssl-context). If both are set, an IllegalArgumentException will be thrown.
 
 It can be enabled like this
-```
+{{<highlight java>}}
 OcAgentMetricsExporterConfiguration.builder().setUseInsecure(true).build();
 OcAgentTraceExporterConfiguration.builder().setUseInsecure(true).build();
-```
+{{</highlight>}}
 
 #### SSL Context
 Alternatively you can configure the exporter to talk to the OpenCensus Agent with TLS.
@@ -98,19 +98,19 @@ Alternatively you can configure the exporter to talk to the OpenCensus Agent wit
 This option is mutually exclusive to [Insecure](#insecure). If both are set, an IllegalArgumentException will be thrown.
 
 It can be enabled like this
-```
+{{<highlight java>}}
 OcAgentMetricsExporterConfiguration.builder().setSslContext(SslContext.defaultClientProvider()).build();
 OcAgentTraceExporterConfiguration.builder().setSslContext(SslContext.defaultClientProvider()).build();
-```
+{{</highlight>}}
 
 #### Service name
 This option allows one to set the service name of the caller by using setServiceName.
 
 It can be enabled like this
-```
+{{<highlight java>}}
 OcAgentMetricsExporterConfiguration.builder().setServiceName("my own service").build();
 OcAgentTraceExporterConfiguration.builder().setServiceName("my own service").build();
-```
+{{</highlight>}}
 
 #### Reconnection period
 This option defines the amount of time for a failed connection, that the exporter takes before a reconnection attempt to the agent.
@@ -118,10 +118,10 @@ This option defines the amount of time for a failed connection, that the exporte
 The option's name is setRetryInterval.
 
 Here is an example for how to tell it to attempt reconnecting on fail, after 10 seconds.
-```
+{{<highlight java>}}
 OcAgentMetricsExporterConfiguration.builder().setRetryInterval(Duration.create(10, 0)).build();
 OcAgentTraceExporterConfiguration.builder().setRetryInterval(Duration.create(10, 0)).build();
-```
+{{</highlight>}}
 
 ### End to end Example
 
@@ -130,7 +130,7 @@ This end to end example exports stats and traces to the agent. It will require y
 The full code snippet can also be found on the
 [OpenCensus-Java repo](https://github.com/census-instrumentation/opencensus-java/blob/master/examples/src/main/java/io/opencensus/examples/ocagent/OcAgentExportersQuickStart.java).
 
-```java
+{{<highlight java>}}
 package io.opencensus.examples.ocagent;
 
 import io.opencensus.common.Duration;
@@ -413,7 +413,7 @@ public class OcAgentExportersQuickStart {
     return s;
   }
 }
-```
+{{</highlight>}}
 
 ### References
 

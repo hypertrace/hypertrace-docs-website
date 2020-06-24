@@ -18,7 +18,7 @@ To create the exporter, we'll need to:
 
 * Create an exporter in code
 * Have the Zipkin endpoint available to receive traces
-
+<pre>
 ```python
 #!/usr/bin/env python
 
@@ -40,6 +40,7 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+</pre>
 
 ## Viewing your traces
 Please visit the Hypertrace UI endpoint [http://localhost](http://localhost).

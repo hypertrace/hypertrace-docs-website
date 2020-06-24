@@ -35,12 +35,12 @@ The same thing happens for traces.
 The exporter's import path is "contrib.go.opencensus.io/exporter/ocagent".
 
 An exporter can be started by invoking `ocagent.New`, whose signature is:
-{{<highlight go>}}
+```
 func NewExporter(opts ...ExporterOption) (*Exporter, error)
-{{</highlight>}}
+```
 
 Below is a full example of the simplest end-to-end initialization:
-{{<highlight go>}}
+```go
 package main
 
 import (
@@ -58,25 +58,25 @@ func main() {
 	// remember to stop  the exporter.
 	defer oce.Stop()
 }
-{{</highlight>}}
+```
 
 ### Options
 Options allow you to customize the exporter.
 The function signature for New allows optional functional options.
-{{<highlight go>}}
+```
 func NewExporter(opts ...ExporterOption) (*Exporter, error)
-{{</highlight>}}
+```
 
 #### Custom address
 This option allows one to talk to an OpenCensus Agent running on a customized address.
 The customized address could be anything that is resolvable by [net.LookupAddr](https://golang.org/pkg/net/#LookupAddr)
 
-{{<highlight go>}}
+```go
         oce, err := ocagent.NewExporter(
                 // WithAddress takes in any value that can be resolved
                 // by invoking net.Lookup https://golang.org/pkg/net/#LookupAddr
                 ocagent.WithAddress("<my_host>:<myport>"))
-{{</highlight>}}
+```
 
 #### Insecure
 This option allows one to talk to the OpenCensus Agent without mutual TLS.
@@ -84,19 +84,19 @@ This option allows one to talk to the OpenCensus Agent without mutual TLS.
 [WithInsecure](https://godoc.org/contrib.go.opencensus.io/exporter/ocagent/#WithInsecure) is akin to [grpc.WithInsecure](https://godoc.org/google.golang.org/grpc/#WithInsecure)
 
 It can be enabled like this
-{{<highlight go>}}
+```go
         oce, err := ocagent.NewExporter(
                 // WithInsecure is akin to  grpc.WithInsecure()
                 ocagent.WithInsecure())
-{{</highlight>}}
+```
 
 #### Service name
 This option allows one to set the service name of the caller by using [WithServiceName](https://godoc.org/contrib.go.opencensus.io/exporter/ocagent#WithServiceName)
 
 It can be enabled like this
-{{<highlight go>}}
+```go
         oce, err := ocagent.NewExporter(ocagent.WithServiceName("with-service-name"))
-{{</highlight>}}
+```
 
 #### Reconnection period
 This option defines the amount of time for a failed connection, that the exporter takes before a reconnection attempt to the agent.
@@ -104,40 +104,41 @@ This option defines the amount of time for a failed connection, that the exporte
 [WithReconnectionPeriod](https://godoc.org/contrib.go.opencensus.io/exporter/ocagent#WithReconnectionPeriod) is the option's name.
 
 Here is an example for how to tell it to attempt reconnecting on fail, after 10 seconds.
-{{<highlight go>}}
+```go
         oce, err := ocagent.NewExporter(ocagent.WithReconnectionPeriod(10 * time.Second))
-{{</highlight>}}
+```
 
 ### Enabling stats exporting
 
 This exporter implements OpenCensus-Go's [view.Exporter](https://godoc.org/go.opencensus.io/stats/view#Exporter)
 
 This allows it to receive stats emitted by OpenCensus-Go and upload them to the agent. It can be enabled by
-{{<highlight go>}}
+```
 import "go.opencensus.io/stats/view"
 
 func main() {
         view.RegisterExporter(oce)
 }
-{{</highlight>}}
+```
 
 ### Enabling trace exporting
 
 This exporter implements OpenCensus-Go's [trace.Exporter](https://godoc.org/go.opencensus.io/trace#Exporter)
 
 This allows it to receive stats emitted by OpenCensus-Go and upload them to the agent. It can be enabled by
-{{<highlight go>}}
+```go
 import "go.opencensus.io/trace"
 
 func main() {
         trace.RegisterExporter(oce)
 }
-{{</highlight>}}
+```
 
 ### End to end Example
 
 This end to end example exports stats and traces to the agent. It will require you to deploy the [OpenCensus-Agent](https://github.com/census-instrumentation/opencensus-service) in order to examine the stats and traces.
 
+<pre>
 ```go
 package main
 
@@ -261,7 +262,7 @@ func main() {
 	}
 }
 ```
-
+</pre>
 ### References
 
 Resource|URL

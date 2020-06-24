@@ -12,16 +12,13 @@ It manages both the collection and lookup of this data. Zipkin’s design is bas
 
 OpenCensus Go has support for this exporter available through package [contrib.go.opencensus.io/exporter/zipkin](https://godoc.org/contrib.go.opencensus.io/exporter/zipkin)
 
-{{% notice tip %}}
-For assistance setting up Zipkin, [Click here](/codelabs/zipkin) for a guided codelab.
-{{% /notice %}}
 
 ## Creating the exporter
 To create the exporter, we'll need to:
 
 * Create an exporter in code
 * Have the Zipkin endpoint available to receive traces
-
+<pre>
 ```go
 package main
 
@@ -52,7 +49,7 @@ func main() {
 	trace.RegisterExporter(ze)
 }
 ```
-
+</pre>
 ## Viewing your traces
 Please visit the Hypertrace UI endpoint [http://localhost](http://localhost)
 

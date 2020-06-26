@@ -2,13 +2,13 @@
 title: Welcome to Hypertrace
 template: docs
 ---
-## What is Hypertrace?
+# What is Hypertrace?
 Hypertrace is a highly scalable distributed tracing and observability platform designed to ingest and analyze large volumes of production trace data. OpenTelemetry-based agents collect and send observability data directly from applications to Hypertrace for analysis. Data visualizations, reports, and dashboards are available in a web-based console to assist in monitoring cloud-native applications and resolving application and service performance problems.
 
-## Hypertrace: Features
+# Hypertrace: Features
 Hypertrace is a highly scalable open source platform with many of the same features as other distributed tracing platforms. Its real distninction, however, is that it offers advanced features out-of-the-box, which are typically found only in commercial products. 
 
-Advanced Distributed Tracing features:
+## Advanced Distributed Tracing features:
 - Flowmaps and metrics for Services
 - Flowmaps and metrics for APIs. APIs detected automatically. 
 - API host (or Domain) level metrics and traces
@@ -18,7 +18,7 @@ Advanced Distributed Tracing features:
 - Flexible query interface to build your own UIs
 - OLAP store is pluggable with abstractions (need to add request handlers in QueryService)
 
-Basic Distributed Tracing Features:
+## Basic Distributed Tracing Features:
 - Monitor
     - Distributed Tracing & Correlation - End-to-end distributed tracing of all internal microservice/backend calls triggered by the edge API calls and web transactions
     - Application Flow Mapping - Real-time discovery and visualization of end-to-end application topology
@@ -31,7 +31,7 @@ Basic Distributed Tracing Features:
     - Trace Filtering & Visualizations - Search & visualize any traces
     - Advanced Slice & Dice - Create your own aggregation and grouping of traces
 
-Feature details:
+## Feature details:
 
 ### Aggregations
 Hypertrace Explorer provides multiple parameters to help you aggregate your API and trace searches. Combine parameters together to give you aggregations based on very specific criteria. 

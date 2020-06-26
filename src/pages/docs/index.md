@@ -1,5 +1,5 @@
 ---
-title: Welcome to Hypertrace
+title: Welcome to Hypertrace!!
 template: docs
 ---
 # What is Hypertrace?

@@ -1,6 +1,5 @@
 root_folder: /docs/
 sections:
-  - about
   - getting-started
   - arch
   - instrumentation

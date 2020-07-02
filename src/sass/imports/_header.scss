@@ -1,6 +1,7 @@
 /**
  * Site Header
  */
+@import "nav-font.css";
 .site-header {
   background: #fff;
   padding-bottom: 1.25em;
@@ -46,6 +47,7 @@
 
 .site-navigation {
   margin-left: auto;
+  font-family:  Rational TW, sans-serif;
 }
 
 .menu,

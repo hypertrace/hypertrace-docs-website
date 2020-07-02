@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Rational TW';
+    src: local('Rational TW Text Thin'), local('Rational-TW-Text-Thin'),
+        url('../webfonts/RationalTWText-Thin.woff2') format('woff2'),
+        url('../webfonts/RationalTWText-Thin.woff') format('woff'),
+        url('../webfonts/RationalTWText-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }

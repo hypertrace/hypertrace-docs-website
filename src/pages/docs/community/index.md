@@ -1,30 +1,26 @@
 ---
 title: community
 excerpt: >-
-  We'd love it if you participate in the Libris community. Find out how to get
+  We'd love it if you participate in the Hypertrace community. Find out how to get
   connected.
 template: docs
 ---
+Hypertrace was originally developed by Traceable as a highly scalable distributed tracing platform. It collects rich, granular production application usage data and trains machine learning algorithms for Traceable’s cloud-native application security platform. 
+‍
+Realizing that Hypertrace was a powerful standalone tracing and observability platform, Traceable created this open source project for the software development community to use in their applications.
 
-<div class="note">
-  <strong>Note:</strong> 
-  This is the demo content for demonstration purpose only. The primary function of this content is to show you what this theme can do. There is a more detailed explanation in the <strong>Getting Started</strong> section.
-</div>
+## GitHub
 
-**Lorem ipsum dolor sit amet, consectetur adipiscing elit.** Donec ut nulla laoreet, finibus purus sit amet, ullamcorper felis. Aliquam sagittis consectetur ullamcorper. Ut dapibus ex a nibh euismod tincidunt. Vestibulum quam velit, placerat vel ipsum eget, vulputate aliquet nibh. Cras hendrerit, justo a sagittis pharetra, ante elit imperdiet quam, eget euismod mauris lacus at eros. Sed et est interdum leo ultricies feugiat non non est. Aenean sit amet sollicitudin tellus, at pellentesque massa. Vestibulum dapibus magna quis dui ultrices vestibulum.
+Being a open-source product, our source code is available under hypertrace organization on GitHub. We welcome contributions from everyone to make Hypertrace a best open-source tracing platform out there. 
 
-## Stack Overflow
 
-Suspendisse hendrerit maximus metus in placerat. In ligula magna, efficitur sed ultrices non, iaculis ut ligula. Sed finibus efficitur cursus. Proin quis molestie purus. Vestibulum ut magna eget tortor tempor egestas eget eu orci. Integer porta cursus rutrum. Quisque porta suscipit sem, et tincidunt felis malesuada vel. 
+## Gitter
+We are using gitter to connect with community and listen to good things and problem faced by community. If you have any issues regarding hypertrace or you're new to Distributed Tracing world altogether, you can drop by on our gitter channel and we will be happy to guide you!
 
-## Popular Discussion Forums
-
-Donec eget tellus magna. Duis eu metus sem. Donec nec ullamcorper dui. Phasellus turpis mauris, lacinia ac imperdiet eu, dapibus eu metus. Vestibulum porta lectus vel dui eleifend pretium. Nulla facilisi. Nam luctus quam at velit congue tincidunt. Ut tempus justo at urna varius commodo.
+Join us: 
 
 ## Twitter
 
-Vestibulum maximus volutpat eros a lobortis. Duis cursus neque id sollicitudin vehicula. Morbi varius dapibus est, sed bibendum diam aliquam eu. Morbi maximus consequat sem id vestibulum.
+Follow us on twitter @
 
-Nam semper, augue pharetra commodo commodo, magna augue ornare ligula, ut gravida nisi nulla vel velit. Quisque tincidunt posuere ex eget luctus.
 
-**Sed a dui in turpis porttitor hendrerit quis id odio.**

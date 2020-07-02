@@ -5,9 +5,6 @@ sections:
   - instrumentation
   - exporters
   - deployments
-  - client libraries
-  - monitoring
-  - performance tuning guide
   - troubleshooting
   - community
   - faq

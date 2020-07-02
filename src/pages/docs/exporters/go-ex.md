@@ -6,6 +6,6 @@ template: docs
 
 Hypertrace supports Jaeger, Zipkin and opencensus agent to accept traces from Go application. You can visit docs below to get more details about that:
 
-1. [OpenCensus Agent](go-opencensus.md)
-2. [Jaeger](go-jaeger.md)
-3. [Zipkin](go-zipkin.md)
+- [OpenCensus Agent](https://docs.hypertrace.org/docs/go/go-opencensus/)
+- [Jaeger](https://docs.hypertrace.org/docs/go/go-jaeger/)
+- [Zipkin](https://docs.hypertrace.org/docs/go/go-zipkin/)

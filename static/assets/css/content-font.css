@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: local('Galano Grotesque Light'), local('Galano-Grotesque-Light'),
+        url('GalanoGrotesque-Light.woff2') format('woff2'),
+        url('GalanoGrotesque-Light.woff') format('woff'),
+        url('GalanoGrotesque-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }

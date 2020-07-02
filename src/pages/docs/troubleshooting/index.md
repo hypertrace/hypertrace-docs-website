@@ -5,8 +5,8 @@ excerpt: >-
   for your project.
 template: docs
 ---
+This section provides information about some know issues you might face during installation or using hypertrace. You can find ways to solve your issues or atleast some guidelines to troubleshoot for pproblem in this section. 
 
-Ut quis consequat risus. Aenean ut porta ligula. Morbi id ante eu nisi suscipit maximus. Fusce ac congue quam. Nulla id elit facilisis, consequat magna vitae, scelerisque elit. Nullam lacinia elit in arcu scelerisque, ac volutpat neque sodales.
 
 ***
 

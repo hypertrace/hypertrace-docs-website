@@ -1,8 +1,20 @@
 ---
-title: Quick Start
-weight: 1
+title: Instrumentation
+weight: 2
 template: docs
 ---
+## Introduction
+Your application must be instrumented before it can send tracing and monitoring data to hypertrace using any supported collector including OpenTracing, OpenCensus, Jaeger and zipkin.  Let's see what is instrumentation and how you can instrument your application for distributed tracing. 
+
+### What is Instrumentation?
+As per the paper titles *Software Instrumentation* by Torsten Kempf, Kingshuk Karuri
+and Lei Gao, *Software instrumentation is a technique that is widely used in software profiling, performance analysis, optimization, testing, error detection, and virtualization. Instrumentation, which involves adding extra code to an application for monitoring some program behavior, can be performed either statically (i.e., at compile time) or dynamically (i.e., at runtime).*
+
+To make it simpler we are looking at Agent based instrumentation and library based intrumentation. 
+
+A library-based instrumentation approach can be characterized by its reliance on an application-level dependency on some shared, standardized library that is used throughout its services and it generally relies on developers to write instrumentation code. Agent-based instrumentation relies on some sort of external process or processes to instrument processes at runtime. Agent can be external process or monitoring service that injects code into your service or some sort of in-process agent that is imported to the runtime environment of a process and uses a system of user-defined rules. When we look into it in a way we can observe that agent based instrumentation is more of a black box approach whereas library based instrumentation is more analogues to white box implementation. 
+
+## Let's get started with Instrumentation with example
 ### Learning objectives
 - Learn to create some python flask api based microservices and make them call each other. 
 - Learn to instrument basic microservice app

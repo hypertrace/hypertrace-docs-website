@@ -1,6 +1,6 @@
 ---
 title: UI Overview
-weight: 3
+weight: 1
 template: docs
 ---
 # Hypertrace: UI Overview

@@ -4,31 +4,51 @@ weight: 1
 template: docs
 ---
 ## Hypertrace: Installation
-Get up and running with hypertrace in your local environment
+- We are using Helm charts to deploy Hypertrace distributed tracing platform.
+- Hypertrace supports collection of traces from different tracers like OpenTracing, OpenCensus, Jaeger and zipkin.
+
+### Requirements
+- `Docker desktop` (version 2.2.x and above) with `Kubernetes` enabled.
+- Minimum resources for Docker: (2 CPUs, 4GB Memory).
+Following is the snapshot of resources used of a typical hypertrace standalone deployment.
+
+    | Resource          | Requests        | Limits        |
+    |-------------------| ---------------:| -------------:|
+    | cpu               | 1850m (46%)     | 2700m (67%)   |
+    | memory            | 4084Mi (41%)    | 6472Mi (65%)  |
+    | ephemeral-storage | 0 (0%)          | 0 (0%)        |
+
+
+- `Helm` (version 3.2.x and above)
+- Bash
+- Ineternet connectivity to pull the hypertrace helm charts and docker images
+- Basic understanding of kubernetes and helm
 
 ### How it works
-Deploys Hypertrace platform in `docker-desktop` context and under the namespace `hypertrace`.
-
-### Ports used
-Following ports are opened and used by Hypertrace. Make sure these ports are available before we proceed with installation.
-- `80` - Used by Hypertrace UI
-- `55678` - Opencensus collector
-- `14267` - Jaeger thrift collector
-- `14268` - Jaeger HTTP collector
-- `9411` - Zipkin collector
-
-In case of any port collisions, users can modify the following properties in helm file (`platform-services/values.yaml`).
-- `ingress.hosts[].paths[].port` -  To change UI port 
-- `hypertrace-oc-collector.service.ports[].targetPort` - To change collector ports
+Deploys Hypertrace platform in `docker-desktop` or any cloud platform context, under the namespace `hypertrace`.
 
 ### Install
 - Clone the repository from github.
-- Customize the configuration under `./config/hypertrace.properties` as needed. Default configuration works for most of the setups.
-- Run `./standalone.sh install`
+- Customize the configuration under `./config/hypertrace.properties` as needed. Default configuration will work for standalone deployment on docker for desktop.
+- Run `./hypertrace.sh install`
 
 In case of any issue, install hypertrace in debug mode to get more logs and traces to identify the rootcause.
-- Set `ENABLE_DEBUG` to `true` in `./config/hypertrace.properties`
-- Debug `bash -x ./standalone.sh install`
+- Set `HT_ENABLE_DEBUG` to `true` in `./config/hypertrace.properties`
+- Debug `bash -x ./hypertrace.sh install`
+
+
+### Configuration
+
+| Key                | Description                                                                                                   | Allowed values       |
+|--------------------|---------------------------------------------------------------------------------------------------------------|----------------------|
+| HT_DOCKER_REGISTRY | Public docker repository.                                                                                     |                      |
+| HT_HELM_REGISTRY   | Public helm repository.                                                                                       |                      |
+| HT_PROFILE         | Profile is size of your deployment. (Memory, No. of CPU's, etc.).                                             | mini, medium, large  |
+| HT_CLOUD_PROVIDER  | Cloud platform you are deploying hypertrace on.                                                               | aws, gcp, azure      |
+| HT_KUBE_CONTEXT    | Kubernetes context to deploy hypertrace.                                                                      | specific to platform |
+| HT_KUBE_NAMESPACE  | Kubernetes namespace to deploy hypertrace.                                                                    | hypertrace           |
+| HT_ENABLE_DEBUG    | In case of any issue, install hypertrace in debug mode to get more logs and traces to identify the rootcause. | true, false          |
+| HT_INSTALL_TIMEOUT | Helm install wait timeout.                                                                                    | in minutes           |
 
 ### Verify installation
 
@@ -72,35 +92,7 @@ In case of any issue, install hypertrace in debug mode to get more logs and trac
     ```
 
 ### Uninstall
-- Run `./standalone.sh uninstall`
-
-### Troubleshooting
-- ###### Error: release hypertrace-data-services failed, and has been uninstalled due to atomic being set: timed out waiting for the condition
-    Installation failed due to timeout. May be due to slower connection to pull the hypertrace docker images. Increase timeout configuration `INSTALL_TIMEOUT` in `config/hypertrace.properties`
-    
-    If the problem persists even after sufficient timeout, check if some services in hung pending state for long. 
-    This is a known [ docker issue ](https://github.com/docker/for-mac/issues/2990).
-    Issues gets fixed by rebooting `Docker desktop` and reinstalling hypertrace.
-    ```shell script
-     $ kubectl get services --context=docker-desktop --namespace=hypertrace
-    NAME                         TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)                                                          AGE
-    attribute-service            ClusterIP      10.108.115.193   <none>        9012/TCP                                                         5m14s
-    bootstrap                    ClusterIP      10.97.13.134     <none>        9092/TCP                                                         8m32s
-    entity-service               ClusterIP      10.96.159.110    <none>        50061/TCP                                                        5m14s
-    gateway-service              ClusterIP      10.110.55.131    <none>        50071/TCP                                                        5m14s
-    hypertrace-graphql-service   ClusterIP      10.107.17.146    <none>        23431/TCP                                                        5m14s
-    hypertrace-oc-collector      LoadBalancer   10.109.173.246   <pending>     55678:32553/TCP,14268:32604/TCP,14267:30295/TCP,9411:32753/TCP   5m14s
-    hypertrace-ui                LoadBalancer   10.100.55.219    <pending>     80:32631/TCP                                                     5m14s
-    kafka-broker                 ClusterIP      None             <none>        9092/TCP                                                         8m33s
-    pinot-controller             ClusterIP      None             <none>        9000/TCP                                                         8m33s
-    pinot-servicemanager         ClusterIP      None             <none>        9000/TCP,8098/TCP,8099/TCP                                       8m33s
-    pinot-servicemanager-svc     ClusterIP      10.96.130.44     <none>        9000/TCP,8098/TCP,8099/TCP                                       8m33s
-    query-service                ClusterIP      10.106.114.19    <none>        8090/TCP                                                         5m14s
-    schema-registry-service      ClusterIP      10.100.216.76    <none>        8081/TCP                                                         8m33s
-    zookeeper                    ClusterIP      10.107.169.223   <none>        2181/TCP                                                         8m33s
-    zookeeper-headless           ClusterIP      None             <none>        2888/TCP,3888/TCP                                                8m33s
-    ```
-
+- Run `./hypertrace.sh uninstall`
 
 ## Hypertrace
 

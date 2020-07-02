@@ -6,30 +6,28 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
  * @author Lea Verou
  */
  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
- 
+
  code[class*="language-"],
  pre[class*="language-"] {
-   color: black;
-   background: none;
-   text-shadow: 0 1px white;
-   font-family: Roboto Mono, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-   font-size: 1em;
-   text-align: left;
-   white-space: pre;
-   word-spacing: normal;
-   word-break: normal;
-   word-wrap: normal;
-   line-height: 1.5;
- 
-   -moz-tab-size: 4;
-   -o-tab-size: 4;
-   tab-size: 4;
- 
-   -webkit-hyphens: none;
-   -moz-hyphens: none;
-   -ms-hyphens: none;
-   hyphens: none;
+  color: _palette(secondary);
+  background: none;
+  font-family: _font(monospace);
+  font-size: 0.875rem;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
  }
+
  
  pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
  code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {

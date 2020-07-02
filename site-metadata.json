@@ -34,13 +34,13 @@
         "nav_links": [
             {
                 "label": "Home",
-                "url": "/",
+                "url": "/home/",
                 "type": "link",
                 "has_subnav": false
             },
             {
                 "label": "Docs",
-                "url": "/docs/",
+                "url": "/",
                 "type": "link",
                 "has_subnav": false
             },

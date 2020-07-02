@@ -1,7 +1,7 @@
 
 // Font.
 $font: (
-  primary: ('Galano Grotesque', sans-serif),
+  primary: ('karla', sans-serif),
   monospace: ('Rationale TW', sans-serif, monospace)
 );
 
@@ -36,3 +36,4 @@ $palette: (
 @import "imports/sections";
 @import "imports/footer";
 @import "imports/prism";
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');

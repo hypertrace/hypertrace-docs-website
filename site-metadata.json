@@ -40,7 +40,7 @@
             },
             {
                 "label": "Docs",
-                "url": "/",
+                "url": "/docs/",
                 "type": "link",
                 "has_subnav": false
             },

@@ -29,7 +29,7 @@
     },
     "header": {
         "title": "Hypertrace",
-        "logo_img": "images/logo.svg",
+        "logo_img": "images/logo.png",
         "has_nav": true,
         "has_social:":true,
         "nav_links": [

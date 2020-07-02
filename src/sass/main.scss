@@ -2,7 +2,7 @@
 // Font.
 $font: (
   primary: ('Galano Grotesque', sans-serif),
-  monospace: (Monaco, courier, monospace)
+  monospace: (Roboto Mono, courier, monospace)
 );
 
 // Palette.
@@ -38,3 +38,4 @@ $palette: (
 @import "imports/footer";
 @import "imports/prism";
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');

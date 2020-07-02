@@ -31,6 +31,7 @@
         "title": "Hypertrace",
         "logo_img": "images/logo.png",
         "has_nav": true,
+        "has_social:":true,
         "nav_links": [
             {
                 "label": "Home",
@@ -51,7 +52,7 @@
                 "has_subnav": false
             },
             {
-                "label": "Style Guide",
+                "label": "Demo",
                 "url": "/style-guide/",
                 "type": "link",
                 "has_subnav": false
@@ -59,8 +60,16 @@
             {
                 "label": "GitHub",
                 "url": "https://github.com/hypertrace",
-                "type": "primary",
-                "has_subnav": false
+                "type": "icon",
+                "icon_class": "fa-github",
+                "new_window": true
+            },
+            {
+                "label": "Gitter",
+                "url": "https://gitter.im/hypertrace",
+                "type": "icon",
+                "icon_class": "fa-gitter",
+                "new_window": true
             }
         ]
     },

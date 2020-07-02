@@ -1,10 +1,10 @@
 ---
-title: Docker for Desktop
-weight: 1
+title: AWS EKS
+weight: 2
 template: docs
 ---
 
-## Deploying hypertrace on docker for desktop using helm:
+## Deploying hypertrace on AWS EKS using helm:
 
 1. Clone the hypertrace-helm repo on you local machine using `git clone https://github.com/Traceableai/hypertrace-helm.git`
 2. Go to the hypertrace-helm directory and run `./hypertrace.sh install`
@@ -12,23 +12,24 @@ template: docs
 ## Configuration
 - You can customize the configuration under `./config/hypertrace.properties` as needed.
 - Default configuration will work for docker for dekstop deployment which we are discussing in this section. 
-- use `standalone` profile while installing on docker for desktop as it is optimized for that purpose. 
+- You can choose from `mini`, `medium` and `large` profile according to your cluster types. each one has appropriate resources allocated to it.
+- Below configuration uses `large` profile. 
 
 Default configuration is as follows:
 ```bash
 HT_DOCKER_REGISTRY=traceableai-docker.jfrog.io
 HT_HELM_REGISTRY=https://traceableai.jfrog.io/traceableai/helm
 # Set install profile using `HT_PROFILE` (It can be `mini`, `medium` and `large`). Please use `standalone` for local deployment.
-HT_PROFILE=standalone
+HT_PROFILE=large
 #  Set `HT_CLOUD_PROVIDER` to cloud provider you are deploying HT on (currently you can set it to `gcp` or `aws`)
-HT_CLOUD_PROVIDER=""
+HT_CLOUD_PROVIDER=aws
 # TODO: Cleanup username,password and email configuration after moving artifacts to public repository
 DOCKER_USERNAME=${DOCKER_USERNAME}
 DOCKER_PASSWORD=${DOCKER_PASSWORD}
 DOCKER_EMAIL=${DOCKER_USERNAME}@traceable.ai
 
 # Kubernetes context to deploy hypertrace
-HT_KUBE_CONTEXT=docker-desktop
+HT_KUBE_CONTEXT="YOUR_EKS_CLUSTER_CONTEXT"
 # Kubernetes namespace to deploy hypertrace
 HT_KUBE_NAMESPACE=hypertrace
 HT_ENABLE_DEBUG=false

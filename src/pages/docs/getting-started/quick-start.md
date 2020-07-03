@@ -65,11 +65,11 @@ by deploying the [release manifest](./release) directly to an existing cluster.
 
 <div class="note">
   <strong>Note:</strong> 
-  If you want to try more samples with Hypertrace visit our blog post on **Best microservice sample apps** [here]().
+  If you want to try more samples with Hypertrace visit our blog post on <a>Best microservice sample apps</a>.
 </div>
 
 
 <div class="important">
   <strong>Important:</strong> 
-  Are you facing any issue with this? Let's discuss it here: https://gitter.im/hypertrace
+  Are you facing any issue with this? Let's discuss it on <a src=https://gitter.im/hypertrace>Gitter.</a>
 </div>

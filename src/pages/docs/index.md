@@ -7,6 +7,21 @@ Hypertrace is a highly scalable distributed tracing and observability platform d
 # Hypertrace: Features
 Hypertrace is a highly scalable open source platform with many of the same features as other distributed tracing platforms. Its real distninction, however, is that it offers advanced features out-of-the-box, which are typically found only in commercial products. 
 
+## Basic Distributed Tracing Features:
+
+| Category | Features                                                                                                                                                            |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Monitor  | Distributed Tracing & Correlation - End-to-end distributed tracing of all internal microservice/backend calls triggered by the edge API calls and web transactions. |
+|          | Application Flow Mapping - Real-time discovery and visualization of end-to-end application topology                                                                 |
+|          |                                                                                                                                                                     |
+| Trace    | Web Transaction Monitoring - Monitor all web transactions at Web Proxies                                                                                            |
+|          | Microservice Monitoring - Monitor all internal micro-ervice calls.                                                                                                  |
+|          | Backends Monitoring - Monitor all calls to backend systems like databases or third-party services.                                                                  |
+|          | End User Monitoring - Monitor end-user calls                                                                                                                        |
+|          |                                                                                                                                                                     |
+| Identify | Trace Filtering & Visualizations - Search & visualize any traces.                                                                                                   |
+|          | Advanced Slice & Dice - Create your own aggregation and grouping of traces                                                                                          |
+
 ## Advanced Distributed Tracing features:
 - Flowmaps and metrics for Services
 - Flowmaps and metrics for APIs. APIs detected automatically. 
@@ -17,18 +32,6 @@ Hypertrace is a highly scalable open source platform with many of the same featu
 - Flexible query interface to build your own UIs
 - OLAP store is pluggable with abstractions (need to add request handlers in QueryService)
 
-## Basic Distributed Tracing Features:
-- Monitor
-    - Distributed Tracing & Correlation - End-to-end distributed tracing of all internal microservice/backend calls triggered by the edge API calls and web transactions
-    - Application Flow Mapping - Real-time discovery and visualization of end-to-end application topology
-- Trace
-    - Web Transaction Monitoring - Monitor all web transactions at Web Proxies
-    - Microservice Monitoring - Monitor all internal micro-ervice calls
-    - Backends Monitoring - Monitor all calls to backend systems like databases or third-party services
-    - End User Monitoring - Monitor end-user calls
-- Identify 
-    - Trace Filtering & Visualizations - Search & visualize any traces
-    - Advanced Slice & Dice - Create your own aggregation and grouping of traces
 
 ## Feature Table
 | Feature                                | Description                                                                                                                                            |

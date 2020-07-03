@@ -63,17 +63,13 @@ by deploying the [release manifest](./release) directly to an existing cluster.
 | [![Screenshot of store homepage](https://s3.amazonaws.com/fininity.tech/online-boutique-frontend-1-min.png)]() | [![Screenshot of checkout screen](https://s3.amazonaws.com/fininity.tech/DT/online-boutique-frontend-2.png)]() |
 
 
-```html
 <div class="note">
   <strong>Note:</strong> 
   If you want to try more samples with Hypertrace visit our blog post on **Best microservice sample apps** [here]().
 </div>
-```
 
 
-```html
 <div class="important">
   <strong>Important:</strong> 
   Are you facing any issue with this? Let's discuss it here: https://gitter.im/hypertrace
-```
-
+</div>

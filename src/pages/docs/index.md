@@ -57,7 +57,6 @@ Hypertrace is a highly scalable open source platform with many of the same featu
 | Basic DAGs for application flow                               | Comes with modern flow map at scale with features like panning and scaling.                            |
 | No way to get detailed insights for single service.           | A complete microservices section will give you details about each service.                             |
 
-<div>
+
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/index.md">
 <button type="button">Edit this page</button></a>
-</div>

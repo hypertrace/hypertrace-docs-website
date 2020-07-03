@@ -39,16 +39,16 @@ In case of any issue, install hypertrace in debug mode to get more logs and trac
 
 ### Configuration
 
-| Key                | Description                                                                                                   | Allowed values       |
-|--------------------|---------------------------------------------------------------------------------------------------------------|----------------------|
-| HT_DOCKER_REGISTRY | Public docker repository.                                                                                     |                      |
-| HT_HELM_REGISTRY   | Public helm repository.                                                                                       |                      |
-| HT_PROFILE         | Profile is size of your deployment. (Memory, No. of CPU's, etc.).                                             | mini, medium, large  |
-| HT_CLOUD_PROVIDER  | Cloud platform you are deploying hypertrace on.                                                               | aws, gcp, azure      |
-| HT_KUBE_CONTEXT    | Kubernetes context to deploy hypertrace.                                                                      | specific to platform |
-| HT_KUBE_NAMESPACE  | Kubernetes namespace to deploy hypertrace.                                                                    | hypertrace           |
-| HT_ENABLE_DEBUG    | In case of any issue, install hypertrace in debug mode to get more logs and traces to identify the rootcause. | true, false          |
-| HT_INSTALL_TIMEOUT | Helm install wait timeout.                                                                                    | in minutes           |
+| Key                  | Description                                                                                                   | Allowed values       |
+|----------------------|---------------------------------------------------------------------------------------------------------------|----------------------|
+| `HT_DOCKER_REGISTRY` | Public docker repository.                                                                                     |                      |
+| `HT_HELM_REGISTRY`   | Public helm repository.                                                                                       |                      |
+| `HT_PROFILE`         | Profile is size of your deployment. (Memory, No. of CPU's, etc.).                                             | mini, medium, large  |
+| `HT_CLOUD_PROVIDER`  | Cloud platform you are deploying hypertrace on.                                                               | aws, gcp, azure      |
+| `HT_KUBE_CONTEXT`    | Kubernetes context to deploy hypertrace.                                                                      | specific to platform |
+| `HT_KUBE_NAMESPACE`  | Kubernetes namespace to deploy hypertrace.                                                                    | hypertrace           |
+| `HT_ENABLE_DEBUG`    | In case of any issue, install hypertrace in debug mode to get more logs and traces to identify the rootcause. | true, false          |
+| `HT_INSTALL_TIMEOUT` | Helm install wait timeout.                                                                                    | in minutes           |
 
 ### Verify installation
 

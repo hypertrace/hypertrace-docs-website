@@ -1,10 +1,10 @@
 ---
-title: Docker for Desktop
-weight: 2
+title: Azure AKS
+weight: 5
 template: docs
 ---
 
-## Deploying hypertrace on docker for desktop using helm:
+## Deploying hypertrace on Azure Kubernetes Service using helm:
 
 1. Clone the hypertrace-helm repo on you local machine using `git clone https://github.com/Traceableai/hypertrace-helm.git`
 2. Go to the hypertrace-helm directory and run `./hypertrace.sh install`
@@ -12,23 +12,33 @@ template: docs
 ## Configuration
 - You can customize the configuration under `./config/hypertrace.properties` as needed.
 - Default configuration will work for docker for dekstop deployment which we are discussing in this section. 
-- use `standalone` profile while installing on docker for desktop as it is optimized for that purpose. 
+- You can choose from `mini`, `medium` and `large` profile according to your cluster types. each one has appropriate resources allocated to it.
+- Below configuration uses `large` profile. 
+
+### Note: 
+In AKS, 4 initial StorageClasses are created:
+- `default` - Uses Azure StandardSSD storage to create a Managed Disk. The reclaim policy indicates that the underlying Azure Disk is deleted when the persistent volume that used it is deleted.
+- `managed-premium` - Uses Azure Premium storage to create Managed Disk. The reclaim policy again indicates that the underlying Azure Disk is deleted when the persistent volume that used it is deleted.
+- `azurefile` - Uses Azure Standard storage to create an Azure File Share. The reclaim policy indicates that the underlying Azure File Share is deleted when the persistent volume that used it is deleted.
+- `azurefile-premium` - Uses Azure Premium storage to create an Azure File Share. The reclaim policy indicates that the underlying Azure File Share is deleted when the persistent volume that used it is deleted.
+
+We are using `default` class for our deployment. 
 
 Default configuration is as follows:
 ```bash
 HT_DOCKER_REGISTRY=traceableai-docker.jfrog.io
 HT_HELM_REGISTRY=https://traceableai.jfrog.io/traceableai/helm
 # Set install profile using `HT_PROFILE` (It can be `mini`, `medium` and `large`). Please use `standalone` for local deployment.
-HT_PROFILE=standalone
+HT_PROFILE=large
 #  Set `HT_CLOUD_PROVIDER` to cloud provider you are deploying HT on (currently you can set it to `gcp` or `aws`)
-HT_CLOUD_PROVIDER=""
+HT_CLOUD_PROVIDER=azure
 # TODO: Cleanup username,password and email configuration after moving artifacts to public repository
 DOCKER_USERNAME=${DOCKER_USERNAME}
 DOCKER_PASSWORD=${DOCKER_PASSWORD}
 DOCKER_EMAIL=${DOCKER_USERNAME}@traceable.ai
 
 # Kubernetes context to deploy hypertrace
-HT_KUBE_CONTEXT=docker-desktop
+HT_KUBE_CONTEXT="YOUR_EKS_CLUSTER_CONTEXT"
 # Kubernetes namespace to deploy hypertrace
 HT_KUBE_NAMESPACE=hypertrace
 HT_ENABLE_DEBUG=false
@@ -87,5 +97,7 @@ In case of any issue, install hypertrace in debug mode to get more logs and trac
 - Run `./hypertrace.sh uninstall`
 
 You can check out [installation]() doc to read more about ports and other configs. 
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: APIs
+title: Data Collection
 weight: 2
 template: docs
 ---

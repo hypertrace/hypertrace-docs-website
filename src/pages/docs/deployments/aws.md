@@ -1,6 +1,6 @@
 ---
 title: AWS EKS
-weight: 2
+weight: 3
 template: docs
 ---
 

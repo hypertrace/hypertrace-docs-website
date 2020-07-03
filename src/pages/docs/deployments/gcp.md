@@ -1,6 +1,6 @@
 ---
 title: GCP GKE
-weight: 3
+weight: 4
 template: docs
 ---
 

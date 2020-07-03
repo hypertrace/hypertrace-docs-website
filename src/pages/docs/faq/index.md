@@ -5,60 +5,39 @@ excerpt: >-
   theme. If you have questions, don’t hesitate to ask us directly.
 template: docs
 ---
-
-This is an example of the FAQ page.
-
-<div class="note">
-  <strong>Note:</strong> 
-  This is the demo content for demonstration purpose only. The primary function of this content is to show you what this theme can do. There is a more detailed explanation in the <strong>Getting Started</strong> section.
-</div>
+## What is Hypertrace?
+Hypertrace is a highly scalable distributed tracing and observability platform designed to ingest and analyze large volumes of production trace data. OpenTelemetry-based agents collect and send observability data directly from applications to Hypertrace for analysis. Data visualizations, reports, and dashboards are available in a web-based console to assist in monitoring cloud-native applications and resolving application and service performance problems.
 
 <hr />
 
-## Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+## What is Distributed Tracing?
+*Distributed Tracing* ! Distributed tracing, also called distributed request tracing, is particularly well-suited to debugging and monitoring modern distributed software architectures, such as microservices. It helps pinpoint where failures occur and what causes sub-optimal performance.
 
-Praesent tristique sem nec lacus laoreet laoreet. Phasellus commodo consectetur viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent mattis rhoncus lacus, vel maximus eros aliquet sit amet. Suspendisse condimentum non elit ac laoreet. Etiam molestie nulla nec ligula ultricies tempor. Nulla facilisi. Cras egestas accumsan nisi. Praesent elementum vehicula turpis sed imperdiet. Curabitur vel justo vitae tellus egestas auctor convallis vel ante. Mauris rhoncus finibus nulla, id rhoncus sapien hendrerit sed. Nullam malesuada mi at erat maximus, in gravida eros aliquet. Proin in enim nec enim tristique lobortis. Nulla finibus consectetur lectus eu porttitor. Vivamus venenatis, mi sit amet laoreet venenatis, augue enim efficitur justo, nec gravida lectus libero vel augue. Integer accumsan nisi lectus, eget imperdiet sem condimentum ut.
+Distributed tracing is the idea of tracing a network request as it travels through your services, as it would be in a microservices-based architecture. One of the main reason you may want to do this is to troubleshoot or monitor the latency of a request as it travels through the different services.
 
-<hr />
+Distributed tracing requires the software developers to add instrumentation to the code of an application. That instrumentation provides information so that the administrator can analyze performance and the developer can debug the operations of complex software.
 
-## Pellentesque id elit mollis, pharetra libero in?
-
-Suspendisse ligula massa, convallis vel turpis at, laoreet venenatis felis. Sed erat tortor, volutpat venenatis efficitur at, mollis ut arcu. Suspendisse potenti. Nulla facilisi. Suspendisse vestibulum quis mi in ullamcorper. Donec rhoncus vitae velit iaculis lobortis. Aliquam eleifend dignissim orci.
 
 <hr />
 
-## Maecenas placerat fermentum libero?
+## Who created Hypertrace?
+Hypertrace was originally developed by Traceable as a highly scalable distributed tracing platform. It collects rich, granular production application usage data and trains machine learning algorithms for Traceable’s cloud-native application security platform. 
+‍
+Realizing that Hypertrace was a powerful standalone tracing and observability platform, Traceable created this open source project for the software development community to use in their applications.
 
-Curabitur quam neque, pulvinar at sagittis viverra, suscipit sed libero. Sed quis lorem feugiat, tempus metus et, tincidunt orci. Vestibulum eget justo venenatis, mollis lectus a, dictum ante. Sed nec metus mi. Fusce pretium quam vel varius aliquam. Nunc vulputate dictum ipsum, sit amet blandit dui ullamcorper sed. Pellentesque ornare arcu at consectetur pharetra. Suspendisse pellentesque euismod diam. Vivamus cursus eget tortor non ultricies.
-
-<hr />
-
-## Integer massa ante, bibendum sed tellus?
-
-Nunc fringilla, est vel mattis malesuada, mauris velit tincidunt est, quis fringilla mauris felis ut sapien. Sed id sapien ex. Vivamus elementum et lectus pharetra accumsan. Curabitur viverra ante vitae velit euismod, in commodo dolor sollicitudin. Vivamus sit amet rhoncus dui, auctor malesuada ante. Phasellus lobortis fringilla magna at placerat. Maecenas nulla magna, condimentum porta tempor eu, tristique vitae nibh. Curabitur imperdiet eros quis justo luctus dapibus. Vestibulum eu ultrices felis, et lobortis urna. Aenean mollis tempus risus, at iaculis nisi rhoncus at. Phasellus eget massa pulvinar, dignissim velit aliquet, sollicitudin erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 <hr />
 
-## Nulla a interdum turpis, vitae tempus risus?
+## Can we use hypertrace for our company?
 
-Vestibulum non sem eu dui facilisis maximus sed a diam. Proin et nulla vitae urna malesuada sollicitudin. Fusce vel enim nisi. Pellentesque tincidunt enim nec quam ullamcorper egestas. Aliquam erat volutpat. Cras in neque pulvinar augue suscipit feugiat. Vestibulum semper ipsum eu ligula imperdiet ullamcorper.
-
-Donec vulputate nibh tellus, quis commodo lectus aliquet vestibulum. Morbi lobortis sem ex, in accumsan elit consectetur at. Ut dolor dui, eleifend a condimentum a, venenatis sit amet nunc. Aenean suscipit, metus sed ornare ultrices, neque felis ultrices mi, vitae gravida turpis dolor ut quam. Vivamus pulvinar eros id neque tincidunt elementum. Praesent at tristique nisl. Duis semper placerat risus, ac congue lectus varius nec.
+Yes! Hypertrace is open-source and you can definitely go ahead fork it and customize according to your requirement. On the way, if you develop some feature which you think will benefit community in one or other way, feel free to contribute and share your learnings!
 
 <hr />
 
-## Integer convallis urna consequat luctus commodo?
 
-Aenean vitae pulvinar est, et egestas nunc. Sed pharetra mollis felis eleifend pulvinar. Suspendisse feugiat metus ex, ac gravida enim accumsan eu. Curabitur placerat leo ut urna laoreet, quis varius arcu euismod. Maecenas et pretium velit. In egestas libero sed ornare luctus. Ut ac finibus odio.
+## Can we use Hypertrace with cloud platforms?
 
-<hr />
-
-## Nam consequat convallis purus, at eleifend tellus scelerisque et?
-
-Cras eu erat et ligula dictum feugiat at eget sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent et justo interdum, iaculis sapien sit amet, ornare est. Duis aliquam a elit et euismod. Sed convallis vestibulum sem sit amet interdum. Sed nec lobortis justo. Mauris fringilla porta risus, et volutpat diam congue at. Nullam commodo fringilla felis ut molestie. Nam eu elit risus. Nulla ornare posuere odio, nec tincidunt nulla elementum ac. Ut viverra eros fringilla aliquet porta. Nulla venenatis enim non blandit tincidunt.
+Yes! We support cloud as well as local deployments. You can read more about deployments [here.](https://docs.hypertrace.org/docs/deployments/)
 
 <hr />
 
-## Suspendisse blandit lobortis mi?
-
-Cras vel congue augue. Integer sodales massa quis justo consectetur, id varius quam sagittis. Fusce molestie et diam ac faucibus. Morbi ut eleifend nibh. Quisque maximus velit eget leo aliquam mollis. Sed cursus nunc vitae dignissim consectetur. Vivamus eget venenatis leo, et aliquet odio. Nam mollis lectus ante, vel volutpat nulla elementum ac. Cras ut purus leo. Integer lacus ligula, vehicula vitae felis vel, iaculis tincidunt lorem. Etiam vestibulum venenatis neque sit amet semper. Fusce suscipit ante at mi blandit, a semper urna euismod.

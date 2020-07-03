@@ -5,6 +5,7 @@ sections:
   - arch
   - exporters
   - deployments
+  - use-cases
   - troubleshooting
   - community
   - faq

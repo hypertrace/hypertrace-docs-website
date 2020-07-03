@@ -73,3 +73,6 @@ by deploying the [release manifest](./release) directly to an existing cluster.
   <strong>Important:</strong> 
   Are you facing any issue with this? Let's discuss it on <a src=https://gitter.im/hypertrace>Gitter.</a>
 </div>
+
+
+[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/quick-start.md)

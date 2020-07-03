@@ -226,3 +226,6 @@ Learn more about microservices at microservices.io and if you want to checkout m
 2. [Sock shop demo](https://github.com/JBAhire/HyperTrace-samples/blob/master/blog/sockshop.md)
 3. [TODO list demo](https://github.com/JBAhire/HyperTrace-samples/blob/master/blog/todolist.md)
 4. [HotROD app](https://github.com/JBAhire/HyperTrace-samples/blob/master/blog/hotrod.md)
+
+
+[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/instrumentation.md)

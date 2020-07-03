@@ -420,3 +420,6 @@ OCAgent Trace Exporter Javadoc|[io.opencensus.exporter.trace.ocagent](https://ww
 Source code|[Metrics exporter on Github](https://github.com/census-instrumentation/opencensus-java/tree/master/exporters/metrics/ocagent), [Trace exporter on Github](https://github.com/census-instrumentation/opencensus-java/tree/master/exporters/trace/ocagent)
 OpenCensus Agent|[Agent homepage](/service/components/agent)
 gRPC NameResolver|[io.grpc.NameResolver](https://grpc.io/grpc-java/javadoc/io/grpc/NameResolver.html)
+
+
+[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/java/java-opencensus.md)

@@ -41,3 +41,4 @@ Yes! We support cloud as well as local deployments. You can read more about depl
 
 <hr />
 
+[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/faq/index.md)

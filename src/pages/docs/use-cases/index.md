@@ -17,6 +17,8 @@ template: docs
 
 ## Causes for sub-optimal performance
 
+[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/use-cases/index.md)
+
 ***
 
 Here are the articles in this section:

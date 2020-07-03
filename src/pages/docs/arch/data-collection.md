@@ -114,3 +114,6 @@ exporters:
     write_key: "739769d7-e61c-42ec-82b9-3ee88dfeff43"
     dataset_name: "dc8_9"
 ```
+
+
+[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/arch/data-collection.md)

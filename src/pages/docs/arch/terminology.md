@@ -69,5 +69,7 @@ Temporal relationships between Spans in a single Trace
 Collector receives traces from various agents in our case Hypertrace can collect traces from Jaeger, Zipkin, OpenCensus and OpenTelemetry agents. 
 
 ### Ingester
+Ingester is a service that reads from Kafka topic and writes to another storage backend (Cassandra, Elasticsearch).
 
-### 
+
+[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/arch/terminology.md)

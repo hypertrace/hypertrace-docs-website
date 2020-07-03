@@ -14,6 +14,8 @@ Here's the list of exporters with examples for some languages:
 - [Go](go-ex.md)
 - [NodeJS](node-ex.md)
 
+[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/java/)
+
 ***
 
 Here are the articles in this section:

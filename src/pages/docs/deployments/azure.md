@@ -100,4 +100,4 @@ You can check out [installation]() doc to read more about ports and other config
 
 
 
-
+[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/deployments/azure.md)

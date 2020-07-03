@@ -4,8 +4,7 @@ weight: 1
 template: docs
 ---
 
-## Troubleshooting Installation Issue
-- ### Error: release hypertrace-data-services failed, and has been uninstalled due to atomic being set: timed out waiting for the condition
+- ## Error: release hypertrace-data-services failed, and has been uninstalled due to atomic being set: timed out waiting for the condition
     Installation failed due to timeout. May be due to slower connection to pull the hypertrace docker images. Increase timeout configuration `INSTALL_TIMEOUT` in `config/hypertrace.properties`
     
     If the problem persists even after sufficient timeout, check if some services in hung pending state for long. 

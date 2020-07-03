@@ -4,16 +4,16 @@ weight: 3
 template: docs
 ---
 
-# Setup and try hypertrace with sample application:
+## Setup and try hypertrace with sample application:
 
-## Sample app: Online Boutique (create by Google Cloud)
+### Sample app: Online Boutique (create by Google Cloud)
 
 Online Boutique is a cloud-native microservices demo application. Online Boutique consists of a 10-tier microservices application. Online boutique uses different microservices written in Go, c#, Python, Java and functions as an e-commerce website app, where users can browse items, add them to the cart, and purchase them.
 
 This demo has various ecommerce microservices like order page, cart, payment, shipping, recommendation though it doesn't operate under the scale as real world ecommerce platform which can have so many reasons to fail but this makes really good close to real-world case for our testing.
 
 
-### Architecture
+#### Architecture
 
 **Online Boutique** is composed of many microservices written in different
 languages that talk to each other over gRPC.
@@ -38,7 +38,7 @@ languages that talk to each other over gRPC.
 | [adservice](./src/adservice)                         | Java          | Provides text ads based on given context words.                                                                                   |
 | [loadgenerator](./src/loadgenerator)                 | Python/Locust | Continuously sends requests imitating realistic user shopping flows to the frontend.                                              |
 
-### Get it running:
+#### Get it running:
 Instruction to run app locally using pre-built container images: 
 
 This option offers you pre-built public container images that are easy to deploy
@@ -56,19 +56,24 @@ by deploying the [release manifest](./release) directly to an existing cluster.
    kubectl get service/frontend-external
    ```
 
-### Screenshots
+#### Screenshots
 
 | Home Page                                                                                                         | Checkout Screen                                                                                                    |
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | [![Screenshot of store homepage](https://s3.amazonaws.com/fininity.tech/online-boutique-frontend-1-min.png)]() | [![Screenshot of checkout screen](https://s3.amazonaws.com/fininity.tech/DT/online-boutique-frontend-2.png)]() |
 
 
-### `Note:` If you want to try more samples with Hypertrace visit our blog post on **Best microservice sample apps** [here]().
+```html
+<div class="note">
+  <strong>Note:</strong> 
+  If you want to try more samples with Hypertrace visit our blog post on **Best microservice sample apps** [here]().
+</div>
+```
 
 
+```html
+<div class="important">
+  <strong>Important:</strong> 
+  Are you facing any issue with this? Let's discuss it here: https://gitter.im/hypertrace
+```
 
-## Troubleshooting with Hypertrace
-
-Add one scenario here
-
-### Are you facing any issue with this? Let's discuss it here:

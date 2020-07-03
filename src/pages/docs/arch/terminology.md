@@ -3,8 +3,6 @@ title: Terminology
 weight: 1
 template: docs
 ---
-
-## Terminology
 Hypertrace supports OpenTracing standard which is being followed by most of the Distributed tracing platforms available in market. It gives Hypertrace ability to fetch traces from all available collectors and work as a single aggregator. 
 
 Let's start with undertsanding some basic terms around distributed tracing as per the [specifications](https://github.com/opentracing/specification/edit/master/specification.md) defined by OpenTracing.

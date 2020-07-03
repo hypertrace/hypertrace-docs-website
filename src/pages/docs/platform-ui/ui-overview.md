@@ -3,8 +3,6 @@ title: UI Overview
 weight: 1
 template: docs
 ---
-# Hypertrace: UI Overview
-
 ## Hypertrace Dashboard
 
 | ![space-1.jpg](https://s3.amazonaws.com/fininity.tech/DT/Hypertrace.png) | 

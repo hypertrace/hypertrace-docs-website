@@ -11,6 +11,11 @@ There are 3 steps you will follow to get started with Hypertrace. If you are exp
 |:--:| 
 | *Getting started with Hypertrace* |
 
+Here are the steps you will follow to get started with hypertrace:
+- [Installation](https://docs.hypertrace.org/docs/getting-started/installation/)
+- [Instrumentation](https://docs.hypertrace.org/docs/getting-started/Instrumentation/)
+- [Quick start with sample app](https://docs.hypertrace.org/docs/getting-started/quick-start/)
+
 
 ***
 

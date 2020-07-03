@@ -1,5 +1,5 @@
 ---
-title: community
+title: Community
 excerpt: >-
   We'd love it if you participate in the Hypertrace community. Find out how to get
   connected.
@@ -11,16 +11,16 @@ Realizing that Hypertrace was a powerful standalone tracing and observability pl
 
 ## GitHub
 
-Being a open-source product, our source code is available under hypertrace organization on GitHub. We welcome contributions from everyone to make Hypertrace a best open-source tracing platform out there. 
+Being a open-source product, our source code is available under hypertrace organization on [GitHub](https://github.com/hypertrace). We welcome contributions from everyone to make Hypertrace a best open-source tracing platform out there. 
 
 
 ## Gitter
 We are using gitter to connect with community and listen to good things and problem faced by community. If you have any issues regarding hypertrace or you're new to Distributed Tracing world altogether, you can drop by on our gitter channel and we will be happy to guide you!
 
-Join us: 
+Join us: https://gitter.im/hypertrace 
 
 ## Twitter
 
-Follow us on twitter @
+Follow us on twitter @hypertrace_org
 
 

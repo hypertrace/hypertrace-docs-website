@@ -60,4 +60,4 @@ Hypertrace is a highly scalable open source platform with many of the same featu
 
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/index.md">
-<button type="button">Edit this page</button></a>
+<button type="button">Edit</button></a>

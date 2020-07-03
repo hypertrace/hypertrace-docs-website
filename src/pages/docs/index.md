@@ -30,45 +30,29 @@ Hypertrace is a highly scalable open source platform with many of the same featu
     - Trace Filtering & Visualizations - Search & visualize any traces
     - Advanced Slice & Dice - Create your own aggregation and grouping of traces
 
-## Feature details:
-
-### Aggregations
-Hypertrace Explorer provides multiple parameters to help you aggregate your API and trace searches. Combine parameters together to give you aggregations based on very specific criteria. 
-
-### Slice and dice
-Hypertrace provides the ability to slice and dice traces to derive advanced insights. 
-
-### Highly Scalabile
-Unlike most of the current open source solutions Hypertrace supports scaling out-of-the box. It can scale for large production grade deployments. You can rely on Hypertrace to scale to your business needs. 
-
-### Native suppport to send and receive traces from OpenCesnus, Jaeger, Zipkin and OpenTelemetry 
-If your application is already instrumented for tracing with Jaeger, Zipkin or any other platform that supports and relies on OpenTracing API? No worries! Hypertrace can consume these traces in hypertrace with bunch of different functionalities available out-of-the box.
-
-### Multiple storage backends
-Hypertrace supports all major backends by default. 
-
-### UI to fall in love with
-Hypertrace comes with a beautiful & modern UI which makes it more informative and useful for analysing your application.
-
-### Cloud Native Deployment
-Deploy Hypertrace on any kubernetes cluster with helm charts and an installation script
-
-### Observability & Multiple APM features
-Hypertrace provides many observability metrics in it's dashboard and throughout the platform as needed. Hypertrace supports multiple APM features out-of-the-box such as detecting frontend or customer services in your application automatically.
-
-### Multiple ways to build and use
-There are multiple ways to build or deploy hypertrace. And a team of engineers to answer you questions online.
+## Feature Table
+| Feature                                | Description                                                                                                                                            |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Aggregations                           | Hypertrace Explorer provides multiple parameters to help you aggregate your API and trace searches                                                     |
+| Slice and dice                         | Hypertrace provides the ability to slice and dice traces to derive advanced insights.                                                                  |
+| Highly Scalable                        | Unlike most of the current open source solutions Hypertrace supports scaling out-of-the box. It can even scale for large production grade deployments. |
+| Native suppport for various collectors | send and receive traces from OpenCesnus, Jaeger, Zipkin and OpenTelemetry.                                                                             |
+| Multiple storage backends              | Hypertrace supports all major backends by default.                                                                                                     |
+| Beautiful UI                           | Hypertrace comes with a beautiful & modern UI which makes it more informative and useful for analysing your application.                               |
+| Cloud Native Deployment                | Deploy Hypertrace on any kubernetes cluster with helm charts and an installation script.                                                               |
+| Observability & Multiple APM features  | Hypertrace provides many observability metrics in it's dashboard and throughout the platform as needed and also provides some basic APM features.      |
 
 
 ## Comparison: Hypertrace vs. Other open-source tracing solutions
-| Other open soure products           | Hypertrace                                                                                                                                                                                      |
-|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| High Scalability                    | Flow map at scale. Jaeger only supports the flowmap with all-in-one setup, which isn’t production scale. For production, one needs to run separate Spark jobs to generate the dependency graph. |
-| Native support for OpenTracing      | APIs detected automatically. Flowmaps and metrics for APIs.                                                                                                                                     |
-| Multiple storage backends           | Metrics and flowmaps for Services                                                                                                                                                               |
-| Modern Web UI                       | API host (or Domain) level metrics and traces                                                                                                                                                   |
-| Cloud Native Deployment             | Basic APM product around Services and APIs                                                                                                                                                      |
-| Observability                       | API Analytics with slice & dice around APIs                                                                                                                                                     |
-| Backwards compatibility with Zipkin | Flexible query interface to build your own UIs                                                                                                                                                  |
-|                                     | OLAP store is pluggable with abstractions (need to add request handlers in QueryService)                                                                                                        |
-|                                     | Scales out of the box                                                                                                                                                                           |
+| Other open source platforms                                   | Hypertrace                                                                                             |
+| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| scalable but you need to change configs for major deployment. | Scales out of the box                                                                                  |
+| Native support for OpenTracing                                | Support for OpenTracing API, OpenCensus, OpenTelemetry and other open source collectors and exporters. |
+| Multiple storage backends                                     | OLAP store is pluggable with abstractions (need to add request handlers in QueryService)               |
+| Modern Web UI based on React                                  | Modern Web UI based on custom framework Hyperdash                                                      |
+| Limited observability features                                | Comes with bunch of observability metrics and details along with limited APM features.                 |
+| Cloud Native Deployment                                       | Single installation script which will help you install on any platform, cloud or local.                |
+| Backwards compatibility with other tracing solutions          | Supports possibly all open source tracing solutions available as of now.                               |
+| Basic DAGs for application flow                               | Comes with modern flow map at scale with features like panning and scaling.                            |
+| No way to get detailed insights for single service.           | A complete microservices section will give you details about each service.                             |
+

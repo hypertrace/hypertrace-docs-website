@@ -9,10 +9,10 @@ template: docs
 Hypertrace supports multiple exporters as it can receive traces which are being sent to Jaeger collector, zipkin collector or opencensus collector port out of the box. 
 
 Here's the list of exporters with examples for some languages:
-- [Java](java-ex.md)
-- [Python](python-ex.md)
-- [Go](go-ex.md)
-- [NodeJS](node-ex.md)
+- [Java](https://docs.hypertrace.org/docs/exporters/java-ex/)
+- [Python](https://docs.hypertrace.org/docs/exporters/python-ex/)
+- [Go](https://docs.hypertrace.org/docs/exporters/go-ex/)
+- [NodeJS](https://docs.hypertrace.org/docs/exporters/node-ex/)
 
 ***
 

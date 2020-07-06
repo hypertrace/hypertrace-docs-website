@@ -125,5 +125,3 @@ In case of any port collisions, users can modify the following properties in hel
 <button type="button">Edit</button></a>
 
 ***
-
-Explore more:

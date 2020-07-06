@@ -40,4 +40,4 @@ Pinot works very well for querying time series data with lots of Dimensions and 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/arch/backends.md">
 <button type="button">Edit</button></a>
 
-```
+***

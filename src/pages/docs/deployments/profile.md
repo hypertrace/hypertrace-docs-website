@@ -14,3 +14,4 @@ Details about them with resources and suggested instances will be available soon
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/deployments/index.md">
 <button type="button">Edit</button></a>
+***

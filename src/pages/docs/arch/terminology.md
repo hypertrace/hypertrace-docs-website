@@ -73,3 +73,4 @@ Ingester is a service that reads from Kafka topic and writes to another storage 
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/arch/terminology.md">
 <button type="button">Edit</button></a>
+***

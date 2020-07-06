@@ -11,3 +11,4 @@ Hypertrace supports Jaeger, Zipkin exporters to accept traces from NodeJS applic
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/exporters/node-ex.md">
 <button type="button">Edit</button></a>
+***

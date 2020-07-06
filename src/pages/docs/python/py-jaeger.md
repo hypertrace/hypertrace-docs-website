@@ -54,4 +54,5 @@ You can find out more about the Jaeger project at [https://www.jaegertracing.io/
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/go/py-jaeger.md">
 <button type="button">Edit</button></a>
+
 ***

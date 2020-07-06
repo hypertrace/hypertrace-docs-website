@@ -44,4 +44,5 @@ You can find out more about the Zipkin project at [https://zipkin.io/](https://z
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/go/node-zipkin.md">
 <button type="button">Edit</button></a>
+
 ***

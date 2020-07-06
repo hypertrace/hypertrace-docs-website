@@ -10,4 +10,5 @@ Hypertrace supports Jaeger, Zipkin and opencensus agent to accept traces from Ja
 - [Jaeger](https://docs.hypertrace.org/docs/java/java-jaeger/)
 - [Zipkin](https://docs.hypertrace.org/docs/java/java-zipkin/)
 
-[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/exporters/java-ex.md)
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/exporters/java-ex.md">
+<button type="button">Edit</button></a>

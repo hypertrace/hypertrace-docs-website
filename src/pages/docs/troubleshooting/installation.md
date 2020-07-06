@@ -30,4 +30,5 @@ template: docs
     zookeeper-headless           ClusterIP      None             <none>        2888/TCP,3888/TCP                                                8m33s
     ```
 
-[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/troubleshooting/installation.md)
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/troubleshooting/installation.md">
+<button type="button">Edit</button></a>

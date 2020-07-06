@@ -90,4 +90,5 @@ In case of any issue, install hypertrace in debug mode to get more logs and trac
 You can check out [installation]() doc to read more about ports and other configs. 
 
 
-[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/deployments/aws.md)
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/deployments/aws.md">
+<button type="button">Edit</button></a>

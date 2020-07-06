@@ -422,4 +422,5 @@ OpenCensus Agent|[Agent homepage](/service/components/agent)
 gRPC NameResolver|[io.grpc.NameResolver](https://grpc.io/grpc-java/javadoc/io/grpc/NameResolver.html)
 
 
-[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/java/java-opencensus.md)
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/go/java-opencensus.md">
+<button type="button">Edit</button></a>

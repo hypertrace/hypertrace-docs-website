@@ -121,7 +121,5 @@ In case of any port collisions, users can modify the following properties in hel
 - `ingress.hosts[].paths[].port` - To change UI port
 - `oc-collector.service.ports[].targetPort` - To change collector ports
 
-
-
-
-[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/installation.md)
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/installation.md">
+<button type="button">Edit</button></a>

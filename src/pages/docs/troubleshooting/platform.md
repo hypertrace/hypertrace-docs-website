@@ -4,4 +4,5 @@ weight: 2
 template: docs
 ---
 
-[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/troubleshooting/platform.md)
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/troubleshooting/platform.md">
+<button type="button">Edit</button></a>

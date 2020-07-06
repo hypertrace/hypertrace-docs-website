@@ -227,5 +227,5 @@ Learn more about microservices at microservices.io and if you want to checkout m
 3. [TODO list demo](https://github.com/JBAhire/HyperTrace-samples/blob/master/blog/todolist.md)
 4. [HotROD app](https://github.com/JBAhire/HyperTrace-samples/blob/master/blog/hotrod.md)
 
-
-[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/instrumentation.md)
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/instrumentation.md">
+<button type="button">Edit</button></a>

@@ -75,4 +75,5 @@ by deploying the [release manifest](./release) directly to an existing cluster.
 </div>
 
 
-[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/quick-start.md)
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/quick-start.md">
+<button type="button">Edit</button></a>

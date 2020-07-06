@@ -54,7 +54,9 @@ If you click on any of the traces you will see the classic waterfall graph which
 As with most Distributed Tracing platforms, the Hypertrace Explorer helps you identify problems in your application. It starts by showing you the number of calls per time frame. And Explorer comes with many searchable parameters. For example you can specify a startTime and endTime to search for an error your customer said they experienced. 
 As you can see, Hypertrace has been collecting traces from the sample application. You can use the timeline feature to see some metrics for predetermined time periods. You can also set your own custom time range. 
 
-[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/platform-ui/index.md)
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/platform-ui/index.md">
+<button type="button">Edit</button></a>
+
 ***
 
 Here are the articles in this section:

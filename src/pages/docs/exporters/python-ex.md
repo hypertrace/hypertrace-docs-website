@@ -10,4 +10,5 @@ Hypertrace supports Jaeger, Zipkin exporters to accept traces from Python applic
 2. [Zipkin](https://docs.hypertrace.org/docs/python/py-zipkin/)
 
 
-[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/exporters/python-ex.md)
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/exporters/python-ex.md">
+<button type="button">Edit</button></a>

@@ -16,8 +16,9 @@ Here are the steps you will follow to get started with hypertrace:
 - [Instrumentation](https://docs.hypertrace.org/docs/getting-started/Instrumentation/)
 - [Quick start with sample app](https://docs.hypertrace.org/docs/getting-started/quick-start/)
 
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/index.md">
+<button type="button">Edit</button></a>
 
-[Edit this page](https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/index.md)
 
 
 ***

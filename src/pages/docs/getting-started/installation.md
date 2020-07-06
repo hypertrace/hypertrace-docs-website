@@ -123,3 +123,7 @@ In case of any port collisions, users can modify the following properties in hel
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/installation.md">
 <button type="button">Edit</button></a>
+
+***
+
+Explore more:

@@ -10,15 +10,6 @@ template: docs
 ### Requirements
 - `docker desktop` or any other `kubernetes` enabled docker environment.
 - Minimum resources: (2 CPUs, 4GB Memory).
-The following is the snapshot of resources used of a typical Hypertrace standalone deployment:
-
-    | Resource          | Requests        | Limits        |
-    |-------------------| ---------------:| -------------:|
-    | cpu               | 1850m (46%)     | 2700m (67%)   |
-    | memory            | 4084Mi (41%)    | 6472Mi (65%)  |
-    | ephemeral-storage | 0 (0%)          | 0 (0%)        |
-
-
 - `Helm` (version 3.2.x and above)
 - Bash
 

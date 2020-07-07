@@ -3,14 +3,14 @@ title: Installation
 weight: 1
 template: docs
 ---
-## Hypertrace: Installation
-- We are using Helm charts to deploy Hypertrace distributed tracing platform.
+## About Installation
+- The default installation uses Helm Charts to deploy Hypertrace.
 - Hypertrace supports collection of traces from different tracers like OpenTracing, OpenCensus, Jaeger and zipkin.
 
 ### Requirements
-- `Docker desktop` (version 2.2.x and above) with `Kubernetes` enabled.
-- Minimum resources for Docker: (2 CPUs, 4GB Memory).
-Following is the snapshot of resources used of a typical hypertrace standalone deployment.
+- A Kubernetes environment, such as `Docker desktop` (version 2.2.x and above) with `Kubernetes` enabled.
+- Minimum resources: (2 CPUs, 4GB Memory).
+The following is the snapshot of resources used of a typical Hypertrace standalone deployment:
 
     | Resource          | Requests        | Limits        |
     |-------------------| ---------------:| -------------:|
@@ -21,7 +21,7 @@ Following is the snapshot of resources used of a typical hypertrace standalone d
 
 - `Helm` (version 3.2.x and above)
 - Bash
-- Ineternet connectivity to pull the hypertrace helm charts and docker images
+- Ineternet connectivity to pull the Hypertrace Helm Charts and Docker Images
 - Basic understanding of kubernetes and helm
 
 ### How it works

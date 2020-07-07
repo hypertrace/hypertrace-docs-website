@@ -40,6 +40,7 @@ Hypertrace UI is based on custom framework written by hypertrace team which we c
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/arch/index.md">
 <button type="button">Edit</button></a>
+
 ***
 
 Here are the articles in this section:

@@ -1,8 +1,7 @@
 ---
 title: Architecture
 excerpt: >-
-  Libris is a Unibit theme created for project documentations. You can use it
-  for your project.
+  Hypertrace is a highly scalable distributed tracing and observability platform.
 template: docs
 ---
 Hypertrace is a highly scalable distributed tracing and observability platform designed to ingest and analyze large volumes of production trace data. OpenTelemetry-based agents collect and send observability data directly from applications to Hypertrace for analysis. Data visualizations, reports, and dashboards are available in a web-based console to assist in monitoring cloud-native applications and resolving application and service performance problems.

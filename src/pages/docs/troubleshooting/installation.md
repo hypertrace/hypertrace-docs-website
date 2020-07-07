@@ -3,6 +3,16 @@ title: Installation issues
 weight: 1
 template: docs
 ---
+- ## Port collision
+In case of any port collisions, users can modify the following properties in helm file (platform-services/values.yaml).
+
+- `ingress.hosts[].paths[].port` - To change UI port
+- `oc-collector.service.ports[].targetPort` - To change collector ports
+
+- ## General issues
+In case of any issue, install hypertrace in debug mode to get more logs and traces to identify the rootcause.
+- Set `HT_ENABLE_DEBUG` to `true` in `./config/hypertrace.properties`
+- Debug `bash -x ./hypertrace.sh install`
 
 - ## Error: release hypertrace-data-services failed, and has been uninstalled due to atomic being set: timed out waiting for the condition
     Installation failed due to timeout. May be due to slower connection to pull the hypertrace docker images. Increase timeout configuration `INSTALL_TIMEOUT` in `config/hypertrace.properties`

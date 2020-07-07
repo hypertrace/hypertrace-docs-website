@@ -4,7 +4,7 @@ excerpt: >-
   Hypertrace is a highly scalable distributed tracing and observability platform.
 template: docs
 ---
-Hypertrace is a highly scalable distributed tracing and observability platform designed to ingest and analyze large volumes of production trace data. Users use Hypertrace to ..... OpenTelemetry-based agents collect and send observability data directly from applications to Hypertrace for analysis. Data visualizations, reports, and dashboards are available in a web-based console to assist in monitoring cloud-native applications and resolving application and service performance problems.
+Hypertrace is a highly scalable distributed tracing and observability platform designed to ingest and analyze large volumes of production trace data. various open-source and enterprise agents and tracers collect and send observability data directly from applications to Hypertrace for analysis. Data visualizations, reports, and dashboards are available in a web-based console to assist in monitoring cloud-native applications and resolving application and service performance problems.
 
 Hypertrace has fairly complex architecture than most of the Distributed Tracing platforms out there because og immense functionality it provides as a platform. 
 
@@ -15,10 +15,10 @@ Let's take a look at Hypertrace architecture and undestand each component in det
 |:--:| 
 | *Hypertrace Architecture* |
 
-### Collect traces in multiple formats
+### Collect traces in all major formats
 One important requirement to start working with hypertrace is, your application must be instrumented before it can send tracing and monitoring data to any currently supported backend including OpenTracing, OpenCensus, Jaeger and zipkin. 
 
-Hypertrace is able to collect traces from any of the formats these platforms support. Hypertrace supports OpenTracing standards out of the box so we can expect it to suppport all applications using OpenTracing API with a backwards compatibility to Zipkin. 
+Hypertrace is able to collect traces from all the major formats. Hypertrace supports OpenTracing standards out of the box so we can expect it to suppport all applications using OpenTracing API with a backwards compatibility to Zipkin. 
 
 We will be adding support to OpenTelemetry collector soon which will make Hypertrace more future proof and robust as a platform.
 

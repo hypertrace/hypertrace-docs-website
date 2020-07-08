@@ -3,14 +3,32 @@ title: What is Hypertrace?
 template: docs
 
 ---
-Hypertrace is a highly scalable distributed tracing and observability platform designed to ingest and analyze large volumes of production trace data. Various open source and enterprise agents and tracers collect and send observability data directly from applications to Hypertrace for analysis. Data visualizations, reports, and dashboards are available in a web-based console to assist in monitoring cloud-native applications and resolving application and service performance problems.
+Hypertrace is a real-time observability platform that helps teams make sense of
+their production requests and trends within their network.
+
+Hypertrace converts distributed trace data into relevant insight for everyone.
+Infrastructure teams can identify which services are causing overload. Service
+teams can diagnose why a specific user's request failed, or which applications
+put their service objectives at risk. Deployment teams can know if a new
+version is causing a problem. Security teams can see non-complaint communication
+and audit accordingly.
+
+Hypertrace is open source licensed and accepts all major tracing data formats.
+This means you can try it without changing your applications!
 
 | ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/dashboard-1.png) | 
 |:--:| 
 | *Hypertrace* |
 
+
 # Features
-Hypertrace is a highly scalable open source platform with many of the same features as other distributed tracing platforms. Its real distninction, however, is that it offers advanced features out-of-the-box, which are typically found only in commercial products. 
+
+Hypertrace is open source and includes features commonly present in distributed
+tracing systems such as a cloud-native backend and a UI. Hypertrace goes beyond,
+including features usually left to commercial products, such as real-time
+processing, custom dashboards and sophisticated path-based analysis!
+
+As many are new to tracing, we'll review basic features first.
 
 ## Basic Distributed Tracing Features:
 
@@ -26,10 +44,10 @@ Hypertrace is a highly scalable open source platform with many of the same featu
 |          | Advanced Slice & Dice - Create your own aggregation and grouping of traces                                                                                          |
 
 ## Advanced Distributed Tracing features:
-- Flowmaps and metrics for Services & APIs. APIs are detected automatically. 
+- Flowmaps and metrics for Services & APIs. APIs are detected automatically.
 - API host (or Domain) level metrics and traces.
 - API Analytics with slice & dice for APIs.
-- Flow map supported at scale and helps discovering non-compliant commnunication. 
+- Flow map supported at scale and helps discovering non-compliant commnunication.
 - Basic APM product around Services and APIs.
 - Flexible query interface to build your own UIs
 - OLAP store is pluggable with abstractions (need to add request handlers in QueryService).

@@ -28,7 +28,7 @@ tracing systems such as a cloud-native backend and a UI. Hypertrace goes beyond,
 including features usually left to commercial products, such as real-time
 processing, custom dashboards and sophisticated path-based analysis!
 
-As many are new to tracing, we'll review basic features first.
+As many are new to tracing, we'll review basic features first, then the advanced features usually only available in commercial products:
 
 ## Basic Distributed Tracing Features:
 
@@ -43,7 +43,7 @@ As many are new to tracing, we'll review basic features first.
 | **Identify** | Trace Filtering & Visualizations - Search & visualize any traces.                                                                                                   |
 |          | Advanced Slice & Dice - Create your own aggregation and grouping of traces                                                                                          |
 
-## Advanced Distributed Tracing features:
+## Advanced Distributed Tracing Features:
 - Flowmaps and metrics for Services & APIs. APIs are detected automatically.
 - API host (or Domain) level metrics and traces.
 - API Analytics with slice & dice for APIs.

@@ -4,17 +4,18 @@ excerpt: In this section you'll find basic information about Hypertrace and how 
 template: docs
 ---
 
-There are 3 steps to get started with Hypertrace. If you are experienced with distributed tracing and instrumentation then you can skip steps 2 and 3. These steps will ensure you have enough information to get started and play with Hypertrace. 
+Here are 3 steps to ensure you have enough information to get started with Hypertrace. If you are experienced with distributed tracing and instrumentation then you may skip steps 2 and 3. 
 
 
 | ![space-1.jpg](https://s3.amazonaws.com/fininity.tech/DT/getting-started.png) | 
 |:--:| 
 | *Getting started with Hypertrace* |
 
-Follow these steps to get started with hypertrace:
-- [Installation](https://docs.hypertrace.org/docs/getting-started/installation/)
-- [Instrumentation](https://docs.hypertrace.org/docs/getting-started/Instrumentation/)
-- [Quick start with sample app](https://docs.hypertrace.org/docs/getting-started/quick-start/)
+3 steps to get started with hypertrace:
+1. [Install Hypertrace](https://docs.hypertrace.org/docs/getting-started/installation/)
+2. [Start tracing with a sample app](https://docs.hypertrace.org/docs/getting-started/quick-start/)
+3. [Instrument your own app](https://docs.hypertrace.org/docs/getting-started/Instrumentation/)
+
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/index.md">
 <button type="button">Edit</button></a>

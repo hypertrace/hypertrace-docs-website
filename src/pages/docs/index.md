@@ -5,6 +5,10 @@ template: docs
 ---
 Hypertrace is a highly scalable distributed tracing and observability platform designed to ingest and analyze large volumes of production trace data. various open-source and enterprise agents and tracers collect and send observability data directly from applications to Hypertrace for analysis. Data visualizations, reports, and dashboards are available in a web-based console to assist in monitoring cloud-native applications and resolving application and service performance problems.
 
+| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/dashboard-1.png) | 
+|:--:| 
+| *Hypertrace* |
+
 # Features
 Hypertrace is a highly scalable open source platform with many of the same features as other distributed tracing platforms. Its real distninction, however, is that it offers advanced features out-of-the-box, which are typically found only in commercial products. 
 

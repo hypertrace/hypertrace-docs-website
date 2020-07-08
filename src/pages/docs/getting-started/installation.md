@@ -47,7 +47,7 @@ In case of any issue, install hypertrace in debug mode to get more logs and trac
 
 Once your hypertrace installation is successful you can navigate to `http://localhost` to access Hypertarce UI. It looks something like this!
 
-| ![space-1.jpg](https://s3.amazonaws.com/fininity.tech/DT/Hypertrace.png) | 
+| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/dashboard-1.png) | 
 |:--:| 
 | *Hypertrace homepage* |
 

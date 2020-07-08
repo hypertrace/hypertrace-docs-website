@@ -7,7 +7,11 @@ template: docs
 ---
 ## Hypertrace Dashboard
 
-| ![space-1.jpg](https://s3.amazonaws.com/fininity.tech/DT/Hypertrace.png) | 
+| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/dashboard-1.png) | 
+|:--:| 
+
+
+| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/dashboard-2.png) | 
 |:--:| 
 | *Hypertrace Dashboard* |
 
@@ -18,15 +22,22 @@ Similarly there is another panel for Top Services where you can see which servic
 
 ## Application flow 
 
-| ![space-1.jpg](https://s3.amazonaws.com/fininity.tech/DT/application+flow.png) | 
+| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/flow.png) | 
 |:--:| 
 | *Application Flow with Hypertrace* |
 
 Application Flow gives you an overview of the services in your applications, and the flow of traces between them. In this example, you can see the frontend is sending requests to the ad service, checkout service, shipping service and the product catalog services. And if you hover over a service, Hypertrace will highlight the trace path and other details so you can confirm that it is acting the way they are supposed to act.
 
-## Microservice details
+## Services
+| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/services.png) | 
+|:--:| 
+| *List of all services in application with Hypertrace* |
 
-| ![space-1.jpg](https://s3.amazonaws.com/fininity.tech/DT/frontendms.png) | 
+Services section in hypertrace shows you all the services your application has and if you increase timeframe you can even see list of all services sent traces to hypertrace in last few hours or even days. 
+
+## Service details
+
+| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/service-dash.png) | 
 |:--:| 
 | *Frontend microservice details with Hypertrace* |
 
@@ -37,7 +48,7 @@ Next, on the APIs tab, you will see a list of all of the APIs contained by the f
 
 ## Traces
 
-| ![space-1.jpg](https://s3.amazonaws.com/fininity.tech/DT/traces.png) | 
+| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/traces.png) | 
 |:--:| 
 | *Tracing with Hypertrace* |
 
@@ -47,7 +58,7 @@ If you click on any of the traces you will see the classic waterfall graph which
 
 ## Explorer
 
-| ![space-1.jpg](https://s3.amazonaws.com/fininity.tech/DT/explorer.png) | 
+| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/explore.png) | 
 |:--:| 
 | *Hypertrace Explorer* |
 

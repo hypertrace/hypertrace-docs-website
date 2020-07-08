@@ -59,7 +59,7 @@ As many are new to tracing, we'll review basic features first, then the advanced
 | Aggregations                           | Hypertrace Explorer provides multiple parameters to help you aggregate your API and trace searches                                                     |
 | Slice & dice                         | Hypertrace provides the ability to slice and dice traces to derive advanced insights                                                                  |
 | Supports scalable real-time processing                        | Unlike most of the current open source solutions Hypertrace supports efficient and scalable real-time stream processing. |
-| Native suppport for various collectors | Send and receive traces from OpenCesnus, Jaeger, Zipkin and OpenTelemetry                                                                             |
+| Native suppport for various collectors | Send and receive traces from OpenCensus, Jaeger, Zipkin and OpenTelemetry                                                                             |
 | Cloud Native Deployment                | Deploy Hypertrace on any Kubernetes cluster with Helm Charts and an installation script                                                               |
 | Observability & Multiple APM features  | Hypertrace provides many observability metrics in it's dashboard and throughout the platform as needed and also provides some basic APM features      |
 

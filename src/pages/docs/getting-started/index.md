@@ -12,9 +12,9 @@ Here are 3 steps to ensure you have enough information to get started with Hyper
 | *Getting started with Hypertrace* |
 
 Thre steps to get started with Hypertrace:
-1. [Install Hypertrace](https://docs.hypertrace.org/docs/getting-started/installation/)
-2. [Start tracing with a sample app](https://docs.hypertrace.org/docs/getting-started/quick-start/)
-3. [Instrument your own app](https://docs.hypertrace.org/docs/getting-started/Instrumentation/)
+1. [Install Hypertrace](installation/) 
+2. [Start tracing with a sample app](quick-start/)
+3. [Instrument your own app](Instrumentation/)
 
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/index.md">

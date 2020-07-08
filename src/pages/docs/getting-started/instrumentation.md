@@ -215,7 +215,7 @@ spec:
 
 Similary you can add API-2 and API-3 and you have your YAML file ready.
 
-Now go to your terminal and run `kubectl apply -f deploy.yaml` once all pods are up and running, you can access API-1 at `localhost:5001`. You have successfully deployed your first microservice app!
+From your terminal run `kubectl apply -f deploy.yaml. Once all pods are up and running, you can access API-1 at `localhost:5001`. You have successfully deployed your first microservice app!
 
 Was it fun? 
 

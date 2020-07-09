@@ -1,6 +1,6 @@
 ---
 title: Instrumentation
-weight: 2
+weight: 3
 template: docs
 ---
 ## Overview

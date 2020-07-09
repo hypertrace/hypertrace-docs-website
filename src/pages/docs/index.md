@@ -43,23 +43,14 @@ As many are new to tracing, we'll review basic features first, then the advanced
 | **Identify** | Trace Filtering & Visualizations - Search & visualize any traces.                                                                                                   |
 |          | Advanced Slice & Dice - Create your own aggregation and grouping of traces                                                                                          |
 
-## Advanced Distributed Tracing Features:
-- Flowmaps and metrics for Services & APIs. APIs are detected automatically.
-- API host (or Domain) level metrics and traces.
-- API Analytics with slice & dice for APIs.
-- Flow map supported at scale and helps discovering non-compliant commnunication.
-- Basic APM product around Services and APIs.
-- Flexible query interface to build your own UIs
-- OLAP store is pluggable with abstractions (need to add request handlers in QueryService).
-
-
 ## Feature Table
 | Feature                                | Description                                                                                                                                            |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Aggregations                           | Hypertrace Explorer provides multiple parameters to help you aggregate your API and trace searches                                                     |
+| Aggregations                           | Hypertrace Explorer provides multiple parameters to help you aggregate your API and trace searches.                                                     |
 | Slice & dice                         | Hypertrace provides the ability to slice and dice traces to derive advanced insights                                                                  |
 | Supports scalable real-time processing                        | Unlike most of the current open source solutions Hypertrace supports efficient and scalable real-time stream processing. |
 | Native suppport for various collectors | Send and receive traces from OpenCensus, Jaeger, Zipkin and OpenTelemetry                                                                             |
+| Application Flow map| Flow map for application along with individual services and API's supported at scale and helps discovering non-compliant commnunication.                                                                            |
 | Cloud Native Deployment                | Deploy Hypertrace on any Kubernetes cluster with Helm Charts and an installation script                                                               |
 | Observability & Multiple APM features  | Hypertrace provides many observability metrics in it's dashboard and throughout the platform as needed and also provides some basic APM features      |
 

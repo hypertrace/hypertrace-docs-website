@@ -11,7 +11,7 @@ Here are 3 steps to ensure you have enough information to get started with Hyper
 |:--:| 
 | *Getting started with Hypertrace* |
 
-Thre steps to get started with Hypertrace:
+Three steps to get started with Hypertrace:
 1. [Install Hypertrace](installation/) 
 2. [Start tracing with a sample app](quick-start/)
 3. [Instrument your own app](Instrumentation/)

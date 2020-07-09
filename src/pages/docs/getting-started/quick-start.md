@@ -4,7 +4,7 @@ weight: 2
 template: docs
 ---
 
-The best part with getting started with Hypertrace is that it's really quick if you are already using a tracing system, you can start today. Hypertrace accepts all major data formats: Jaeger, OpenTracing, Zipkin, you name it. Even if you aren’t tracing yet, we have a bunch of sample apps you can start with, and a chat room of excited people who want to meet you. Here we will tell you how you can get started with Online Boutique sample app which is one of our trace enabled sample applications.
+The best part with getting started with Hypertrace is that it's really quick! If you are already using a tracing system, you can start today. Hypertrace accepts all major data formats: Jaeger, OpenTracing, Zipkin, you name it. Even if you aren’t tracing yet, we have a bunch of sample apps you can start with, and a chat room of excited people who want to meet you. Here we will tell you how you can get started with Online Boutique sample app which is one of our trace enabled sample applications.
 
 ### Sample app: Online Boutique (created by Google Cloud)
 
@@ -37,7 +37,7 @@ Use pre-built public container images that are easy to deploy by deploying the [
 
 #### This is how your tracing data will look like on Hypertrace! 
 
-You can check for [UI & Platform overview](https://hypertrace-docs.netlify.app/docs/platform-ui/) section to get more details on features and see insights of online boutique app using Hypertrace. 
+You can check out [UI & Platform overview](https://hypertrace-docs.netlify.app/docs/platform-ui/) section to get more details on features and see insights of online boutique app using Hypertrace. 
 
 
 #### Architecture

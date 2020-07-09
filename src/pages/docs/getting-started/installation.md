@@ -64,18 +64,6 @@ Once your Hypertrace installation is successful you can navigate to `http://loca
 
 You can access variety of functionalities including Observability Dashboard, Application flow, Microservices, Web Transactions and Explorer which can help you in troubleshooting!
 
-### Ports
-
-Here are the default Hypertrace ports:
-
-| Port  | Service                 |
-|-------|-------------------------|
-| 80    | Used by Hypertrace UI   |
-| 55678 | Opencensus collector    |
-| 14267 | Jaeger thrift collector |
-| 14268 | Jaeger HTTP collector   |
-| 9411  | Zipkin collector        |
-
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/installation.md">
 <button type="button">Edit</button></a>

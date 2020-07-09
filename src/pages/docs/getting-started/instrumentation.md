@@ -4,7 +4,7 @@ weight: 3
 template: docs
 ---
 ## Overview
-Your application must be instrumented before it can send tracing and monitoring data to hypertrace using any supported collector including OpenTracing, OpenCensus, Jaeger and Zipkin.  Let's explain what instrumentation is and how you can instrument your application for distributed tracing. 
+Your application must be instrumented before it can send tracing and monitoring data to Hypertrace using any supported collector including OpenTracing, OpenCensus, Jaeger and Zipkin.  Let's explain what instrumentation is and how you can instrument your application for distributed tracing. 
 
 ### What is Instrumentation?
 As per the paper *Software Instrumentation* by Torsten Kempf, Kingshuk Karuri and Lei Gao, *Software instrumentation is a technique that is widely used in software profiling, performance analysis, optimization, testing, error detection, and virtualization. Instrumentation, which involves adding extra code to an application for monitoring some program behavior, can be performed either statically (i.e., at compile time) or dynamically (i.e., at runtime).*

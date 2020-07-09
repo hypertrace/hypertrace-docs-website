@@ -39,7 +39,7 @@ Use pre-built public container images that are easy to deploy by deploying the [
 
 You can check out [UI & Platform overview](https://hypertrace-docs.netlify.app/docs/platform-ui/) section to get more details on features and see insights of online boutique app using Hypertrace. 
 
-
+## More information about Online Boutique application!
 #### Architecture
 
 **Online Boutique** is composed of many microservices written in different languages that talk to each other over gRPC.
@@ -76,6 +76,8 @@ You can check out [UI & Platform overview](https://hypertrace-docs.netlify.app/d
   Are you facing any issue with this? Let's discuss it on <a src=https://hypertrace.slack.com/>Slack</a>.
 </div>
 
+
+Are you still confused with **Instrumentation** jargon? Ahh! We have you covered! Jump to [Instrumentation](https://hypertrace-docs.netlify.app/docs/getting-started/instrumentation/) section which will tell you about what is instrumentation and how you can get started with instrumenting your application! 
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/quick-start.md">
 <button type="button">Edit</button></a>

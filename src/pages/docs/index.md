@@ -43,7 +43,7 @@ As many are new to tracing, we'll review basic features first, then the advanced
 | **Identify** | Trace Filtering & Visualizations - Search & visualize any traces.                                                                                                   |
 |          | Advanced Slice & Dice - Create your own aggregation and grouping of traces                                                                                          |
 
-## Feature Table
+## Advanced Feature Table
 | Feature                                | Description                                                                                                                                            |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Aggregations                           | Hypertrace Explorer provides multiple parameters to help you aggregate your API and trace searches.                                                     |

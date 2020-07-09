@@ -42,6 +42,18 @@ Deploys Hypertrace platform in `docker-desktop` or any Kubernetes context, under
 ### Uninstall
 - Run `./hypertrace.sh uninstall`
 
+### Ports
+
+Here are the default Hypertrace ports: (You can notice that you don't need to change anything to get started with Zipkin, Jaeger and OpenCensus collector to get started with Hypertrace.)
+
+| Port  | Service                 |
+|-------|-------------------------|
+| 80    | Used by Hypertrace UI   |
+| 55678 | Opencensus collector    |
+| 14267 | Jaeger thrift collector |
+| 14268 | Jaeger HTTP collector   |
+| 9411  | Zipkin collector        |
+
 ## Hypertrace
 
 Once your Hypertrace installation is successful you can navigate to `http://localhost` to access the Hypertarce UI. It looks something like this!

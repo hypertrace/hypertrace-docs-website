@@ -8,7 +8,7 @@ template: docs
 - Hypertrace accepts all major tracing data formats (ex: OpenTracing, OpenCensus, Jaeger and Zipkin)
 
 ### Requirements
-- `docker desktop` or any `kubernetes` environment.
+- `Docker Desktop` or `Kubernetes` (version 1.5 and above).
 - Minimum resources: (2 CPUs, 4GB Memory).
 - `Helm` (version 3.2.x and above)
 - Bash

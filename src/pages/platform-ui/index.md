@@ -95,4 +95,3 @@ You might notice we didn’t wait for anything. Traces from application requests
 
 ***
 
-Here are the articles in this section:

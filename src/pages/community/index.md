@@ -14,10 +14,9 @@ Realizing that Hypertrace was a powerful standalone tracing and observability pl
 Being a open-source product, our source code is available under hypertrace organization on [GitHub](https://github.com/hypertrace). We welcome contributions from everyone to make Hypertrace a best open-source tracing platform out there. 
 
 
-## Gitter
-We are using gitter to connect with community and listen to good things and problem faced by community. If you have any issues regarding hypertrace or you're new to Distributed Tracing world altogether, you can drop by on our gitter channel and we will be happy to guide you!
+## Slack
+The best part is that if you are already using a tracing system, you can start today. Hypertrace accepts all major data formats: Jaeger, OpenTracing, Zipkin, you name it. Even if you aren’t tracing yet, we have a bunch of sample apps you can start with, and a chat room of excited people who want to meet you. Join us today on [slack](https://hypertrace.slack.com)@! 
 
-Join us: https://gitter.im/hypertrace 
 
 ## Twitter
 

@@ -6,7 +6,7 @@ template: docs
 
 The best part in getting started with Hypertrace is that it's really quick! If you are already using a tracing system, you can start today. Hypertrace accepts all major data formats: Jaeger, OpenTracing, Zipkin, you name it. Even if you aren’t tracing yet, we have a bunch of sample apps you can start with, and a [chat room](https://hypertrace.slack.com) of excited people who want to meet you. Here we will tell you how you can get started with Online Boutique sample app which is one of our trace enabled sample applications.
 
-### Sample app: Online Boutique
+### Sample app: Online Boutique (created by Google Cloud)
 
 Online Boutique is one of our trace enabled sample applications. It includes typical ecommerce functionality, including a product catalog and a way for customers to check out in different currencies This application uses different languages to highlight the diversity in micro service architecture: Golang, C++, C#, Python, Java and other programming languages. Whatever your application is written in, you can see its requests in Hypertrace.
 

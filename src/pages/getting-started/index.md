@@ -4,7 +4,7 @@ excerpt: In this section you'll find basic information about Hypertrace and how 
 template: docs
 ---
 
-Here are 3 steps to ensure you have enough information to get started with Hypertrace. If you are experienced with distributed tracing and instrumentation then you may skip steps 2 and 3. 
+Here are 3 steps to ensure you have enough information to get started with Hypertrace. If you are experienced with distributed tracing and instrumentation then you may not even need to look at step 3.
 
 Three steps to get started with Hypertrace:
 1. [Install Hypertrace](installation/) 

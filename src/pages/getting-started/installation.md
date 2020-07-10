@@ -4,8 +4,7 @@ weight: 1
 template: docs
 ---
 ## Overview
-- The default installation script uses Helm Charts to deploy Hypertrace on Kubernetes.
-- Hypertrace accepts all major tracing data formats (ex: OpenTracing, OpenCensus, Jaeger and Zipkin)
+Hypertrace installation script uses Helm Charts to deploy Hypertrace on Kubernetes. If you are already using a tracing system, you can start today. Hypertrace accepts all major data formats: Jaeger, OpenTracing, Zipkin, you name it. Once you complete Installation you can see traces from your already instrumented application in Hypertrace. 
 
 ---
 <iframe width="680" height="380" src="https://www.youtube.com/embed/hmMpa3Xp6Go" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe> 
@@ -18,24 +17,15 @@ template: docs
 - `Helm` (version 3.2.x and above)
 - Bash
 
-
-### How it works
-Deploys Hypertrace platform in `docker-desktop` or any Kubernetes context, under the namespace `hypertrace`.
-
 ### Install
 - Git Clone the <a href="https://github.com/hypertrace/hypertrace">Hypertrace</a> repository. 
 - Update the config properties under `./config/hypertrace.properties` as needed. The default config will work for a standalone deployment on Docker for Desktop.
 - Run `./hypertrace.sh install`
 
-- Set `HT_ENABLE_DEBUG` to `true` in `./config/hypertrace.properties`
-- Debug `bash -x ./hypertrace.sh install`
-
 <div class="note">
   <strong>Note:</strong> 
-  If you want to try more samples with Hypertrace visit our blog post on <a src=https://github.com/hypertrace/hypertrace-samples>Best microservice sample apps</a>.
   If you want more detailed information about deploying Hypertrace on various cloud platforms with different profiles, please check <a src=https://docs.hypertrace.org/deployments>Deployment Docs.</a>
 </div>
-
 
 ### Configuration
 
@@ -65,15 +55,19 @@ Here are the default Hypertrace ports: (You can notice that you don't need to ch
 | 14268 | Jaeger HTTP collector   |
 | 9411  | Zipkin collector        |
 
+In case of any port collisions, users can modify the following properties in helm file (`platform-services/values.yaml`).
+- `ingress.hosts[].paths[].port` -  To change UI port 
+- `hypertrace-oc-collector.service.ports[].targetPort` - To change collector ports
+
 ## Hypertrace
 
 Once your Hypertrace installation is successful you can navigate to `http://localhost` to access the Hypertarce UI. It looks something like this!
 
 | ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/dashboard-1.png) | 
 |:--:| 
-| *Hypertrace homepage* |
+| *Hypertrace Dashboard* |
 
-You can't experience all this functionalities Hypertrace is offering unless you start with sending trace data to it, right? So why not jump to [Quick Start](https://hypertrace-docs.netlify.app/docs/getting-started/quick-start/) section and see how you can get started with using Hypertrace!
+You can't experience all this functionalities Hypertrace is offering unless you start with sending trace data to it. So why not jump to [Quick Start](https://docs.hypertrace.org/getting-started/quick-start/) section in documentation and see how you can get started with using Hypertrace!
 
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/installation.md">

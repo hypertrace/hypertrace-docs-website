@@ -30,7 +30,7 @@ processing, custom dashboards and sophisticated path-based analysis!
 
 As many are new to tracing, we'll review basic features first, then the advanced features usually only available in commercial products:
 
-## Basic features:
+## Basic features
 
 | Feature                 | Description                                                                                          |
 | ----------------------- | ---------------------------------------------------------------------------------------------------- |
@@ -39,7 +39,7 @@ As many are new to tracing, we'll review basic features first, then the advanced
 | Cloud Native Deployment | Kubernetes cluster with Helm Charts to install and manage it                                         |
 
 
-## Notable features:
+## Notable features
 The below features are available by default in Hypertrace, but are not usually included in Open Source distributed tracing systems.
 
 | Feature                 | Description                                                                                  |

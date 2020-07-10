@@ -99,7 +99,7 @@ exporters:
 
   stackdriver:
     project: "my-project-id" # optional, defaults to agent project if run on GCP
-    enable_tracing: true
+    enable_tracing: `true`
 
   zipkin:
     endpoint: "http://127.0.0.1:9411/api/v2/spans"

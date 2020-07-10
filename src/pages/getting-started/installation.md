@@ -7,13 +7,9 @@ template: docs
 - The default installation script uses Helm Charts to deploy Hypertrace on Kubernetes.
 - Hypertrace accepts all major tracing data formats (ex: OpenTracing, OpenCensus, Jaeger and Zipkin)
 
-
-
-
-| <iframe width="680" height="380" src="https://www.youtube.com/embed/hmMpa3Xp6Go" frameborder="5" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe> | 
-|:--:| 
-| *Hypertrace Installation* |
-
+---
+<iframe width="680" height="380" src="https://www.youtube.com/embed/hmMpa3Xp6Go" frameborder="5" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe> 
+---
 
 ### Requirements
 - `Docker Desktop` or `Kubernetes` (version 1.5 and above).

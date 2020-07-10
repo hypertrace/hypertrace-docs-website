@@ -16,8 +16,8 @@ and audit accordingly.
 Hypertrace is open source licensed and accepts all major tracing data formats.
 This means you can try it without changing your applications!
 
-| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/dashboard-1.png) | 
-|:--:| 
+| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/dashboard-1.png) |
+|:--:|
 | *Hypertrace* |
 
 
@@ -30,40 +30,26 @@ processing, custom dashboards and sophisticated path-based analysis!
 
 As many are new to tracing, we'll review basic features first, then the advanced features usually only available in commercial products:
 
-## Basic Distributed Tracing Features:
+## Basic features:
 
-| Category | Features                                                                                                                                                            |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Monitor**  | Distributed Tracing & Correlation - End-to-end distributed tracing of all internal microservice/backend calls triggered by the edge API calls and web transactions. |
-|          | Application Flow Mapping - Real-time discovery and visualization of end-to-end application topology.                                                                 |
-| **Trace**    | Web Transaction Monitoring - Monitor all web transactions at Web Proxies.                                                                                            |
-|          | Microservice Monitoring - Monitor all internal micro-service calls.                                                                                                  |
-|          | Backend Monitoring - Monitor all calls to backend systems like databases or third-party services.                                                                  |
-|          | End User Monitoring - Monitor end-user calls.                                                                                                                        |
-| **Identify** | Trace Filtering & Visualizations - Search & visualize any traces.                                                                                                   |
-|          | Advanced Slice & Dice - Create your own aggregation and grouping of traces                                                                                          |
-
-## Advanced Feature Table
-| Feature                                | Description                                                                                                                                            |
-| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Aggregations                           | Hypertrace Explorer provides multiple parameters to help you aggregate your API and trace searches.                                                     |
-| Slice & dice                         | Hypertrace provides the ability to slice and dice traces to derive advanced insights                                                                  |
-| Supports scalable real-time processing                        | Unlike most of the current open source solutions Hypertrace supports efficient and scalable real-time stream processing. |
-| Native suppport for various collectors | Send and receive traces from OpenCensus, Jaeger, Zipkin and OpenTelemetry                                                                             |
-| Application Flow map| Flow map for application along with individual services and API's supported at scale and helps discovering non-compliant commnunication.                                                                            |
-| Cloud Native Deployment                | Deploy Hypertrace on any Kubernetes cluster with Helm Charts and an installation script                                                               |
-| Observability & Multiple APM features  | Hypertrace provides many observability metrics in it's dashboard and throughout the platform as needed and also provides some basic APM features      |
+| Feature                 | Description                                                                                          |
+| ----------------------- | ---------------------------------------------------------------------------------------------------- |
+| Trace UI                | Visualizes a request's path through services and any backends, including context, errors and delays  |
+| Application Flow UI     | Visualize an service graph of all traced traffic in your network                                     |
+| Cloud Native Deployment | Kubernetes cluster with Helm Charts to install and manage it                                         |
 
 
-## Comparison: Hypertrace vs. Other open source distributed tracing platforms
-| Other open source platforms                                   | Hypertrace                                                                                             |
-| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| Scalable but you need to change configs for major deployment. | Scales out of the box                                                                                  |
-| Limited observability features.                                | Includes many observability features - metrics, details, plus limited APM features.                 |
-| Cloud Native Deployment.                                       | Installation script deployes to laptop/on-prem or cloud.                |
-| Backwards compatibility with other tracing solutions.          | Supports all available open source tracing solutions.                               |
-| Basic DAGs for application flow.                               | Includes modern flow map at scale with features like ability to discover non-compliant. commnunication.                         |
-| No way to get detailed insights for single service.            | Flowmaps and metrics for Services & APIs .                           |
+## Notable features:
+The below features are available by default in Hypertrace, but are not usually included in Open Source distributed tracing systems.
+
+| Feature                 | Description                                                                                  |
+| ----------------------- | -------------------------------------------------------------------------------------------- |
+| Dashboard UI            | Global health including most frequently called endpoints, services and backends              |
+| Services UI             | Service owners see health and latency overview of their endpoints and dependencies           |
+| Backends UI             | Owners of backends like MySQL or Redis can quickly identify slow queries and identify trends |
+| Built-in Rosetta Stone  | Natively understands all major trace data formats including Jaeger, OpenTelemetry and Zipkin |
+| Sampling unnecessary    | Designed to ingest 100% of request traces natively. No need for a sampling collector.        |
+| Real-time processing    | Application flow and metrics aggregate automatically, using stream processing.               |
 
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/index.md">

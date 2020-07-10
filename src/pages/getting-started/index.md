@@ -12,7 +12,7 @@ Three steps to get started with Hypertrace:
 3. [Instrument your own app](Instrumentation/)
 
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/index.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/getting-started/index.md">
 <button type="button">Edit</button></a>
 
 

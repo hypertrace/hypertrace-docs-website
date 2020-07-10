@@ -14,7 +14,7 @@ Here's the list of exporters with examples for some languages:
 - [Go](https://docs.hypertrace.org/exporters/go-ex/)
 - [NodeJS](https://docs.hypertrace.org/exporters/node-ex/)
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/exporters/index.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/exporters/index.md">
 <button type="button">Edit</button></a>
 
 ***

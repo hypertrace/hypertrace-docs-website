@@ -48,7 +48,7 @@ The best part in getting started with Hypertrace is that it's really quick! If y
 
 <hr />
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/faq/index.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/faq/index.md">
 <button type="button">Edit</button></a>
 
 ***

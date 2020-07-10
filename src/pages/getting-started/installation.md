@@ -70,7 +70,7 @@ Once your Hypertrace installation is successful you can navigate to `http://loca
 You can't experience all this functionalities Hypertrace is offering unless you start with sending trace data to it. So why not jump to [Quick Start](https://docs.hypertrace.org/getting-started/quick-start/) section in documentation and see how you can get started with using Hypertrace!
 
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/installation.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/getting-started/installation.md">
 <button type="button">Edit</button></a>
 
 ***

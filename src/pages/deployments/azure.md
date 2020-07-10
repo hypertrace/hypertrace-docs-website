@@ -98,7 +98,7 @@ In case of any issue, install hypertrace in debug mode to get more logs and trac
 
 You can check out [installation]() doc to read more about ports and other configs. 
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/deployments/azure.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/deployments/azure.md">
 <button type="button">Edit</button></a>
 
 ***

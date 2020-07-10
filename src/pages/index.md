@@ -51,8 +51,4 @@ The below features are available by default in Hypertrace, but are not usually i
 | Sampling unnecessary    | Designed to ingest 100% of request traces natively. No need for a sampling collector.        |
 | Real-time processing    | Application flow and metrics aggregate automatically, using stream processing.               |
 
-
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/index.md">
-<button type="button">Edit</button></a>
-
 ***

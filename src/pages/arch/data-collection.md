@@ -115,7 +115,7 @@ exporters:
     dataset_name: "dc8_9"
 ```
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/arch/data-collection.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/arch/data-collection.md">
 <button type="button">Edit</button></a>
 
 ***

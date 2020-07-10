@@ -37,7 +37,7 @@ Pinot works very well for querying time series data with lots of Dimensions and 
 1. Apache pinot: https://pinot.apache.org/
 2. GitHub: https://github.com/apache/incubator-pinot 
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/arch/backends.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/arch/backends.md">
 <button type="button">Edit</button></a>
 
 ***

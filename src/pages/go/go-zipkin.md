@@ -55,7 +55,7 @@ Please visit the Hypertrace UI endpoint [http://localhost](http://localhost)
 You can find out more about the Zipkin project at [https://zipkin.io/](https://zipkin.io/)
 
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/go/go-zipkin.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/go/go-zipkin.md">
 <button type="button">Edit</button></a>
 
 ***

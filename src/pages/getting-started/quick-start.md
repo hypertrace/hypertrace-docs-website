@@ -65,7 +65,7 @@ You can check out [UI & Platform overview](https://hypertrace-docs.netlify.app/d
 
 Are you still confused with **Instrumentation** jargon? Ahh! We have you covered! Jump to [Instrumentation](https://hypertrace-docs.netlify.app/docs/getting-started/instrumentation/) section which will tell you about what is instrumentation and how you can get started with instrumenting your application! 
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/quick-start.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/getting-started/quick-start.md">
 <button type="button">Edit</button></a>
 
 ***

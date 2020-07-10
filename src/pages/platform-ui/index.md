@@ -90,7 +90,7 @@ What’s neat is you can add metrics to compare them using visualizations as wel
 You might notice we didn’t wait for anything. Traces from application requests process in real time.However, we’re often interested in a problem that happened in the past. Hypertrace can show you metrics from predetermined time periods or even a custom range. The results in the bottom will change according to our search criteria. If you are looking for spans matching your search criteria instead of endpoints you can switch the toggle in top left corner to `spans` and do that!
 
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/platform-ui/index.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/platform-ui/index.md">
 <button type="button">Edit</button></a>
 
 ***

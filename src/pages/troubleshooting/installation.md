@@ -40,7 +40,7 @@ In case of any issue, install hypertrace in debug mode to get more logs and trac
     zookeeper-headless           ClusterIP      None             <none>        2888/TCP,3888/TCP                                                8m33s
     ```
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/troubleshooting/installation.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/troubleshooting/installation.md">
 <button type="button">Edit</button></a>
 
 ***

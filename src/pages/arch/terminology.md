@@ -71,6 +71,6 @@ Collector receives traces from various agents in our case Hypertrace can collect
 ### Ingester
 Ingester is a service that reads from Kafka topic and writes to another storage backend (Cassandra, Elasticsearch).
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/arch/terminology.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/arch/terminology.md">
 <button type="button">Edit</button></a>
 ***

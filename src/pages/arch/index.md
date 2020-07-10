@@ -37,7 +37,7 @@ When we look into classic REST API calls for fetching trace data we can get all 
 ### UI
 Hypertrace UI is based on custom framework written by Hypertrace team which we call Hyperdash. Hypertrace UI uses Angular and is open source with some parts under source available licence. It's a beautiful UI with bunch of features and functionalities out of the box which will help you troubleshoot issues with your application and find performance issues. You can check out this [page](docs/UI.md) for more information about UI and features. 
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/arch/index.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/arch/index.md">
 <button type="button">Edit</button></a>
 
 ***

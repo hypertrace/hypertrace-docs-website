@@ -68,7 +68,7 @@ Please visit the Hypertrace UI endpoint [http://localhost](http://localhost).
 ### Project link
 You can find out more about the Jaeger project at [https://www.jaegertracing.io/](https://www.jaegertracing.io/)
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/go/java-jaeger.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/go/java-jaeger.md">
 <button type="button">Edit</button></a>
 
 ***

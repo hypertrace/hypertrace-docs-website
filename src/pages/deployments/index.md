@@ -87,7 +87,7 @@ We have divided this services into two categories namely data services and platf
 - All open services/technologies (zookeeper, kafka, schema registry, pinot, mongo) are grouped into data-services. These services acts as data-store for Hypertrace.
 - All other microservices which deals with traces like span collection, trace generation, trace enrichment, views etc. forms another group, platform-services. 
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/deployments/index.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/deployments/index.md">
 <button type="button">Edit</button></a>
 ***
 

@@ -15,7 +15,7 @@ version is causing a problem.
 Hypertrace is open source licensed and accepts all major tracing data formats.
 This means you can try it without changing your applications!
 
-| <iframe src="https://drive.google.com/file/d/1mNebw2R5CRk7oZ6B04v-dcrcnGON17sT/preview" width="640" height="480"></iframe> |
+| <iframe src="https://drive.google.com/file/d/1mNebw2R5CRk7oZ6B04v-dcrcnGON17sT/preview" width="640" height="380"></iframe> |
 |:--:|
 | *Hypertrace* |
 

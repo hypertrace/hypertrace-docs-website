@@ -30,6 +30,12 @@ Deploys Hypertrace platform in `docker-desktop` or any Kubernetes context, under
 - Set `HT_ENABLE_DEBUG` to `true` in `./config/hypertrace.properties`
 - Debug `bash -x ./hypertrace.sh install`
 
+<div class="note">
+  <strong>Note:</strong> 
+  If you want to try more samples with Hypertrace visit our blog post on <a src=https://github.com/hypertrace/hypertrace-samples>Best microservice sample apps</a>.
+  If you want more detailed information about deploying Hypertrace on various cloud platforms with different profiles, please check <a src=https://docs.hypertrace.org/deployments>Deployment Docs.</a>
+</div>
+
 
 ### Configuration
 

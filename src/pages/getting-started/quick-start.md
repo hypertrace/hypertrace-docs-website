@@ -67,7 +67,7 @@ You can check out [UI & Platform overview](https://hypertrace-docs.netlify.app/d
 
 <div class="note">
   <strong>Note:</strong> 
-  If you want to try more samples with Hypertrace visit our blog post on <a src=https://github.com/hypertrace/best-microservices-sample-apps>Best microservice sample apps</a>.
+  If you want to try more samples with Hypertrace visit our blog post on <a src=https://github.com/hypertrace/hypertrace-samples>Best microservice sample apps</a>.
 </div>
 
 

@@ -33,7 +33,7 @@ that need the most work.
 <hr />
 
 
-## Non conformant communication
+## Monitor microservice dependency
 Hypertrace aggregates traces, which allows it to know the source of traffic.
 Service and backend views include upstream services. Service owners can see
 everything calling them or query to track-down everything they call, even if it

@@ -15,6 +15,13 @@ export default class Docs extends React.Component {
         let has_children = (child_count > 0) ? true : false;
         return (
             <Layout {...this.props}>
+              <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168225592-2"></script>
+              <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-168225592-2');
+              </script>
               <div className="inner outer">
                   <div className="docs-content">
                     <DocsMenu {...this.props} page={this.props.pageContext} site={this.props.pageContext.site} />

@@ -77,7 +77,7 @@ receivers:
               - targets: ['localhost:9777']
 ```
 
-## Exporters
+## [Exporters](https://hypertrace-docs.netlify.app/exporters/)
 An exporter is how you send data to one or more backends/destinations. One or more exporters can be configured. By default, no exporters are configured on the Service (either the Agent or Collector).
 
 A basic example of all available exporters is provided below. For detailed exporter configuration, please see the exporter README.md.

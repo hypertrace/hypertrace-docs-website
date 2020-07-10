@@ -60,8 +60,8 @@ You can check out [UI & Platform overview](https://hypertrace-docs.netlify.app/d
 </div>
 
 ### Other samples:
-1. [Horod application](/hotrod/README.md)
-2. [todo-list-application](/todo-list-application/README.md)
+1. [Horod application](https://github.com/hypertrace/hypertrace-samples/tree/master/hotrod)
+2. [todo-list-application](https://github.com/hypertrace/hypertrace-samples/tree/master/todo-list-application)
 
 Are you still confused with **Instrumentation** jargon? Ahh! We have you covered! Jump to [Instrumentation](https://hypertrace-docs.netlify.app/docs/getting-started/instrumentation/) section which will tell you about what is instrumentation and how you can get started with instrumenting your application! 
 

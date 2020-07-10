@@ -1,5 +1,5 @@
 {
-    "description": "Open Source, Cloud Native Distributed Tracing Platform",
+    "description": "Open Source, Cloud Native, Distributed Tracing Platform",
     "palette": "violet",
     "palettes": {
         "blue": {
@@ -35,25 +35,25 @@
         "nav_links": [
             {
                 "label": "Home",
-                "url": "/home/",
+                "url": "/",
                 "type": "link",
                 "has_subnav": false
             },
             {
                 "label": "Docs",
-                "url": "/docs/",
+                "url": "/",
                 "type": "link",
                 "has_subnav": false
             },
             {
                 "label": "Blog",
-                "url": "/blog/",
+                "url": "/",
                 "type": "link",
                 "has_subnav": false
             },
             {
                 "label": "Demo",
-                "url": "/style-guide/",
+                "url": "/",
                 "type": "link",
                 "has_subnav": false
             },
@@ -65,10 +65,10 @@
                 "new_window": true
             },
             {
-                "label": "Gitter",
-                "url": "https://gitter.im/hypertrace",
+                "label": "Slack",
+                "url": "https://hypertrace.slack.com",
                 "type": "icon",
-                "icon_class": "fa-gitter",
+                "icon_class": "fa-slack",
                 "new_window": true
             }
         ]

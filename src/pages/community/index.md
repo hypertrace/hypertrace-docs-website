@@ -11,7 +11,7 @@ Realizing that Hypertrace was a powerful standalone tracing and observability pl
 
 ## GitHub
 
-Being a open-source product, our source code is available under hypertrace organization on [GitHub](https://github.com/hypertrace). We welcome contributions from everyone to make Hypertrace a best open-source tracing platform out there. 
+Being a open-source product, our source code is available under Hypertrace organization on [GitHub](https://github.com/hypertrace). We welcome contributions from everyone to make Hypertrace a best open-source tracing platform out there. 
 
 
 ## Slack

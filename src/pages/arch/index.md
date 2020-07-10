@@ -16,7 +16,7 @@ Let's take a look at Hypertrace architecture and undestand each component in det
 | *Hypertrace Architecture* |
 
 ### Collect traces in all major formats
-One important requirement to start working with hypertrace is, your application must be instrumented before it can send tracing and monitoring data to any currently supported backend including OpenTracing, OpenCensus, Jaeger and zipkin. 
+One important requirement to start working with Hypertrace is, your application must be instrumented before it can send tracing and monitoring data to any currently supported backend including OpenTracing, OpenCensus, Jaeger and zipkin. 
 
 Hypertrace is able to collect traces from all the major formats. Hypertrace supports OpenTracing standards out of the box so we can expect it to suppport all applications using OpenTracing API with a backwards compatibility to Zipkin. 
 
@@ -35,7 +35,7 @@ Trace enricher is what basically provides a way to incorporate business logic in
 When we look into classic REST API calls for fetching trace data we can get all the information at ones or no information at all. REST API's do not provide us selectability or ability to limit the scope. GraphQL solves this problem.  The query layer which involves this different services which work together is flexible and scalable. 
 
 ### UI
-Hypertrace UI is based on custom framework written by hypertrace team which we call Hyperdash. Hypertrace UI uses Angular and is open source with some parts under source available licence. It's a beautiful UI with bunch of features and functionalities out of the box which will help you troubleshoot issues with your application and find performance issues. You can check out this [page](docs/UI.md) for more information about UI and features. 
+Hypertrace UI is based on custom framework written by Hypertrace team which we call Hyperdash. Hypertrace UI uses Angular and is open source with some parts under source available licence. It's a beautiful UI with bunch of features and functionalities out of the box which will help you troubleshoot issues with your application and find performance issues. You can check out this [page](docs/UI.md) for more information about UI and features. 
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/arch/index.md">
 <button type="button">Edit</button></a>

@@ -6,8 +6,8 @@ template: docs
 
 ## Deploying hypertrace on AWS EKS using helm:
 
-1. Clone the hypertrace-helm repo on you local machine using `git clone https://github.com/Traceableai/hypertrace-helm.git`
-2. Go to the hypertrace-helm directory and run `./hypertrace.sh install`
+1. Clone the Hypertrace-helm repo on you local machine using `git clone https://github.com/Traceableai/hypertrace-helm.git`
+2. Go to the Hypertrace-helm directory and run `./hypertrace.sh install`
 
 ## Configuration
 - You can customize the configuration under `./config/hypertrace.properties` as needed.

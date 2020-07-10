@@ -73,7 +73,7 @@ Once your Hypertrace installation is successful you can navigate to `http://loca
 |:--:| 
 | *Hypertrace homepage* |
 
-You can't experience all this functionalities Hypertrace is offering unless you start with sending trace data to it, right? So why not jump to [Quick Start](https://hypertrace-docs.netlify.app/docs/getting-started/quick-start/) section and see how you can get started with using hypertrace!
+You can't experience all this functionalities Hypertrace is offering unless you start with sending trace data to it, right? So why not jump to [Quick Start](https://hypertrace-docs.netlify.app/docs/getting-started/quick-start/) section and see how you can get started with using Hypertrace!
 
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/docs/getting-started/installation.md">

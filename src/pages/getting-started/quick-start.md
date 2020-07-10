@@ -28,6 +28,7 @@ Use pre-built public container images that are easy to deploy by deploying the r
    ```sh
    kubectl get service/frontend-external
    ```
+
 #### Architecture
 
 **Online Boutique** is composed of many microservices written in different languages that talk to each other over gRPC.

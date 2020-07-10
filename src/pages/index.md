@@ -16,7 +16,7 @@ Hypertrace is open source licensed and accepts all major tracing data formats.
 This means you can try it without changing your applications!
 
 ---
-<iframe width="680" height="380" src="https://www.youtube.com/embed/nGGEJWBwRWo" frameborder="5" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
+<iframe width="680" height="380" src="https://www.youtube.com/embed/nGGEJWBwRWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
 
 ---
 

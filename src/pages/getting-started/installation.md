@@ -8,7 +8,7 @@ template: docs
 - Hypertrace accepts all major tracing data formats (ex: OpenTracing, OpenCensus, Jaeger and Zipkin)
 
 ---
-<iframe width="680" height="380" src="https://www.youtube.com/embed/hmMpa3Xp6Go" frameborder="5" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe> 
+<iframe width="680" height="380" src="https://www.youtube.com/embed/hmMpa3Xp6Go" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe> 
 
 ---
 

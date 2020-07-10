@@ -10,8 +10,7 @@ Hypertrace converts distributed trace data into relevant insight for everyone.
 Infrastructure teams can identify which services are causing overload. Service
 teams can diagnose why a specific user's request failed, or which applications
 put their service objectives at risk. Deployment teams can know if a new
-version is causing a problem. Security teams can see non-complaint communication
-and audit accordingly.
+version is causing a problem.
 
 Hypertrace is open source licensed and accepts all major tracing data formats.
 This means you can try it without changing your applications!

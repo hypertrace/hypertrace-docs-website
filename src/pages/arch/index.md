@@ -29,7 +29,7 @@ Storage layer uses OLAP currently which is in real-time store. It is possible to
 Processing layer here uses Flink to read from and write to kafka topics. currently we are using flink local mode but we are looking into providing other modes according to scale. 
 
 ### Customizable Enrichers and Views
-Trace enricher is what basically provides a way to incorporate business logic in our current setup. There are variety of customizations you can add using trace enricher by writing some java code. Customizations can include protocols for various backends or some custom metrics. It helps us to get most out of out span data.
+Trace enricher is what basically provides a way to incorporate business logic in our current setup. There are variety of customizations you can add using trace enricher by writing some java code. Customizations can include protocols for various backends or some custom metrics. It helps us to get most out of your span data.
 
 ### Flexible query layer + GraphQL
 When we look into classic REST API calls for fetching trace data we can get all the information at ones or no information at all. REST API's do not provide us selectability or ability to limit the scope. GraphQL solves this problem.  The query layer which involves this different services which work together is flexible and scalable. 

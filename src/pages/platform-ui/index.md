@@ -32,7 +32,7 @@ Then if you scroll down you will get lists of top assets including top endpoints
 |:--:| 
 | *Application Flow with Hypertrace* |
 
-Application Flow shows your service requests in aggregate: it is a live architecture diagram! With this diagram we can see how Online Boutique communicates: he frontend is sending requests to several microservices. If you hover over a service, Hypertrace highlights the trace path and will show you a bunch of details less common in trace only solutions. For example, the link between two services will show you P99 latency between those two services. You also get a mini view at the bottom right corner where you can select the part you want to focus on and it will show you that part only which is great when you have a very complex microservice network like Netflix and everything can’t fit on a screen at the same time. Yes, we are talking scale my friends! 
+Application Flow shows your service requests in aggregate: it is a live architecture diagram! With this diagram we can see how Online Boutique communicates: Here the frontend is sending requests to several microservices. If you hover over a service, Hypertrace highlights the trace path and will show you a bunch of details less common in trace only solutions. For example, the link between two services will show you P99 latency between those two services. You also get a mini view at the bottom right corner where you can select the part you want to focus on and it will show you that part only which is great when you have a very complex microservice network like Netflix and everything can’t fit on a screen at the same time. Yes, we are talking scale my friends! 
 
 Of course this does normal controls like zoom and refresh which you can find in top right corner.
 

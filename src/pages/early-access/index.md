@@ -14,3 +14,5 @@ See you soon!
 Dave Nielsen
 
 Head of Community
+
+dave.nielsen@hypertrace.org

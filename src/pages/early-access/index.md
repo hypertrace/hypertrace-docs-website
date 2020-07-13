@@ -12,4 +12,5 @@ We hope you get as excited about all you can do with Hypertrace as we are.
 See you soon!
 
 Dave Nielsen
+
 Head of Community

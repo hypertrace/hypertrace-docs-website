@@ -1,7 +1,6 @@
 ---
 title: Exporters
-excerpt: >-
-This section contains details for variety of exporters we support and this will be updated over the period. 
+excerpt: This section contains details for variety of exporters we support and this will be updated over the period. 
 template: docs
 ---
 

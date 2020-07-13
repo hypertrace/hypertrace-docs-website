@@ -1,8 +1,6 @@
 ---
 title: Deployments
-excerpt: >-
-  To make it easy to write documentation in plain Markdown, most UI components
-  are styled using Markdown elements with few additional CSS classes.
+excerpt: This section will help you in deploying hypertrace on various cloud platforms as well as managed kubernetes services. 
 template: docs
 ---
 

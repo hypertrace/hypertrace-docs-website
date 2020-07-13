@@ -1,8 +1,7 @@
 ---
 title: Exporters
 excerpt: >-
-  See some interesting tools developed by the Libris community to help automate
-  parts of your workflow.
+This section contains details for variety of exporters we support and this will be updated over the period. 
 template: docs
 ---
 

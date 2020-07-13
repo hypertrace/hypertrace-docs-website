@@ -11,8 +11,6 @@ We hope you get as excited about Hypertrace as we are. Whether you have question
 
 See you soon!
 
-Dave Nielsen
-
+Dave Nielsen,
 Head of Community
-
 dave.nielsen@hypertrace.org

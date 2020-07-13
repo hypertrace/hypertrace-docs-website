@@ -60,7 +60,7 @@ Are you still confused with **Instrumentation** jargon? Ahh! We have you covered
 
 ***
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/quick-start/index.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/sample-app/index.md">
 <button type="button">Edit</button></a>
 
 

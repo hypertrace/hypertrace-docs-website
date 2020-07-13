@@ -1,8 +1,7 @@
 ---
 title: FAQ
 excerpt: >-
-  In this section you'll find commonly asked questions regarding the Libris
-  theme. If you have questions, don’t hesitate to ask us directly.
+  Do you have questions about Hypertrace? We got some answers for you!
 template: docs
 ---
 ## What is Hypertrace?

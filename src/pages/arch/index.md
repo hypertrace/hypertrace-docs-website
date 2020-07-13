@@ -1,7 +1,7 @@
 ---
 title: Architecture
 excerpt: >-
-  Hypertrace is a highly scalable distributed tracing and observability platform.
+  Hypertrace is a highly scalable distributed tracing and observability platform. This section will guide you thorugh architecture of hypertrace. 
 template: docs
 ---
 Hypertrace is a highly scalable distributed tracing and observability platform designed to ingest and analyze large volumes of production trace data. various open-source and enterprise agents and tracers collect and send observability data directly from applications to Hypertrace for analysis. Data visualizations, reports, and dashboards are available in a web-based console to assist in monitoring cloud-native applications and resolving application and service performance problems.

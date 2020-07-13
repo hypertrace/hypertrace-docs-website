@@ -1,8 +1,6 @@
 ---
 title: UI and Platform Overview
-excerpt: >-
-  Libris is a Unibit theme created for project documentations. You can use it
-  for your project.
+excerpt: Discover various functionalities of Hypertrace and learn about UI and platform features. 
 template: docs
 ---
 ## Hypertrace Dashboard

@@ -1,8 +1,7 @@
 ---
 title: Troubleshooting
 excerpt: >-
-  Libris is a Unibit theme created for project documentations. You can use it
-  for your project.
+Troubleshooting tips for general problems you might face while installing or using hypertrace. 
 template: docs
 ---
 This section provides information about some known issues you might face during installation or using hypertrace. In this section, you can find ways to solve your issues or atleast some guidelines to troubleshoot the issues. 

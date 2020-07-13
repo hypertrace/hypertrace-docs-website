@@ -58,10 +58,12 @@ You can check out [UI & Platform overview](https://docs.hypertrace.org/platform-
 
 Are you still confused with **Instrumentation** jargon? Ahh! We have you covered! Jump to [Instrumentation](https://docs.hypertrace.org/instrumentation/) section which will tell you about what is instrumentation and how you can get started with instrumenting your application! 
 
+***
+
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/quick-start/index.md">
 <button type="button">Edit</button></a>
 
 
 ***
 
-Here are the articles in this section:
+

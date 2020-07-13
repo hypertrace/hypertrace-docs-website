@@ -223,10 +223,10 @@ Was it fun?
 
 Learn more about microservices at [microservices.io](https://microservices.io). If you have application that's already instrumented or want to use sample app to quickly get started with Hypertrace, you can refer [quick start](https://docs.hypertrace.org/quick-start/) section!
 
+***
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/instrumentation/index.md">
 <button type="button">Edit</button></a>
 
 ***
 
-Here are the articles in this section:

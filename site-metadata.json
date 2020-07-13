@@ -50,11 +50,11 @@
         ]
     },
     "footer": {
-        "content": "<a href=https://hypertrace-staging.webflow.io/privacy-policy/1-0>Privacy Policy</a>",
+        "content": "&copy;2020 Traceable Inc.",
         "links": [
             {
-                "label": "Made with Stackbit",
-                "url": "https://www.stackbit.com",
+                "label": "Privacy Policy",
+                "url": "https://hypertrace.org/privacy-policy/1-0",
                 "type": "link",
                 "new_window": true
             }

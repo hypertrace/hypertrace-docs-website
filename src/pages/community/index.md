@@ -1,8 +1,6 @@
 ---
 title: Community
-excerpt: >-
-  We'd love it if you participate in the Hypertrace community. Find out how to get
-  connected.
+excerpt: We'd love it if you participate in the Hypertrace community. Find out how to get connected.
 template: docs
 ---
 Hypertrace was originally developed by Traceable as a highly scalable distributed tracing platform. It collects rich, granular production application usage data and trains machine learning algorithms for Traceable’s cloud-native application security platform. 

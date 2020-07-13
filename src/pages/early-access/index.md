@@ -1,7 +1,6 @@
 ---
 title: Early access to Hypertrace
-excerpt: >-
-  Thank you for joining us. Please check your email.
+excerpt: Thank you for joining us. Please check your email.
 template: docs
 ---
 

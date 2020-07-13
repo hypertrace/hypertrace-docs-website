@@ -1,7 +1,6 @@
 ---
 title: FAQ
-excerpt: >-
-  Do you have questions about Hypertrace? We got some answers for you!
+excerpt: Do you have questions about Hypertrace? We got some answers for you!
 template: docs
 ---
 ## What is Hypertrace?

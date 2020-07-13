@@ -6,6 +6,8 @@ sections:
   - exporters
   - deployments
   - use-cases
+  - Instrumentation
+  - Sample App
   - troubleshooting
   - community
   - faq

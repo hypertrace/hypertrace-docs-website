@@ -1,6 +1,6 @@
 ---
-title: Quick Start
-weight: 2
+title: Sample App
+excerpt: Online boutique app will help you get started with Hypertrace in case you don't have applications sending trace data yet. 
 template: docs
 ---
 
@@ -56,9 +56,12 @@ You can check out [UI & Platform overview](https://docs.hypertrace.org/platform-
 1. [HotROD application](https://github.com/hypertrace/hypertrace-samples/tree/master/hotrod)
 2. [todo-list-application](https://github.com/hypertrace/hypertrace-samples/tree/master/todo-list-application)
 
-Are you still confused with **Instrumentation** jargon? Ahh! We have you covered! Jump to [Instrumentation](https://hypertrace-docs.netlify.app/docs/getting-started/instrumentation/) section which will tell you about what is instrumentation and how you can get started with instrumenting your application! 
+Are you still confused with **Instrumentation** jargon? Ahh! We have you covered! Jump to [Instrumentation](https://docs.hypertrace.org/instrumentation/) section which will tell you about what is instrumentation and how you can get started with instrumenting your application! 
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/getting-started/quick-start.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/quick-start/index.md">
 <button type="button">Edit</button></a>
 
+
 ***
+
+Here are the articles in this section:

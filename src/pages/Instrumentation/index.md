@@ -1,29 +1,25 @@
 ---
 title: Instrumentation
-weight: 3
+excerpt: In this section we will learn about instrumentation. 
 template: docs
 ---
+
 ## Overview
-Your application must be instrumented before it can send tracing and monitoring data to Hypertrace using any supported collector including OpenTracing, OpenCensus, Jaeger and Zipkin.  Let's explain what instrumentation is and how you can instrument your application for distributed tracing. 
+Your application must be instrumented before it can send tracing and monitoring data to Hypertrace. Let's explain what instrumentation is and how you can instrument your application for distributed tracing. 
 
 ---
 <iframe width="680" height="380" src="https://www.youtube.com/embed/AHGsf60SGcE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
 
 ---
 
+### Concept overview
+A tracer is a utility library, similar to metrics or logging libraries. It is a mechanism uses to trace an operation. 
 
-### What is Instrumentation?
-As per the paper *Software Instrumentation* by Torsten Kempf, Kingshuk Karuri and Lei Gao, *Software instrumentation is a technique that is widely used in software profiling, performance analysis, optimization, testing, error detection, and virtualization. Instrumentation, which involves adding extra code to an application for monitoring some program behavior, can be performed either statically (i.e., at compile time) or dynamically (i.e., at runtime).*
+Instrumentation is framework-specific code that uses a tracer to collect details such as the http url and request timing.
 
-### Agent vs Library
+Instrumentation must be configured and pointed to a tracing system for tracing to work. This is often done automatically with agents or frameworks like Spring Boot.                                                                                               |
 
-| Agent                                                                                                                                                                                                                          | Library                                                                                                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Black-box approach                                                                                                                                                                                                             | White-box approach                                                                                                                                                                       |
-| Agent-based instrumentation relies on some sort of external process to track your application processes at runtime.                                                                                                            | A library-based instrumentation approach can be characterized by its reliance on an application-level dependency on some shared, standardized code that is used throughout its services. |
-| Agents can be an external process or monitoring service that injects code into your service, or an in-process agent that is imported to the runtime environment of a process and uses a system of user-defined rules. | This approach generally relies on the developer to write instrumentation code.                                                                                                              |
-
-## An Instrumentation with example
+## An Instrumentation example
 ### Learning objectives
 - Make Python Flask API-based microservices call each other. 
 - Instrument a basic microservice app
@@ -225,10 +221,12 @@ From your terminal run `kubectl apply -f deploy.yaml. Once all pods are up and r
 
 Was it fun? 
 
-Learn more about microservices at [microservices.io](https://microservices.io). If you have application that's already instrumented or want to use sample app to quickly get started with Hypertrace, you can refer [quick start](https://docs.hypertrace.org/getting-started/quick-start/) section!
+Learn more about microservices at [microservices.io](https://microservices.io). If you have application that's already instrumented or want to use sample app to quickly get started with Hypertrace, you can refer [quick start](https://docs.hypertrace.org/quick-start/) section!
 
+***
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/getting-started/instrumentation.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/instrumentation/index.md">
 <button type="button">Edit</button></a>
 
 ***
+

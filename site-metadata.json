@@ -50,7 +50,7 @@
         ]
     },
     "footer": {
-        "content": "&copy; Traceableai. All rights reserved.",
+        "content": "<a href=https://hypertrace-staging.webflow.io/privacy-policy/1-0>Privacy Policy</a>",
         "links": [
             {
                 "label": "Made with Stackbit",

@@ -19,7 +19,7 @@ Hypertrace installation script uses Helm Charts to deploy Hypertrace on Kubernet
 - Bash
 
 ### Install
-- Git Clone the <a href="https://github.com/hypertrace/hypertrace">Hypertrace</a> repository. 
+- 
 - Update the config properties under `./config/hypertrace.properties` as needed. The default config will work for a standalone deployment on Docker for Desktop.
 - Run `./hypertrace.sh install`
 
@@ -30,8 +30,8 @@ Hypertrace installation script uses Helm Charts to deploy Hypertrace on Kubernet
 
 | Key                  | Description                                                                                                   | Allowed values       |
 |----------------------|---------------------------------------------------------------------------------------------------------------|----------------------|
-| `HT_PROFILE`         | Profile is size of your deployment. (Memory, No. of CPU's, etc.).                                             | Dev, Mini, Standard  |
-| `HT_CLOUD_PROVIDER`  | Cloud platform you are deploying Hypertrace on.                                                               | aws, gcp, azure      |
+| `HT_PROFILE`         | Profile is size of your deployment. (Memory, No. of CPU's, etc.).                                             | dev, mini, standard |
+| `HT_ENV`             | Platform you are deploying Hypertrace on.                                                                     | aws, gcp, minikube, docker-desktop      |
 | `HT_KUBE_CONTEXT`    | Kubernetes context to deploy Hypertrace.                                                                      | specific to platform |
 | `HT_KUBE_NAMESPACE`  | Kubernetes namespace to deploy Hypertrace.                                                                    | hypertrace           |
 | `HT_ENABLE_DEBUG`    | In case of any issue, install Hypertrace in debug mode to get more logs and traces to identify the rootcause. | true, false          |

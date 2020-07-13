@@ -49,34 +49,6 @@ receivers:
     address: "127.0.0.1:9411"
 ```
 
-### 4. Prometheus
-This receiver is a drop-in replacement for getting Prometheus to scrape your services. Just like you would write in a YAML configuration file before starting Prometheus, such as with:
-```
-prometheus --config.file=prom.yaml
-```
-you can copy and paste that same configuration under section
-```
-receivers:
-  prometheus:
-    config:
-```
-such as:
-```
-receivers:
-    prometheus:
-      config:
-        scrape_configs:
-          - job_name: 'opencensus_service'
-            scrape_interval: 5s
-            static_configs:
-              - targets: ['localhost:8889']
-
-          - job_name: 'jdbc_apps'
-            scrape_interval: 3s
-            static_configs:
-              - targets: ['localhost:9777']
-```
-
 ## [Exporters](https://hypertrace-docs.netlify.app/exporters/)
 An exporter is how you send data to one or more backends/destinations. One or more exporters can be configured. By default, no exporters are configured on the Service (either the Agent or Collector).
 

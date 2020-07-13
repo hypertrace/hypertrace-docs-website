@@ -225,12 +225,8 @@ From your terminal run `kubectl apply -f deploy.yaml. Once all pods are up and r
 
 Was it fun? 
 
-Learn more about microservices at microservices.io. If you want to checkout more examples, visit the following microservices:
+Learn more about microservices at [microservices.io](https://microservices.io). If you have application that's already instrumented or want to use sample app to quickly get started with Hypertrace, you can refer [quick start](https://docs.hypertrace.org/getting-started/quick-start/) section!
 
-1. [Online Boutique Demo](https://github.com/JBAhire/HyperTrace-samples/blob/master/blog/onlineboutique.md)
-2. [Sock Shop demo](https://github.com/JBAhire/HyperTrace-samples/blob/master/blog/sockshop.md)
-3. [TODO list demo](https://github.com/JBAhire/HyperTrace-samples/blob/master/blog/todolist.md)
-4. [HotROD app](https://github.com/JBAhire/HyperTrace-samples/blob/master/blog/hotrod.md)
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/getting-started/instrumentation.md">
 <button type="button">Edit</button></a>

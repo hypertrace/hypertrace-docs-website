@@ -11,54 +11,7 @@ There are bunch of different ways to deploy hypertarce. You can deploy on local 
 ## What is helm?
 Helm is the package manager for Kubernetes. It streamlines installing and managing Kubernetes applications. We can use a single helm chart to deploy anything from simple pod to a complex application. 
 
-Helm has pretty detailed documentation which you can find over here: https://helm.sh/docs/
-
-## Installing helm
-
-You can install helm using package managers or script or you can even download binary versions manually from the the release and install. 
-
-### Install using script:
-
-```
-$ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
-$ chmod 700 get_helm.sh
-$ ./get_helm.sh
-```
-
-### Install using Package Managers:
-#### 1. Homebrew (macOS)
-
-```
-# install
-brew install helm
-
-# Upgrade
-brew upgrade helm
-
-```
-#### 2. Chocolatey (Windows)
-
-```
-choco install kubernetes-helm
-```
-
-#### 3. Apt (Debian/Ubuntu)
-
-```
-curl https://helm.baltorepo.com/organization/signing.asc | sudo apt-key add -
-sudo apt-get install apt-transport-https --yes
-echo "deb https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
-sudo apt-get update
-sudo apt-get install helm
-```
-
-### 4. Snap
-
-```
-sudo snap install helm --classic
-```
-
-For detailed information about installation you can use helm installation documentation [here](https://helm.sh/docs/intro/install/). 
+Helm has pretty detailed documentation which you can find over [here](https://helm.sh/docs/). For detailed information about installing helm on different platforms you can visit [here](https://helm.sh/docs/intro/install/). 
 
 
 ## Hypertrace-helm

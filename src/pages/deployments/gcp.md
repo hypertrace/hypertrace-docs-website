@@ -23,6 +23,13 @@ HT_PROFILE=mini
 # Cloud provider name
 # Allowed values: {docker-desktop, gcp, aws}
 HT_CLOUD_PROVIDER=gcp
+<<<<<<< HEAD
+=======
+# TODO: Cleanup username,password and email configuration after moving artifacts to public repository
+DOCKER_USERNAME=${DOCKER_USERNAME}
+DOCKER_PASSWORD=${DOCKER_PASSWORD}
+
+>>>>>>> 4d9619c9901777bc6a79c1c2468654096f12c71c
 # Kubernetes context to deploy hypertrace
 HT_KUBE_CONTEXT=gke_dataservices-0001_us-west1-b_saas-dave
 # Kubernetes context to deploy hypertrace

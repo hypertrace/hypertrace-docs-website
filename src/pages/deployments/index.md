@@ -28,8 +28,6 @@ Helm repo contains charts for different services which are as follows:
 - Kafka Manager
 - ElasticSearch
 - Logstash
-- Kibana
-- Fliebeat
 - Mongo
 - Pinot
 - Local volume provisioner

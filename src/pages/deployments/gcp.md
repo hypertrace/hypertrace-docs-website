@@ -26,7 +26,6 @@ HT_CLOUD_PROVIDER=gcp
 # TODO: Cleanup username,password and email configuration after moving artifacts to public repository
 DOCKER_USERNAME=${DOCKER_USERNAME}
 DOCKER_PASSWORD=${DOCKER_PASSWORD}
-DOCKER_EMAIL=${DOCKER_USERNAME}@traceable.ai
 
 # Kubernetes context to deploy hypertrace
 HT_KUBE_CONTEXT="YOUR_GKE_CLUSTER_CONTEXT"

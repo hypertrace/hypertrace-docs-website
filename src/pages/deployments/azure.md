@@ -33,7 +33,7 @@ HT_PROFILE=mini
 # Allowed values: {docker-desktop, gcp, aws}
 HT_CLOUD_PROVIDER=azure
 # Kubernetes context to deploy hypertrace
-HT_KUBE_CONTEXT=gke_dataservices-0001_us-west1-b_saas-dave
+HT_KUBE_CONTEXT=`Your azure context`
 # Kubernetes context to deploy hypertrace
 HT_KUBE_NAMESPACE=hypertrace
 # Helm install wait timeout.

@@ -25,8 +25,7 @@ This means you can try it without changing your applications!
 
 Hypertrace is open source and includes features commonly present in distributed
 tracing systems such as a cloud-native backend and a UI. Hypertrace goes beyond,
-including features usually left to commercial products, such as real-time
-processing, custom dashboards and sophisticated path-based analysis!
+including features usually left to commercial products, such as With no additional jobs or configuration, service graph and metrics aggregate in real time (No more batch jobs!), custom dashboards and sophisticated path-based analysis!
 
 As many are new to tracing, we'll review basic features first, then the advanced features usually only available in commercial products:
 

@@ -12,16 +12,12 @@ Your application must be instrumented before it can send tracing and monitoring 
 ---
 
 
-### What is Instrumentation?
-As per the paper *Software Instrumentation* by Torsten Kempf, Kingshuk Karuri and Lei Gao, *Software instrumentation is a technique that is widely used in software profiling, performance analysis, optimization, testing, error detection, and virtualization. Instrumentation, which involves adding extra code to an application for monitoring some program behavior, can be performed either statically (i.e., at compile time) or dynamically (i.e., at runtime).*
+### How do I turn on tracing?
+A tracer is a utility library, similar to metrics or logging libraries. It is a mechanism uses to trace an operation. 
 
-### Agent vs Library
+Instrumentation is framework-specific code that uses a tracer to collect details such as the http url and request timing.
 
-| Agent                                                                                                                                                                                                                          | Library                                                                                                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Black-box approach                                                                                                                                                                                                             | White-box approach                                                                                                                                                                       |
-| Agent-based instrumentation relies on some sort of external process to track your application processes at runtime.                                                                                                            | A library-based instrumentation approach can be characterized by its reliance on an application-level dependency on some shared, standardized code that is used throughout its services. |
-| Agents can be an external process or monitoring service that injects code into your service, or an in-process agent that is imported to the runtime environment of a process and uses a system of user-defined rules. | This approach generally relies on the developer to write instrumentation code.                                                                                                              |
+Instrumentation must be configured and pointed to a tracing system for tracing to work. This is often done automatically with agents or frameworks like Spring Boot.                                                                                               |
 
 ## An Instrumentation with example
 ### Learning objectives

@@ -34,7 +34,7 @@ As many are new to tracing, we'll review basic features first, then the advanced
 | Feature                 | Description                                                                                          |
 | ----------------------- | ---------------------------------------------------------------------------------------------------- |
 | Trace UI                | Visualizes a request's path through services and any backends, including context, errors and delays  |
-| Application Flow UI     | Visualize an service graph of all traced traffic in your network                                     |
+| Application Flow UI     | Visualize a service graph of all traced traffic in your network                                     |
 | Cloud Native Deployment | Kubernetes cluster with Helm Charts to install and manage it                                         |
 
 

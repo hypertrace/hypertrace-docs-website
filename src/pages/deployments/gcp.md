@@ -10,8 +10,7 @@ template: docs
 2. Go to the hypertrace-helm directory and run `./hypertrace.sh install`
 
 ## Configuration
-- You can customize the configuration under `./config/hypertrace.properties` as needed.
-- Default configuration will work for docker for dekstop deployment which we are discussing in this section. 
+- You can customize the configuration under `./config/hypertrace.properties` as needed. 
 - You can choose from `mini`, `medium` and `large` profile according to your cluster types. each one has appropriate resources allocated to it.
 - Below configuration uses `large` profile. 
 

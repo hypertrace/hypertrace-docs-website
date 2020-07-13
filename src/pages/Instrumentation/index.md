@@ -221,7 +221,7 @@ From your terminal run `kubectl apply -f deploy.yaml. Once all pods are up and r
 
 Was it fun? 
 
-Learn more about microservices at [microservices.io](https://microservices.io). If you have application that's already instrumented or want to use sample app to quickly get started with Hypertrace, you can refer [quick start](https://docs.hypertrace.org/quick-start/) section!
+Learn more about microservices at [microservices.io](https://microservices.io). If you have application that's already instrumented or want to use sample app to quickly get started with Hypertrace, you can refer [quick start](https://docs.hypertrace.org/sample-app/) section!
 
 ***
 

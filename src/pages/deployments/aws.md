@@ -10,8 +10,7 @@ template: docs
 2. Go to the Hypertrace-helm directory and run `./hypertrace.sh install`
 
 ## Configuration
-- You can customize the configuration under `./config/hypertrace.properties` as needed.
-- Default configuration will work for docker for dekstop deployment which we are discussing in this section. 
+- You can customize the configuration under `./config/hypertrace.properties` as needed. 
 - You can choose from `dev`, `mini` and `standard` profile according to your cluster types. each one has appropriate resources allocated to it.
 - Below configuration uses `mini` profile. 
 
@@ -53,7 +52,7 @@ In case of any issue, install hypertrace in debug mode to get more logs and trac
 ### Uninstall
 - Run `./hypertrace.sh uninstall`
 
-You can check out [installation]() doc to read more about ports and other configs. 
+You can check out [installation](https://docs.hypertrace.org/getting-started/) doc to read more about ports and other configs. 
 
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/deployments/aws.md">

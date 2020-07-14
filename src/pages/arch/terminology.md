@@ -5,7 +5,7 @@ template: docs
 ---
 Hypertrace supports OpenTracing standard which is being followed by most of the Distributed tracing platforms available in market. It gives Hypertrace ability to fetch traces from all available collectors and work as a single aggregator. 
 
-Let's start with undertsanding some basic terms around distributed tracing as per the [specifications](https://github.com/opentracing/specification/edit/master/specification.md) defined by OpenTracing.
+Let's start with undertsanding some basic terms around distributed tracing as per the [specifications](https://github.com/opentracing/specification/blob/master/specification.md) defined by OpenTracing.
 
 ### Spans
 The “span” is the primary building block or a logical unit of a distributed trace, representing an individual unit of work done in a distributed system.

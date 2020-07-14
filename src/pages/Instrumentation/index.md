@@ -7,10 +7,6 @@ template: docs
 ## Overview
 Your application must be instrumented before it can send tracing and monitoring data to Hypertrace. Let's explain what instrumentation is and how you can instrument your application for distributed tracing. 
 
----
-<iframe width="680" height="380" src="https://www.youtube.com/embed/AHGsf60SGcE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
-
----
 
 ### Concept overview
 A tracer is a utility library, similar to metrics or logging libraries. It is a mechanism uses to trace an operation. 

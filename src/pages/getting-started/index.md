@@ -7,11 +7,6 @@ template: docs
 ## Overview
 Hypertrace installation script uses Helm Charts to deploy Hypertrace on Kubernetes. If you are already using a tracing system, you can start today. Hypertrace accepts all major data formats: Jaeger, OpenTracing, Zipkin, you name it. Once you complete Installation you can see traces from your already instrumented application in Hypertrace. 
 
----
-<iframe width="680" height="380" src="https://www.youtube.com/embed/hmMpa3Xp6Go" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe> 
-
----
-
 ### Requirements
 - `Docker Desktop` or `Kubernetes` (version 1.5 and above).
 - Minimum resources: (2 CPUs, 4GB Memory).

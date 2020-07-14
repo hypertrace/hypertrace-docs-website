@@ -13,7 +13,7 @@ Being a open-source product, our source code is available under Hypertrace organ
 
 
 ## Slack
-The best part is that if you are already using a tracing system, you can start today. Hypertrace accepts all major data formats: Jaeger, OpenTracing, Zipkin, you name it. Even if you aren’t tracing yet, we have a bunch of sample apps you can start with, and a chat room of excited people who want to meet you. Join us today on [slack](https://hypertrace.slack.com).
+The best part is that if you are already using a tracing system, you can start today. Hypertrace accepts all major data formats: Jaeger, OpenTracing, Zipkin, you name it. Even if you aren’t tracing yet, we have a bunch of sample apps you can start with, and a chat room of excited people who want to meet you. Join us today on [slack](https://www.hypertrace.org/get-started).
 
 
 ## Twitter

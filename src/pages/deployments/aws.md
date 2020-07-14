@@ -6,7 +6,7 @@ template: docs
 
 ## Deploying hypertrace on AWS EKS using helm:
 
-- [Join the Hypertrace Workspace](https://hypertrace-staging.webflow.io/launch/get-started) on Slack
+- [Join the Hypertrace Workspace](https://www.hypertrace.org/get-started) on Slack
 - Download and unzip or unpack the installer file from the 'Early-Access' Slack channel 
 - Go to the Hypertrace-helm directory and run `./hypertrace.sh install`
 

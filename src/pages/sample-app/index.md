@@ -4,7 +4,7 @@ excerpt: Online boutique app will help you get started with Hypertrace in case y
 template: docs
 ---
 
-The best part in getting started with Hypertrace is that it's really quick! If you are already using a tracing system, you can start today. Hypertrace accepts all major data formats: Jaeger, OpenTracing, Zipkin, you name it. Even if you aren’t tracing yet, we have a bunch of sample apps you can start with, and a [chat room](https://hypertrace.slack.com) of excited people who want to meet you. Here we will tell you how you can get started with Online Boutique sample app which is one of our trace enabled sample applications.
+The best part in getting started with Hypertrace is that it's really quick! If you are already using a tracing system, you can start today. Hypertrace accepts all major data formats: Jaeger, OpenTracing, Zipkin, you name it. Even if you aren’t tracing yet, we have a bunch of sample apps you can start with, and a [chat room](https://www.hypertrace.org/get-started) on Slack) of excited people who want to meet you. Here we will tell you how you can get started with Online Boutique sample app which is one of our trace enabled sample applications.
 
 ### Sample app: Online Boutique (created by Google Cloud)
 
@@ -50,7 +50,7 @@ Use pre-built public container images that are easy to deploy by deploying the r
 You can check out [UI & Platform overview](https://docs.hypertrace.org/platform-ui/) section to get more details on features and see insights of online boutique app using Hypertrace. 
 
 
-#### Are you facing any issue with this? Let's discuss it [Slack](https://hypertrace.slack.com/).
+#### Are you facing any issue with this? Let's discuss it [Slack](https://www.hypertrace.org/get-started).
 
 ### Other samples:
 1. [HotROD application](https://github.com/hypertrace/hypertrace-samples/tree/master/hotrod)

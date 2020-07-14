@@ -70,4 +70,6 @@ Collector receives traces from various agents in our case Hypertrace can collect
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/arch/terminology.md">
 <button type="button">Edit</button></a>
+
+
 ***

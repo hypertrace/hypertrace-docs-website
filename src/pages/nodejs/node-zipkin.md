@@ -25,7 +25,7 @@ Now let's use the Zipkin exporter:
 const tracing = require('@opencensus/nodejs');
 const { ZipkinTraceExporter } = require('@opencensus/exporter-zipkin');
 
-// Add your zipkin url (ex http://localhost:9411/api/v2/spans)
+// Add your zipkin url (ex http://localhost:9000:9411/api/v2/spans)
 // and application name to the Zipkin options
 const zipkinOptions = {
   url: 'your-zipkin-url',
@@ -37,7 +37,7 @@ tracing.registerExporter(exporter).start();
 ```
  
 ### Viewing your traces
-Please visit the Hypertrace UI endpoint [http://localhost](http://localhost).
+Please visit the Hypertrace UI endpoint [http://localhost:9000](http://localhost:9000).
 
 ### Project link
 You can find out more about the Zipkin project at [https://zipkin.io/](https://zipkin.io/)

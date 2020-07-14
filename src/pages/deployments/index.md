@@ -14,8 +14,6 @@ Helm has pretty detailed documentation which you can find over [here](https://he
 
 ## Hypertrace-helm
 
-You can find hypertrace helm repo here: https://github.com/Traceableai/hypertrace-helm 
-
 Helm repo contains charts for different services which are as follows:
 - Zookeeper
 - Kafka
@@ -38,6 +36,7 @@ We have divided this services into two categories namely data services and platf
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/deployments/index.md">
 <button type="button">Edit</button></a>
+
 ***
 
 Here are the articles in this section:

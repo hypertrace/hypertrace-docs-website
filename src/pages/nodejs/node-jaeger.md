@@ -47,7 +47,7 @@ tracing.registerExporter(exporter).start();
 ```
  
 ### Viewing your traces
-Please visit the Hypertrace UI endpoint [http://localhost](http://localhost).
+Please visit the Hypertrace UI endpoint [http://localhost:9000](http://localhost:9000).
 
 ### Project link
 You can find out more about the Jaeger project at [https://www.jaegertracing.io/](https://www.jaegertracing.io/)

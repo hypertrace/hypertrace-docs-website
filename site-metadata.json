@@ -46,6 +46,12 @@
                 "type": "icon",
                 "icon_class": "fa-slack",
                 "new_window": true
+            }, 
+            {
+                "label": "Know More",
+                "url": "https://hypertrace.org",
+                "type": "button",
+                "new_window": true
             }
         ]
     },
@@ -63,16 +69,9 @@
         "social_links": [
             {
                 "label": "Twitter",
-                "url": "https://twitter.com/",
+                "url": "https://twitter.com/hypertraceorg",
                 "type": "icon",
                 "icon_class": "fa-twitter",
-                "new_window": true
-            },
-            {
-                "label": "LinkedIn",
-                "url": "https://www.linkedin.com/",
-                "type": "icon",
-                "icon_class": "fa-linkedin",
                 "new_window": true
             },
             {

@@ -4,9 +4,8 @@ weight: 1
 template: docs
 ---
 
-There are 4 installation profile availables to install hypertrace. Those are as follows:
+There are 2 installation profile availables to install hypertrace. Those are as follows:
 - `dev`
-- `mini`
 - `standard`
 Details about them with resources and suggested instances will be available soon!
 

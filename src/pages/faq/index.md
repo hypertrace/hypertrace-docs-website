@@ -23,24 +23,17 @@ Hypertrace was originally developed by Traceable as a highly scalable distribute
 ‍
 Realizing that Hypertrace was a powerful standalone tracing and observability platform, Traceable created this open source project for the software development community to use in their applications.
 
-
-<hr />
-
-## Can we use hypertrace for our company?
-
-Yes! Hypertrace is open-source and you can definitely go ahead fork it and customize according to your requirement. On the way, if you develop some feature which you think will benefit community in one or other way, feel free to contribute and share your learnings!
-
 <hr />
 
 
-## Can we use Hypertrace with cloud platforms?
+## Can we run Hypertrace on any cloud platforms?
 
 Yes! We support cloud as well as local deployments. You can read more about deployments [here.](https://docs.hypertrace.org/docs/deployments/)
 
 <hr />
 
 
-## What changes I need to make in my application if I am already using something like Jaeger, Zipkin or OpenCensus?
+## What changes do I need to make in my application if I am already using Jaeger, Zipkin or OpenCensus?
 
 The best part in getting started with Hypertrace is that it's really quick! If you are already using a tracing system, you can start today. Hypertrace accepts all major data formats: Jaeger, OpenTracing, Zipkin, you name it. Even if you aren’t tracing yet, we have a bunch of [sample apps](https://github.com/hypertrace/hypertrace-samples) you can start with, and a [chat room](https://hypertrace.slack.com) of excited people who want to meet you. If you want to get quickly started with one of our sample app please visit our [quick-start](https://docs.hypertrace.org/sample-app/) guide.
 

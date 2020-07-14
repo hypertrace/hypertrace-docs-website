@@ -8,7 +8,7 @@ template: docs
 Hypertrace installation script uses Helm Charts to deploy Hypertrace on Kubernetes. If you are already using a tracing system, you can start today. Hypertrace accepts all major data formats: Jaeger, OpenTracing, Zipkin, you name it. Once you complete Installation you can see traces from your already instrumented application in Hypertrace. 
 
 ### Requirements
-- `Docker Desktop` or `Kubernetes` (version 1.5 and above).
+- `Docker desktop` with `Kubernetes` (2.3.x and above) or `kubernetes client`(1.16+ and above)
 - Minimum resources: (2 CPUs, 4GB Memory).
 - `Helm` (version 3.2.x and above)
 - Bash
@@ -42,7 +42,7 @@ Here are the default Hypertrace ports: (You can notice that you don't need to ch
 
 | Port  | Service                 |
 |-------|-------------------------|
-| 80    | Used by Hypertrace UI   |
+| 9000    | Used by Hypertrace UI   |
 | 55678 | Opencensus collector    |
 | 14267 | Jaeger thrift collector |
 | 14268 | Jaeger HTTP collector   |

@@ -11,15 +11,13 @@ template: docs
 - Go to the Hypertrace-helm directory and run `./hypertrace.sh install`
 
 ## Configuration
-- You can customize the configuration under `./config/hypertrace.properties` as needed. 
-- You can choose from `dev`, `mini` and `standard` profile according to your cluster types. each one has appropriate resources allocated to it.
-- Below configuration uses `mini` profile. 
+- You can customize the configuration under `./config/hypertrace.properties` as needed.  
 
 Default configuration is as follows:
 ```bash
 # Name of the profile
 # Allowed values: {dev, mini, standard}
-HT_PROFILE=mini
+HT_PROFILE=dev
 # Cloud provider name
 # Allowed values: {docker-desktop, gcp, aws}
 HT_CLOUD_PROVIDER=aws

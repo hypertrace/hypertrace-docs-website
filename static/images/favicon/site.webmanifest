@@ -2,12 +2,7 @@
     "name": "Hypertrace",
     "short_name": "Hypertrace",
     "icons": [{
-      "src": "/images/favicon/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    }, {
-      "src": "/images/favicon/android-chrome-512x512.png",
-      "sizes": "512x512",
+      "src": "/images/favicon/ht-favicon@2x.png",
       "type": "image/png"
     }],
     "theme_color": "#ffffff",

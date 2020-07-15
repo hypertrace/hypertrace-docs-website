@@ -13,7 +13,7 @@ export default class Header extends React.Component {
                 <div className="site-header-inside">
                   <div className="site-branding">
                     {_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img') ? 
-                    <p className="site-logo"><Link to={safePrefix(_.get(this.props, 'https://hypertrace.org') || '/')}><img src={safePrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img'))} alt={_.get(this.props, 'pageContext.site.siteMetadata.header.title')} /></Link></p>
+                    <p className="site-logo"><Link to={"https://hypertrace.org"}><img src={safePrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img'))} alt={_.get(this.props, 'pageContext.site.siteMetadata.header.title')} /></Link></p>
                      : 
                     <p className="site-title"><Link to={safePrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.url') || '/')}>{_.get(this.props, 'pageContext.site.siteMetadata.header.title')}</Link></p>
                     }

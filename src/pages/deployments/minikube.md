@@ -1,29 +1,31 @@
 ---
-title: GCP GKE
-weight: 4
+title: Minikube
+weight: 2
 template: docs
 ---
 
-## Deploying hypertrace on GCP GKE using helm:
+## Deploying hypertrace on minikube using helm:
 
 - [Join the Hypertrace Workspace](https://www.hypertrace.org/get-started) on Slack
 - Download and unzip or unpack the installer file from the 'Early-Access' Slack channel 
+- You have to make some changes in config file as per the [configuration](#Configuration) section below.
 - Go to the Hypertrace-helm directory and run `./hypertrace.sh install`
 
 ## Configuration
-- You can customize the configuration under `./config/hypertrace.properties` as needed. 
+- You can customize the configuration under `./config/hypertrace.properties` as needed.
+- Default configuration will work for docker for dekstop deployment which we are discussing in this section. 
+- use `dev` profile while installing on docker for desktop as it is optimized for that purpose. 
 
 Default configuration is as follows:
 ```bash
 # Name of the profile
 # Allowed values: {dev, mini, standard}
-HT_PROFILE=mini
+HT_PROFILE=dev
 # Cloud provider name
 # Allowed values: {docker-desktop, gcp, aws}
-HT_ENV=gcp
-
+HT_ENV=minikube
 # Kubernetes context to deploy hypertrace
-HT_KUBE_CONTEXT=`your GKE context`
+HT_KUBE_CONTEXT=minikube
 # Kubernetes context to deploy hypertrace
 HT_KUBE_NAMESPACE=hypertrace
 # Helm install wait timeout.
@@ -39,6 +41,11 @@ In case of any issue, install hypertrace in debug mode to get more logs and trac
 - Set `HT_ENABLE_DEBUG` to `true` in `./config/hypertrace.properties`
 - Debug `bash -x ./hypertrace.sh install`
 
+## Note: 
+Services of type `LoadBalancer` (In our case hypertrace-oc-collector and hypertrace-ui) can be exposed via the `minikube tunnel` command. It **must** be run in a separate terminal window to keep the LoadBalancer running. Ctrl-C in the terminal can be used to terminate the process at which time the network routes will be cleaned up.
+
+Ref: https://minikube.sigs.k8s.io/docs/handbook/accessing/#using-minikube-tunnel 
+
 ### Verify installation
 
 - Verify helm charts. Successful installation should have the release status as deployed for both `data-services` and `platform-services` as below.
@@ -51,9 +58,9 @@ In case of any issue, install hypertrace in debug mode to get more logs and trac
 ### Uninstall
 - Run `./hypertrace.sh uninstall`
 
-You can check out [installation]() doc to read more about ports and other configs. 
+You can check out [installation](https://docs.hypertrace.org/getting-started/) doc to read more about ports and other configs. 
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/deployments/gcp.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/deployments/minikube.md">
 <button type="button">Edit</button></a>
 
 ***

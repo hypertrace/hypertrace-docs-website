@@ -17,10 +17,10 @@ Default configuration is as follows:
 ```bash
 # Name of the profile
 # Allowed values: {dev, mini, standard}
-HT_PROFILE=dev
+HT_PROFILE=mini
 # Cloud provider name
 # Allowed values: {docker-desktop, gcp, aws}
-HT_CLOUD_PROVIDER=aws
+HT_ENV=aws
 # Kubernetes context to deploy hypertrace
 HT_KUBE_CONTEXT=`Your eks context`
 # Kubernetes context to deploy hypertrace

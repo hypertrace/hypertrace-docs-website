@@ -26,10 +26,10 @@ Default configuration is as follows:
 ```bash
 # Name of the profile
 # Allowed values: {dev, mini, standard}
-HT_PROFILE=dev
+HT_PROFILE=mini
 # Cloud provider name
 # Allowed values: {docker-desktop, gcp, aws}
-HT_CLOUD_PROVIDER=azure
+HT_ENV=azure
 # Kubernetes context to deploy hypertrace
 HT_KUBE_CONTEXT=`Your azure context`
 # Kubernetes context to deploy hypertrace

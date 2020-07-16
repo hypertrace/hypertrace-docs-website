@@ -1,6 +1,6 @@
 ---
 title: Docker for Desktop
-weight: 2
+weight: 1
 template: docs
 ---
 
@@ -22,7 +22,7 @@ Default configuration is as follows:
 HT_PROFILE=dev
 # Cloud provider name
 # Allowed values: {docker-desktop, gcp, aws}
-HT_CLOUD_PROVIDER=docker-desktop
+HT_ENV=docker-desktop
 # Kubernetes context to deploy hypertrace
 HT_KUBE_CONTEXT=docker-desktop
 # Kubernetes context to deploy hypertrace

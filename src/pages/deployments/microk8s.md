@@ -11,10 +11,17 @@ template: docs
 - You have to make some changes in config file as per the [configuration](#Configuration) section below.
 - Go to the Hypertrace-helm directory and run `./hypertrace.sh install`
 
+## Note:
+- As default in `Microk8s` you can use only services like `NodePort` and `ClusterIP`.
+- With your setup you can use `NodePort`, `ClusterIP with Ingress` or `MetalLB`. 
+- We are using `ClusterIP with Ingress` so you have to remember to enable **ingress and dns addons** in _Microk8s_. 
+- It can be done by `$microk8s.enable dns ingress`.
+- So once the installation is complete you can access service which uses `LoadBalancer`, in our case _hypertrace-oc-collector_ and _hypertrace-ui_ can be accessed using combination `YourIP:NodePort` where `NodePort` is specific to service. 
+
 ## Configuration
 - You can customize the configuration under `./config/hypertrace.properties` as needed.
 - Default configuration will work for docker for dekstop deployment which we are discussing in this section. 
-- use `dev` profile while installing on minkube on local setup. 
+- use `dev` profile while installing on microk8s on local setup.
 
 Default configuration is as follows:
 ```bash
@@ -23,9 +30,9 @@ Default configuration is as follows:
 HT_PROFILE=dev
 # Cloud provider name
 # Allowed values: {docker-desktop, gcp, aws}
-HT_ENV=minikube
+HT_ENV=microk8s
 # Kubernetes context to deploy hypertrace
-HT_KUBE_CONTEXT=minikube
+HT_KUBE_CONTEXT=micork8s
 # Kubernetes context to deploy hypertrace
 HT_KUBE_NAMESPACE=hypertrace
 # Helm install wait timeout.
@@ -41,10 +48,6 @@ In case of any issue, install hypertrace in debug mode to get more logs and trac
 - Set `HT_ENABLE_DEBUG` to `true` in `./config/hypertrace.properties`
 - Debug `bash -x ./hypertrace.sh install`
 
-## Note: 
-Services of type `LoadBalancer` (In our case hypertrace-oc-collector and hypertrace-ui) can be exposed via the `minikube tunnel` command. It **must** be run in a separate terminal window to keep the LoadBalancer running. Ctrl-C in the terminal can be used to terminate the process at which time the network routes will be cleaned up.
-
-Ref: https://minikube.sigs.k8s.io/docs/handbook/accessing/#using-minikube-tunnel 
 
 ### Verify installation
 

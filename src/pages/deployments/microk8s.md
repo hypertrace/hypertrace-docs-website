@@ -1,6 +1,6 @@
 ---
-title: Minikube
-weight: 2
+title: MicroK8S
+weight: 3
 template: docs
 ---
 

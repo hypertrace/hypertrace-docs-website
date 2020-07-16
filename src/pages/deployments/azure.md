@@ -1,6 +1,6 @@
 ---
 title: Azure AKS
-weight: 5
+weight: 6
 template: docs
 ---
 

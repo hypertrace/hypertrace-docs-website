@@ -1,22 +1,22 @@
 ---
 title: Deployments
-excerpt: This section will help you in deploying hypertrace on various cloud platforms as well as managed kubernetes services. 
+excerpt: This section will help you deploy Hypertrace on various cloud platforms, Docker for Desktop, and more
 template: docs
 ---
 
-There are bunch of different ways to deploy hypertarce. You can deploy on local machine using docker for desktop or you can use any cloud based kubernetes service and deploy hypertrace on it. We are using helm charts to deploy hypertrace. This section will help you learning about helm charts along with resources to help you deploy hypertrace on GKE and EKS.
+Hypertrace is deployed using Helm Charts, which means you can deploy it to almost any Kubernetes environment. You can deploy it on your local machine using Docker for Desktop with Kubernets enabled, or any cloud-based Kubernetes service, or a managed Cloud that supportes Kubernetes such as OpenShift and Cloud Foundry. This section will provide you the resources to help you deploy Hypertrace.
 
-## What is helm?
-Helm is the package manager for Kubernetes. It streamlines installing and managing Kubernetes applications. We can use a single helm chart to deploy anything from simple pod to a complex application. 
+## What is Helm?
+Helm is the package manager for Kubernetes. It streamlines installing and managing Kubernetes applications. We can use a single Helm chart to deploy anything from a simple pod to a complex application. 
 
-Helm has pretty detailed documentation which you can find over [here](https://helm.sh/docs/). For detailed information about installing helm on different platforms you can visit [here](https://helm.sh/docs/intro/install/). 
+Helm has detailed documentation which you can find at [helm.sh/docs](https://helm.sh/docs/). For detailed information about installing Helm on different platforms you can visit [helm.sh/docs/intro/install](https://helm.sh/docs/intro/install/). 
 
 
 ## Hypertrace-helm
-We provide Helm charts for all services needed for a Hypertrace installation. We have divided this services into two categories namely data services and platform services:
+We provide Helm charts for all services needed to run Hypertrace. They are grouped into two categories: Data services and Platform services:
 
+- The `platform-services` category includes services that are primarily Hypertrace code. These services handle span collection, trace generation, trace enrichment, views etc.
 - The `data-services` category includes third party technologies such as Flink and Pinot. These services handle storage and real-time analysis functionality.
-- The `platform-services` category includes Hypertrace code. This services handle span collection, trace generation, trace enrichment, views etc.
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/deployments/index.md">
 <button type="button">Edit</button></a>

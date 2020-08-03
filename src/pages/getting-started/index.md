@@ -54,7 +54,7 @@ In case of any port collisions, users can modify the following properties in hel
 
 ## Verifying Hypertrace UI
 
-Once your Hypertrace installation is successful you can navigate to`http://localhost:9000` or IP address for hypertrace-ui service to access the Hypertarce UI. It looks something like this!
+Once your Hypertrace installation is successful you can navigate to`http://localhost:2020` or IP address for hypertrace-ui service to access the Hypertarce UI. It looks something like this!
 
 | ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/dashboard-1.png) | 
 |:--:| 

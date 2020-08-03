@@ -1,6 +1,6 @@
 ---
 title: AWS AMI
-weight: 7
+weight: 8
 template: docs
 ---
 ## Getting started with Hypertrace using AMI

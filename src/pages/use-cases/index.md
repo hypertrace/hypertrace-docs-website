@@ -5,12 +5,11 @@ excerpt: >-
 template: docs
 ---
 ## Root cause analysis
-Customers contact you with a request or application ID that failed. Hypertrace
-can show all the services, endpoints and backends that request hit along the
-way, contextualizing any errors that occurred. When a root cause becomes
-evident, you can drill into that endpoint or backend and see if the problem was
-overall or specific to that request. Hypertrace points you at the root cause
-faster.
+A customer contacts you with a request or application ID that failed. Hypertrace 
+can display all of the services, endpoints and backends that request hit along 
+the way, contextualizing any errors that occurred. When you find the root cause, 
+you can drill into that endpoint or backend and see if the problem was specific 
+to that request. Hypertrace points you to the root cause faster.
 
 <hr />
 
@@ -24,16 +23,16 @@ causing slow requests.
 <hr />
 
 
-## Understand if performance is better
+## Determine if performance is better
 Anyone in a DevOps role can validate if a change made something better or worse,
 by viewing similar traces. Traces can show if calls are indeed parallel or if
-caches are in use. Further, "top call" ranking can help teams focus on endpoints
+caches are in use. Further, "top call" ranking can help teams identify endpoints
 that need the most work.
 
 <hr />
 
 
-## Monitor microservice dependency
+## Monitor microservice dependencies
 Hypertrace aggregates traces, which allows it to know the source of traffic.
 Service and backend views include upstream services. Service owners can see
 everything calling them or query to track-down everything they call, even if it
@@ -43,11 +42,10 @@ is several layers deep into the network.
 
 
 ## Observability
-Hypertrace UI includes a global dashboard as well as service and backend
-specific views. Together, these allow different teams with different goals to be
-on the same page with regards to overall performance. As top calls are ranked,
-those looking at any scope can learn what's different now vs an hour or a week
-ago.
+Hypertrace UI includes a global dashboard as well as service and backend-specific 
+views. Together, these allow different teams with different goals to be on the 
+same page with regards to overall performance. As top calls are ranked, those 
+looking at any scope can learn what's different now vs an hour or a week ago.
 
 <hr />
 

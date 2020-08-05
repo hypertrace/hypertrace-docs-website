@@ -28,7 +28,7 @@ HT_KUBE_CONTEXT=docker-desktop
 # Kubernetes context to deploy hypertrace
 HT_KUBE_NAMESPACE=hypertrace
 # Helm install wait timeout.
-# Installation time generally depends time to pull multiple hypertrace images from the repository.
+# Installation time generally depends time to pull multiple Hypertrace images from the repository.
 # Set it higher value if the connection is slower.
 # Units in minutes
 HT_INSTALL_TIMEOUT=10
@@ -36,13 +36,13 @@ HT_INSTALL_TIMEOUT=10
 # Allowed values: {true, false}
 HT_ENABLE_DEBUG=false
 ```
-In case of any issue, install hypertrace in debug mode to get more logs and traces to identify the rootcause.
+In case of any issue, install Hypertrace in debug mode to get more logs and traces to identify the rootcause.
 - Set `HT_ENABLE_DEBUG` to `true` in `./config/hypertrace.properties`
 - Debug `bash -x ./hypertrace.sh install`
 
 ### Verify installation
 
-- Verify helm charts. Successful installation should have the release status as deployed for both `data-services` and `platform-services` as below.
+- Verify Helm Charts. Successful installation should have the release status as deployed for both `data-services` and `platform-services` as below.
     ``` shell script
     $ helm list --namespace=hypertrace --kube-context=docker-desktop               
      NAME                        	NAMESPACE 	REVISION	UPDATED                             	STATUS  	CHART                             	APP VERSION

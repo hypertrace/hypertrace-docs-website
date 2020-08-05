@@ -1,6 +1,6 @@
 ---
 title: Instrumentation
-excerpt: In this section we will learn about instrumentation. 
+excerpt: Learn about instrumentation in this section. 
 template: docs
 ---
 
@@ -221,7 +221,7 @@ Learn more about microservices at [microservices.io](https://microservices.io). 
 
 ***
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/instrumentation/index.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/blob/master/src/pages/instrumentation/index.md">
 <button type="button">Edit</button></a>
 
 ***

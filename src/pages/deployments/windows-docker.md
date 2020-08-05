@@ -1,6 +1,7 @@
 ---
-title: Windows
+title: Windows 10
 weight: 7
+excerpt: Deploying Hypertrace on Windows 10 using Helm
 template: docs
 ---
 

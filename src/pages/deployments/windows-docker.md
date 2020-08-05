@@ -4,14 +4,14 @@ weight: 7
 template: docs
 ---
 
-## Deploying hypertrace on windows using helm:
+## Deploying Hypertrace on Windows 10 using Helm:
 
 - [Join the Hypertrace Workspace](https://www.hypertrace.org/get-started) on Slack.
 - Download and unzip or unpack the installer file from the 'Early-Access' Slack channel .
-- Go to the Hypertrace-helm directory.
+- Go to the hypertrace-helm directory.
 - Create namespace `hypertrace` by executing `kubectl create ns hypertrace`.
 - make sure you are using docker-desktop or any kubernetes context appropriate for platform you are using. You can check your context using `kubectl config current-context`.
-- Replace `StoragClass` in `values.yaml` in `clusters/dev` with your StorageClass. Find your storageclass using `kubectl get sc`. Ex for Docker for desktop it will be `docker-dekstop` and for minikube it will be `standard` etc.
+- Replace `StoragClass` in `values.yaml` in `clusters/dev` with your StorageClass. Find your storageclass using `kubectl get sc`. Ex for Docker for Desktop it will be `docker-dekstop` and for Minikube it will be `standard` etc.
 - Run `helm repo update`
 - Run `helm upgrade hypertrace-data-services ./data-services -f ./data-services/values.yaml -f ./clusters/dev/values.yaml --install -n hypertrace --wait --timeout 15m`
 - Run `helm dependency update ./platform-services`
@@ -21,7 +21,7 @@ template: docs
 
 ### Verify installation
 
-- Verify helm charts. Successful installation should have the release status as deployed for both `data-services` and `platform-services` as below.
+- Verify Helm Charts. Successful installation should have the release status as deployed for both `data-services` and `platform-services` as below.
     ``` shell script
     $ helm list --namespace=hypertrace --kube-context=docker-desktop               
      NAME                        	NAMESPACE 	REVISION	UPDATED                             	STATUS  	CHART                             	APP VERSION

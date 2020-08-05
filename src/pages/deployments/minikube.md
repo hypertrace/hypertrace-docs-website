@@ -4,7 +4,7 @@ weight: 2
 template: docs
 ---
 
-## Deploying hypertrace on minikube using helm:
+## Deploying Hypertrace on Minikube using Helm:
 
 - [Join the Hypertrace Workspace](https://www.hypertrace.org/get-started) on Slack
 - Download and unzip or unpack the installer file from the 'Early-Access' Slack channel 
@@ -13,7 +13,7 @@ template: docs
 
 ## Configuration
 - You can customize the configuration under `./config/hypertrace.properties` as needed.
-- Default configuration will work for docker for dekstop deployment which we are discussing in this section. 
+- Default configuration will work for Docker for Dekstop deployment which we are discussing in this section. 
 - use `dev` profile while installing on minkube on local setup. 
 
 Default configuration is as follows:
@@ -24,12 +24,12 @@ HT_PROFILE=dev
 # Cloud provider name
 # Allowed values: {docker-desktop, gcp, aws}
 HT_ENV=minikube
-# Kubernetes context to deploy hypertrace
+# Kubernetes context to deploy Hypertrace
 HT_KUBE_CONTEXT=minikube
-# Kubernetes context to deploy hypertrace
+# Kubernetes context to deploy Hypertrace
 HT_KUBE_NAMESPACE=hypertrace
 # Helm install wait timeout.
-# Installation time generally depends time to pull multiple hypertrace images from the repository.
+# Installation time generally depends time to pull multiple Hypertrace images from the repository.
 # Set it higher value if the connection is slower.
 # Units in minutes
 HT_INSTALL_TIMEOUT=10
@@ -37,7 +37,7 @@ HT_INSTALL_TIMEOUT=10
 # Allowed values: {true, false}
 HT_ENABLE_DEBUG=false
 ```
-In case of any issue, install hypertrace in debug mode to get more logs and traces to identify the rootcause.
+In case of any issue, install Hypertrace in debug mode to get more logs and traces to identify the rootcause.
 - Set `HT_ENABLE_DEBUG` to `true` in `./config/hypertrace.properties`
 - Debug `bash -x ./hypertrace.sh install`
 
@@ -48,7 +48,7 @@ Ref: https://minikube.sigs.k8s.io/docs/handbook/accessing/#using-minikube-tunnel
 
 ### Verify installation
 
-- Verify helm charts. Successful installation should have the release status as deployed for both `data-services` and `platform-services` as below.
+- Verify Helm Charts. Successful installation should have the release status as deployed for both `data-services` and `platform-services` as below.
     ``` shell script
     $ helm list --namespace=hypertrace --kube-context=docker-desktop               
      NAME                        	NAMESPACE 	REVISION	UPDATED                             	STATUS  	CHART                             	APP VERSION

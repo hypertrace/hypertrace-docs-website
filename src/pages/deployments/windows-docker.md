@@ -33,7 +33,7 @@ template: docs
 
 You can check out [installation](https://docs.hypertrace.org/getting-started/) doc to read more about ports and other configs. 
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/deployments/docker.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/deployments/windows-docker.md">
 <button type="button">Edit</button></a>
 
 ***

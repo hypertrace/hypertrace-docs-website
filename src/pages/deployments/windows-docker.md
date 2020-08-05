@@ -17,6 +17,7 @@ template: docs
 - Run `helm dependency update ./platform-services`
 - Run `helm upgrade hypertrace-platform-services ./platform-services -f ./platform-services/values.yaml -f ./clusters/dev/values.yaml --install -n hypertrace --wait --timeout 15m`
 - Check if you have all pods running using `kubectl get pods -n hypertrace`
+- In case your pods are pending troubleshoot with `kubectl describe pods -n hypertrace`. The most common issues with pods pending are insufficient resources (CPU, memory) or used host port. You can find common issues [here.](https://kubernetes.io/docs/tasks/debug-application-cluster/debug-application/#:~:text=If%20a%20Pod%20is%20stuck,or%20another%20that%20prevent%20scheduling.&text=If%20you%20do%20require%20hostPort,nodes%20in%20your%20Kubernetes%20cluster.)
 
 
 ### Verify installation

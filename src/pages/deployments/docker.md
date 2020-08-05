@@ -4,7 +4,7 @@ weight: 1
 template: docs
 ---
 
-## Deploying hypertrace on docker for desktop using helm:
+## Deploying Hypertrace on Docker for Desktop using Helm:
 
 - [Join the Hypertrace Workspace](https://www.hypertrace.org/get-started) on Slack
 - Download and unzip or unpack the installer file from the 'Early-Access' Slack channel 
@@ -12,8 +12,8 @@ template: docs
 
 ## Configuration
 - You can customize the configuration under `./config/hypertrace.properties` as needed.
-- Default configuration will work for docker for dekstop deployment which we are discussing in this section. 
-- use `dev` profile while installing on docker for desktop as it is optimized for that purpose. 
+- The default configuration will work for the Docker for Dekstop deployment as discussed in this section. 
+- Use the `dev` profile while installing in Docker for Desktop. It is optimized for that purpose. 
 
 Default configuration is as follows:
 ```bash

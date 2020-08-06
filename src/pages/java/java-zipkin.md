@@ -59,7 +59,7 @@ public class ZipkinTutorial {
 ```
  
 ## #Viewing your traces
-Please visit the Hypertrace UI endpoint [http://localhost:9000](http://localhost:9000).
+Please visit the Hypertrace UI endpoint [http://localhost:2020](http://localhost:2020).
 
 ### Project link
 You can find out more about the Zipkin project at [https://zipkin.io/](https://zipkin.io/)

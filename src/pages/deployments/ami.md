@@ -14,7 +14,7 @@ template: docs
 6. The instace you just setup is a Ubuntu VM running Hypertrace on Microk8s.
 7. Do `kubectl get services -n hypertrace`
 8. Look for hypertrace UI service. 
-9. Look for nodeport of UI service which will be 5 digit one(9000:30332 in this case 30332 will be nodeport)
+9. Look for nodeport of UI service which will be 5 digit one(2020:30332 in this case 30332 will be nodeport)
 10. Find your EC2 instance IP from console and go to `Instance IP: Node Port` to see UI
 
 ***

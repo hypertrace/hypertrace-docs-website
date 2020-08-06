@@ -31,9 +31,9 @@ In case of any issue, install hypertrace in debug mode to get more logs and trac
     hypertrace-oc-collector      LoadBalancer   10.109.173.246   <pending>     55678:32553/TCP,14268:32604/TCP,14267:30295/TCP,9411:32753/TCP   5m14s
     hypertrace-ui                LoadBalancer   10.100.55.219    <pending>     80:32631/TCP                                                     5m14s
     kafka-broker                 ClusterIP      None             <none>        9092/TCP                                                         8m33s
-    pinot-controller             ClusterIP      None             <none>        9000/TCP                                                         8m33s
-    pinot-servicemanager         ClusterIP      None             <none>        9000/TCP,8098/TCP,8099/TCP                                       8m33s
-    pinot-servicemanager-svc     ClusterIP      10.96.130.44     <none>        9000/TCP,8098/TCP,8099/TCP                                       8m33s
+    pinot-controller             ClusterIP      None             <none>        2020/TCP                                                         8m33s
+    pinot-servicemanager         ClusterIP      None             <none>        2020/TCP,8098/TCP,8099/TCP                                       8m33s
+    pinot-servicemanager-svc     ClusterIP      10.96.130.44     <none>        2020/TCP,8098/TCP,8099/TCP                                       8m33s
     query-service                ClusterIP      10.106.114.19    <none>        8090/TCP                                                         5m14s
     schema-registry-service      ClusterIP      10.100.216.76    <none>        8081/TCP                                                         8m33s
     zookeeper                    ClusterIP      10.107.169.223   <none>        2181/TCP                                                         8m33s

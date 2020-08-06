@@ -63,7 +63,7 @@ public class JaegerTutorial {
 ```
  
 ### Viewing your traces
-Please visit the Hypertrace UI endpoint [http://localhost:9000](http://localhost:9000).
+Please visit the Hypertrace UI endpoint [http://localhost:2020](http://localhost:2020).
 
 ### Project link
 You can find out more about the Jaeger project at [https://www.jaegertracing.io/](https://www.jaegertracing.io/)

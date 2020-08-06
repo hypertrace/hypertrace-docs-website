@@ -42,7 +42,7 @@ Here are the default Hypertrace ports: (You can notice that you don't need to ch
 
 | Port  | Service                 |
 |-------|-------------------------|
-| 9000    | Used by Hypertrace UI   |
+| 2020    | Used by Hypertrace UI   |
 | 55678 | Opencensus collector    |
 | 14267 | Jaeger thrift collector |
 | 14268 | Jaeger HTTP collector   |

@@ -4,7 +4,7 @@ weight: 4
 template: docs
 ---
 
-## Deploying hypertrace on AWS EKS using helm:
+## Deploying Hypertrace on AWS EKS using Helm:
 
 - [Join the Hypertrace Workspace](https://www.hypertrace.org/get-started) on Slack
 - Download and unzip or unpack the installer file from the 'Early-Access' Slack channel 
@@ -21,12 +21,12 @@ HT_PROFILE=mini
 # Cloud provider name
 # Allowed values: {docker-desktop, gcp, aws}
 HT_ENV=aws
-# Kubernetes context to deploy hypertrace
+# Kubernetes context to deploy Hypertrace
 HT_KUBE_CONTEXT=`Your eks context`
-# Kubernetes context to deploy hypertrace
+# Kubernetes context to deploy Hypertrace
 HT_KUBE_NAMESPACE=hypertrace
 # Helm install wait timeout.
-# Installation time generally depends time to pull multiple hypertrace images from the repository.
+# Installation time generally depends time to pull multiple Hypertrace images from the repository.
 # Set it higher value if the connection is slower.
 # Units in minutes
 HT_INSTALL_TIMEOUT=10
@@ -34,7 +34,7 @@ HT_INSTALL_TIMEOUT=10
 # Allowed values: {true, false}
 HT_ENABLE_DEBUG=false
 ```
-In case of any issue, install hypertrace in debug mode to get more logs and traces to identify the rootcause.
+In case of any issue, install Hypertrace in debug mode to get more logs and traces to identify the rootcause.
 - Set `HT_ENABLE_DEBUG` to `true` in `./config/hypertrace.properties`
 - Debug `bash -x ./hypertrace.sh install`
 

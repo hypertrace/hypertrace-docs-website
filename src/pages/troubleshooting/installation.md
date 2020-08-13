@@ -3,6 +3,10 @@ title: Installation issues
 weight: 1
 template: docs
 ---
+- ## Memory
+If case of services pending, you may need more memory. Set memory to 5 or 6 GB
+
+---
 - ## Port collision
 In case of any port collisions, users can modify the following properties in helm file (platform-services/values.yaml).
 

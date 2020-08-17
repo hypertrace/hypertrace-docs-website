@@ -5,11 +5,11 @@ template: docs
 ---
 
 ## Deploying Hypertrace on Minikube using Helm:
-
-- [Join the Hypertrace Workspace](https://www.hypertrace.org/get-started) on Slack
-- Download and unzip or unpack the installer file from the 'Early-Access' Slack channel 
+- `git clone https://github.com/hypertrace/hypertrace.git`
+- `cd hypertrace/kubernetes`
 - You have to make some changes in config file as per the [configuration](#Configuration) section below.
-- Go to the Hypertrace-helm directory and run `./hypertrace.sh install`
+- Run `./hypertrace.sh install`
+
 
 ## Note:
 - As default in `Microk8s` you can use only services like `NodePort` and `ClusterIP`.

@@ -14,8 +14,8 @@ Hypertrace installation script uses Helm Charts to deploy Hypertrace on Kubernet
 - Bash
 
 ### Install
-- [Join the Hypertrace Workspace](https://www.hypertrace.org/get-started) on Slack to chat with other Hypertrace users.
-- You will be invited to a private channel where you can download and unzip or unpack the installer file.
+- `git clone https://github.com/hypertrace/hypertrace.git`
+- `cd hypertrace/kubernetes`
 - Update the config properties under `./config/hypertrace.properties` as needed. The default config will work for a `dev` deployment on Docker for Desktop.
 - Run `./hypertrace.sh install`
 
@@ -65,7 +65,7 @@ Now you know things are running, let's get some data into Hypertrace. If your ap
 
 ***
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/getting-started/index.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/getting-started/kubernetes.md">
 <button type="button">Edit</button></a>
 
 

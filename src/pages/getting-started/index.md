@@ -48,7 +48,7 @@ You can refer to [kubernetes deployment guide](https://docs.hypertrace.org/getti
 
 ***
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/getting-started/index.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/deployments/index.md">
 <button type="button">Edit</button></a>
 
 

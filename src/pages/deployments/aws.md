@@ -5,10 +5,10 @@ template: docs
 ---
 
 ## Deploying Hypertrace on AWS EKS using Helm:
-
-- [Join the Hypertrace Workspace](https://www.hypertrace.org/get-started) on Slack
-- Download and unzip or unpack the installer file from the 'Early-Access' Slack channel 
-- Go to the Hypertrace-helm directory and run `./hypertrace.sh install`
+- `git clone https://github.com/hypertrace/hypertrace.git`
+- `cd hypertrace/kubernetes`
+- You have to make some changes in config file as per the [configuration](#Configuration) section below.
+- Run `./hypertrace.sh install`
 
 ## Configuration
 - You can customize the configuration under `./config/hypertrace.properties` as needed.  

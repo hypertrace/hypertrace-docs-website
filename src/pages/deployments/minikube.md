@@ -7,7 +7,7 @@ template: docs
 ## Deploying Hypertrace on Minikube using Helm:
 - `git clone https://github.com/hypertrace/hypertrace.git`
 - `cd hypertrace/kubernetes`
-- - You have to make some changes in config file as per the [configuration](#Configuration) section below.
+- You have to make some changes in config file as per the [configuration](#Configuration) section below.
 - Run `./hypertrace.sh install`
 
 ## Configuration

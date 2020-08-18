@@ -1,17 +1,17 @@
 ---
 title: Getting Started
-excerpt: In this section you'll find basic information about Hypertrace and how to use it.
+excerpt: Get started with Hypertrace using Docker Desktop (using Docker Compose or Docker with Kubernetes)
 template: docs
 ---
-## Quick start with Hypertrace using Docker
+## Quick start with Docker Desktop
 
-### Running Hypertrace with docker-compose
+### Running Hypertrace with Docker Compose
 
-**Note:** *It is recommended to change default memory for docker from `2GiB` to `4GiB` and default CPU's to 3 to get Hypertrace up and running.* 
+**Note:** *We recommend you change the Docker Desktop default settings from `2 GB` of memory to at least `4 GB` of memory, and set CPUs to at least 3* 
 
 #### Start Hypertrace
 
-If you want to see Hypertrace in action, you can quickly start Hypertrace via Docker.
+Use your terminal window to start Hypertrace with docker-compose up
 
 ```
 git clone https://github.com/hypertrace/hypertrace.git
@@ -20,14 +20,37 @@ docker-compose pull
 docker-compose -f docker-compose.yml up
 ```
 
-This will start all services required for Hypertrace. Once you see the service hypertrace-ui start, you can visit Hypertrace UI at http://localhost:2020 . 
+This will start all services required for Hypertrace. Once you see the service hypertrace-ui start, you can view the Hypertrace UI at http://localhost:2020. The UI isn't useful without data. To send data to Hypertrace, run an app, such as the sample app below. 
 
 | ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/dashboard-1.png) | 
 |:--:| 
 | *Hypertrace Dashboard* |
 
-If you are facing any issues with docker-compose setup, we have listed down common issues and resolutions [here](https://docs.hypertrace.org/troubleshooting/docker-compose/).
+#### Start the Sample App
 
+- The sample app has two services: frontend and backend. They both report trace data to Hypertrace. To setup the sample app, you need to start Frontend, Backend and Hypertrace. You can start the sample app with:
+```
+docker-compose -f docker/examples/docker-compose.yml up
+```
+- You can start Hypertrace AND the sample app with: 
+```
+docker-compose -f docker/docker-compose.yml -f docker/examples/docker-compose.yml up
+```
+- You can view the sample app at http://localhost:8081. Refresh the sample app page multiple times to generate sample requests. Then go back to the Hypertrace UI and click refresh. You should now see sample requests in the Explorer section. 
+
+### Troubleshooting
+
+Issues? Answers to common installatin problems can be found at [Troubleshooting Docker Compose](https://docs.hypertrace.org/troubleshooting/docker-compose/).
+
+#### Stop Hypertrace
+
+Use your terminal window to stop Hypertrace with docker-compose down
+
+```
+cntrl-c
+docker-compose -f docker-compose.yml down
+// or docker-compose -f docker/docker-compose.yml -f docker/examples/docker-compose.yml down
+```
 
 #### Ports
 
@@ -41,19 +64,13 @@ Here are the default Hypertrace ports:
 | 9411  | Zipkin collector        |
 
 
-#### Sample application
-- The example app has two services: frontend and backend. They both report trace data to Hypertrace. To setup the demo, you need to start Frontend, Backend and Hypertrace. 
-- You can start sample by running `docker-compose -f docker/examples/docker-compose.yml up` if you have hypertrace running already. 
-- You can start sample app with Hypertrace using `docker-compose -f docker/docker-compose.yml -f docker/examples/docker-compose.yml up`.
-- Example app will be served at http://localhost:8081 . You can visit app to generate some sample requests or simply run `run.sh` which will generate bunch of requests for you! 
-
 
 ## Deploying with Kubernetes
-You can refer to [kubernetes deployment guide](https://docs.hypertrace.org/getting-started/kubernetes/) to deploy using helm on docker-dektop with Kubernetes. [deployments](https://docs.hypertrace.org/deployments/) section lists down steps for deploying Hypertrace on different Kubernetes flavors along different operating systems along with all major cloud providers. You can find the helm charts and installation script along with more details [here](https://github.com/hypertrace/hypertrace).
+Want to deploy using Helm in Docker Desktop with Kubernetes? View our [Kubernetes Deployment Guide](https://docs.hypertrace.org/getting-started/kubernetes/). The [deployments](https://docs.hypertrace.org/deployments/) section provides step-by-step instructions for deploying Hypertrace in different Kubernetes environments, operating systems and cloud providers. You can find the Helm Charts and installation script along with more details [here](https://github.com/hypertrace/hypertrace).
 
 ***
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/deployments/index.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/getting-started/index.md">
 <button type="button">Edit</button></a>
 
 

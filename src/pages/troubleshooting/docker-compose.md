@@ -8,7 +8,7 @@ template: docs
 Do you observe an error related to an unhealthy container during startup?
 like eg.`ERROR: for hypertrace-federated-service Container "2c1c01fd3b59" is unhealthy`
 #### Reason: 
-In this case mostly the reson can be lack of resources. Our stack is dependent on pinot and it is a CPU heavy during startup. The depends_on has a max wait time of 1 min.
+In this case, mostly the reson can be lack of resources. Our stack is dependent on pinot and it is a CPU heavy during startup. The depends_on has a max wait time of 1 min.
 #### Solution:
 Set your resources to a minimum 3 CPUs/4GB and re-run `docker-compose up` .
 

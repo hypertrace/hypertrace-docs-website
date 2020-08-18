@@ -8,8 +8,7 @@ template: docs
 Do you observe an error related to an unhealthy container during startup?
 like eg.`ERROR: for hypertrace-federated-service Container "2c1c01fd3b59" is unhealthy`
 #### Reason: 
-lack of resources
-Our stack is dependent on pinot and it is a CPU heavy during startup. The depends_on has a max wait time of 1 min.
+In this case mostly the reson can be lack of resources. Our stack is dependent on pinot and it is a CPU heavy during startup. The depends_on has a max wait time of 1 min.
 #### Solution:
 Set your resources to a minimum 3 CPUs/4GB and re-run `docker-compose up` .
 
@@ -27,7 +26,8 @@ Run `docker-compose pull` to fetch the latest images, and bring up the stack ful
 ### Issue 3:
 How to clean up your docker-compose setup?
 #### Solution:
-Once you stop docker-compose, please do `docker-compose down` so it will remove all the containers related to it along with the network. In case you have any orphan containers do `docker-compose down --remove-orphans`. 
+- Once you stop docker-compose, please do `docker-compose down` so it will remove all the containers related to it along with the network. 
+- In case you have any orphan containers do `docker-compose down --remove-orphans`. 
 
 <hr />
 

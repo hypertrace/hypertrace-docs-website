@@ -17,7 +17,7 @@ Set your resources to a minimum 3 CPUs/4GB and re-run `docker-compose up` .
 
 ### Issue 2:
 Do you see any exception in `hypertrace-federated-service` container or ingestion pipeline container logs?
-### Reason
+#### Reason
 Probably, you might not have the latest images pulled locally.
 ####  Solution:
 Run `docker-compose pull` to fetch the latest images, and bring up the stack fully. For that first do `docker-compose down --remove-orphans` and run `docker-compose up`.
@@ -40,7 +40,7 @@ Do `docker system prune` and then run `docker-compose up`.
 
 ### Issue 5
 How do I force recreate an entire stack?
-### Solution
+#### Solution
 Use this command to re-create all containers - `docker-compose up --force-recreate`
 
 <hr />

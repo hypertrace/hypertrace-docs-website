@@ -65,7 +65,7 @@ Here are the default Hypertrace ports:
 
 
 
-## Deploying with Kubernetes
+## Running Hypertrace in Kubernetes
 Want to deploy using Helm in Docker Desktop with Kubernetes? View our [Kubernetes Deployment Guide](https://docs.hypertrace.org/getting-started/kubernetes/). The [deployments](https://docs.hypertrace.org/deployments/) section provides step-by-step instructions for deploying Hypertrace in different Kubernetes environments, operating systems and cloud providers. You can find the Helm Charts and installation script along with more details [here](https://github.com/hypertrace/hypertrace).
 
 ***

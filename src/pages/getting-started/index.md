@@ -30,7 +30,7 @@ This will start all services required for Hypertrace. Once you see the service h
 
 - The sample app has two services: frontend and backend. They both report trace data to Hypertrace. To setup the sample app, you need to start Frontend, Backend and Hypertrace. You can start the sample app with:
 ```
-docker-compose -f docker/examples/docker-compose.yml up
+docker-compose -f docker-compose-zipkin-example.yml up
 ```
 - You can start Hypertrace AND the sample app with: 
 ```

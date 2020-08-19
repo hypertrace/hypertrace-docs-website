@@ -34,7 +34,7 @@ docker-compose -f docker/examples/docker-compose.yml up
 ```
 - You can start Hypertrace AND the sample app with: 
 ```
-docker-compose -f docker/docker-compose.yml -f docker/examples/docker-compose.yml up
+docker-compose -f docker-compose.yml -f docker-compose-zipkin-example.yml up
 ```
 - You can view the sample app at http://localhost:8081. Refresh the sample app page multiple times to generate sample requests. Then go back to the Hypertrace UI and click refresh. You should now see sample requests in the Explorer section. 
 

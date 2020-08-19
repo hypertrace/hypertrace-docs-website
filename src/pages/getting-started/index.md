@@ -32,7 +32,7 @@ This will start all services required for Hypertrace. Once you see the service h
 ```
 docker-compose -f docker-compose-zipkin-example.yml up
 ```
-- You can start Hypertrace AND the sample app with: 
+- You can start Hypertrace AND the sample app together with: 
 ```
 docker-compose -f docker-compose.yml -f docker-compose-zipkin-example.yml up
 ```

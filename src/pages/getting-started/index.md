@@ -49,7 +49,7 @@ Use your terminal window to stop Hypertrace with docker-compose down
 ```
 cntrl-c
 docker-compose -f docker-compose.yml down
-// or docker-compose -f docker/docker-compose.yml -f docker/examples/docker-compose.yml down
+// docker-compose -f docker-compose.yml -f docker-compose-zipkin-example.yml down
 ```
 
 #### Ports

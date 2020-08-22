@@ -16,7 +16,7 @@ Use your terminal window to start Hypertrace with docker-compose up
 ```
 git clone https://github.com/hypertrace/hypertrace.git
 cd hypertrace/docker
-docker-compose pull
+docker-compose -f docker-compose.yml pull
 docker-compose -f docker-compose.yml up
 ```
 

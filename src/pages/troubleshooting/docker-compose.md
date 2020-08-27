@@ -6,20 +6,24 @@ template: docs
 
 ### Issue 1
 Do you see the below error on the first startup?
-| ![space-1.jpg](https://s3.amazonaws.com/fininity.tech/DT/docker-compose-error.png) | 
-|:--:| 
-| ** |
+
+![space-1.jpg](https://s3.amazonaws.com/fininity.tech/DT/docker-compose-error.png) 
+
 
 #### Reason:
 It is because we start all our containers in parallel. And, few things are still running in the background like `pinot` and `config-bootstrapper` job.
 #### Solution:
-you can use the below query to check the status of stack full availability.
-`wget -qO- http://localhost:2020/graphql\?query\=\{metadata\{name\}\} `
+you can use the below query to check the status of stack full availability:
+```
+wget -qO- http://localhost:2020/graphql\?query\=\{metadata\{name\}\} 
+```
+
 Once, the above query returns results, you can refresh/reload UI.
 Even if it keeps failing for more than a `2 mins`, you check the status of
-`config-bootstrapper` and `pinot` as below.
-`docker ps -a | grep config-bootstrapper`
-`docker ps -a | grep pinot`
+`config-bootstrapper` and `pinot` as below:
+
+- `docker ps -a | grep config-bootstrapper`
+- `docker ps -a | grep pinot`
 
 <hr />
 

@@ -17,7 +17,7 @@ Use your terminal window to start Hypertrace with docker-compose up
 git clone https://github.com/hypertrace/hypertrace.git
 cd hypertrace/docker
 docker-compose -f docker-compose.yml pull
-docker-compose -f docker-compose.yml up
+docker-compose -f docker-compose.yml up --force-recreate
 ```
 
 This will start all services required for Hypertrace. Once you see the service hypertrace-ui start, you can view the Hypertrace UI at http://localhost:2020. The UI isn't useful without data. To send data to Hypertrace, run an app, such as the sample app below. 

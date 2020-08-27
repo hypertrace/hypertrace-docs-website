@@ -40,7 +40,7 @@ docker-compose -f docker-compose.yml -f docker-compose-zipkin-example.yml up
 
 ### Troubleshooting
 
-Issues? Answers to common installatin problems can be found at [Troubleshooting Docker Compose](https://docs.hypertrace.org/troubleshooting/docker-compose/).
+Issues? Answers to common installation problems can be found at [Troubleshooting Docker Compose](https://docs.hypertrace.org/troubleshooting/docker-compose/).
 
 #### Stop Hypertrace
 

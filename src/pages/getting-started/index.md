@@ -59,6 +59,7 @@ Here are the default Hypertrace ports:
 | Port  | Service                 |
 |-------|-------------------------|
 | 2020  | Used by Hypertrace UI   |
+| 8081  | Sample App   |
 | 14267 | Jaeger thrift collector |
 | 14268 | Jaeger HTTP collector   |
 | 9411  | Zipkin collector        |

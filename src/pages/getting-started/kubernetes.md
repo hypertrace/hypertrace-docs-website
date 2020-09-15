@@ -9,7 +9,7 @@ Hypertrace installation script uses Helm Charts to deploy Hypertrace on Kubernet
 
 ### Requirements
 - `Docker desktop` with `Kubernetes` (2.3.x and above) or `kubernetes client`(1.16+ and above)
-- Minimum resources: (2 CPUs, 4GB Memory).
+- Minimum resources: (3 CPUs, 4GB Memory).
 - `Helm` (version 3.2.x and above)
 - Bash
 

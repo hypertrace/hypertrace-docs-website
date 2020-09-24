@@ -8,7 +8,7 @@ The best part in getting started with Hypertrace is that it's really quick! If y
 
 ### Sample app: Online Boutique (created by Google Cloud)
 
-Online Boutique is one of our trace enabled sample apps. It includes typical ecommerce functionality, including: a product catalog, shopping card, and a way for customers to check-out using different currencies. This application uses different languages to highlight the diversity in microservice architecture: Golang, C++, C#, Python, Java and other programming languages. Whatever your application is written in, you can see its requests in Hypertrace.
+Online Boutique is one of our trace enabled sample apps. It includes typical ecommerce functionality, including: a product catalog, shopping cart, and a way for customers to check-out using different currencies. This application uses different languages to highlight the diversity in microservice architecture: Golang, C++, C#, Python, Java and other programming languages. Whatever your application is written in, you can see its requests in Hypertrace.
 
 If you want to start your own online boutique, just add user authentication, payment processing and you're in business! It also makes a great way to learn about Hypertrace and to get started with distributed tracing. 
 

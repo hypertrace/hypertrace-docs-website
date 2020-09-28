@@ -27,7 +27,7 @@ docker-compose -f docker-compose.yml up --force-recreate
 
 This will start all services required for Hypertrace. Once you see the service hypertrace-ui start, you can view the Hypertrace UI at http://localhost:2020. The UI isn't useful without data. To send data to Hypertrace, run an app, such as the sample app below. 
 
-| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/dashboard-1.png) | 
+| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/dashboard-3.png) | 
 |:--:| 
 | *Hypertrace Dashboard* |
 

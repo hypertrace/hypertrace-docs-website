@@ -5,7 +5,7 @@ template: docs
 ---
 ## Hypertrace Dashboard
 
-| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/dashboard-1.png) | 
+| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/dashboard-3.png) | 
 |:--:| 
 
 
@@ -14,11 +14,11 @@ template: docs
 | *Hypertrace Dashboard* |
 
 Even compared to commercial products, we think this will delight you.. and to think this is free and open source!. The goal of Dashboard is less guessing. Instead of knowing search parameters, dashboard tries to present you with relevant things 
-It shows you the number of total calls in a defined time frame, which have errors and at what rate they arrive.
+It shows you the Latency rate and Error rates along with P99 and P50 Latency and Calls per second matrix. 
  
 If you haven’t seen this before, this chart on the top right is a radar chart. Radar charts help visualize multivariate data, showing error rate and call rate along with total errors and calls. By default, it compares current time range (here we selected 15 minutes) with data from the last hour. In other words, you can see how the current performance or error count compares with requests from the last hour. You can also change the comparison factor to the last day, week or even month!
 
-Below that we have `call/unit time` and `errors/unit time` graph for chosen time range for which you can change update durations. So there are a lot of customizations you can do as per your need. 
+Below that we have `latency/unit time`, `call/unit time` and `errors/unit time` graph for chosen time range. 
 
 Then if you scroll down you will get lists of top assets including top endpoints, top services and backends with metrics like avg latency, error rate, total errors, call rate and number of calls. Like other parts of the dashboard, this is typically not something you’ll see in a trace-only UI. You can click on those to sort them according to increasing or decreasing order to learn the fastest or slowest endpoints! 
 

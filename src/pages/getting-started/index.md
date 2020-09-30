@@ -38,11 +38,13 @@ This will start all services required for Hypertrace. Once you see the service h
 ```
 docker-compose -f docker-compose-zipkin-example.yml up
 ```
-- You can start Hypertrace AND the sample app together with: 
+- You can view the sample app at http://localhost:8081. Refresh the sample app page multiple times to generate sample requests. Then go back to the Hypertrace UI and click the 'Refresh' button at the top. You should now see sample requests in the Explorer section. 
+
+- Note: You can start Hypertrace AND the sample app together with: 
 ```
 docker-compose -f docker-compose.yml -f docker-compose-zipkin-example.yml up
 ```
-- You can view the sample app at http://localhost:8081. Refresh the sample app page multiple times to generate sample requests. Then go back to the Hypertrace UI and click refresh. You should now see sample requests in the Explorer section. 
+
 
 ### Troubleshooting
 
@@ -50,10 +52,9 @@ Issues? Answers to common installation problems can be found at [Troubleshooting
 
 #### Stop Hypertrace
 
-Use your terminal window to stop Hypertrace with docker-compose down
+Use a terminal window to stop Hypertrace:
 
 ```
-cntrl-c
 docker-compose -f docker-compose.yml down
 // docker-compose -f docker-compose.yml -f docker-compose-zipkin-example.yml down
 ```
@@ -69,7 +70,6 @@ Here are the default Hypertrace ports:
 | 14267 | Jaeger thrift collector |
 | 14268 | Jaeger HTTP collector   |
 | 9411  | Zipkin collector        |
-
 
 
 ## Running Hypertrace in Kubernetes

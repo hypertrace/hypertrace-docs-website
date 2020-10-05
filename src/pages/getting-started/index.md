@@ -7,8 +7,11 @@ template: docs
 
 ### Running Hypertrace with Docker Compose
 
-#### Note: 
-If allowed, we recommend you change the Docker Desktop default settings from `2 GB` of memory to `4 GB` of memory, and set CPUs to 4 or more CPUs. You can change resources for docker in `docker->preferences->resources`.
+#### Requirements:
+- [docker-engine](https://docs.docker.com/engine/install/) (17.12.0+)
+- [docker-compose](https://docs.docker.com/compose/install/) (1.21.0 +)
+- **We recommend you change the [Docker Desktop default settings](https://hypertrace-docs.s3.amazonaws.com/docker-desktop.png) from `2 GB` of memory to `4 GB` of memory, and set CPUs to at least 4 CPUs.** 
+`Note`: When reporting problems, please include the output of `docker stats --no-stream`.
 
 | ![space-1.jpg](https://hypertrace-docs.s3.amazonaws.com/docker-desktop.png) | 
 |:--:| 

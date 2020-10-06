@@ -70,3 +70,20 @@ In this case, mostly the reson can be lack of resources. The depends_on has a ma
 - re-run `docker-compose -f docker-compose.yml up`
 
 <hr />
+
+
+### Issue 6
+On windows, you got error saying `image operating system "linux" cannot be used on this platform`.
+#### Reason: 
+In this case, your docker host might be running windows daemon which only runs windows-containers. 
+#### Solution:
+In order to run Linux containers, you need to make sure Docker is using the Linux daemon. You can toggle this by selecting Switch to Linux Containers from the action menu when clicking on the Docker whale icon in the system tray. If you see Switch to Windows Containers, then you are already targeting the Linux daemon. 
+
+| ![space-1.jpg](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/media/switchdaemon.png) | 
+|:--:| 
+| *Switch Daemons to use Linux containers* |
+
+
+read more about docker for windows issues and troubleshooting here: https://docs.docker.com/docker-for-windows/troubleshoot/
+
+<hr />

@@ -10,17 +10,18 @@ template: docs
 #### Requirements:
 - [docker-engine](https://docs.docker.com/engine/install/) (17.12.0+)
 - [docker-compose](https://docs.docker.com/compose/install/) (1.21.0 +)
-- **We recommend you change the [Docker Desktop default settings](https://hypertrace-docs.s3.amazonaws.com/docker-desktop.png) from `2 GB` of memory to `4 GB` of memory, and set CPUs to at least 4 CPUs.** 
-`Note`: When reporting problems, please include the output of `docker stats --no-stream`.
+- **We recommend you change the [Docker Desktop default settings](https://hypertrace-docs.s3.amazonaws.com/docker-desktop.png) from `2 GB` of memory to `4 GB` of memory, and set CPUs to at least 3 CPUs.** 
+
+`Note`: If reporting a problem, please include the output of `docker stats --no-stream`.
 
 | ![space-1.jpg](https://hypertrace-docs.s3.amazonaws.com/docker-desktop.png) | 
 |:--:| 
-| *Docker for desktop resource allocation* |
+| *Docker Desktop resource allocation* |
 
 
 #### Start Hypertrace
 
-Use your terminal window to start Hypertrace with docker-compose up
+Use your terminal window to start Hypertrace with git and docker-compose up:
 
 ```
 git clone https://github.com/hypertrace/hypertrace.git
@@ -29,7 +30,7 @@ docker-compose -f docker-compose.yml pull
 docker-compose -f docker-compose.yml up --force-recreate
 ```
 
-This will start all services required for Hypertrace. Once you see the service hypertrace-ui start, you can view the Hypertrace UI at http://localhost:2020. The UI isn't useful without data. To send data to Hypertrace, run an app, such as the sample app below. 
+This will start all services required for Hypertrace. Once you see 'Stack is up after [x] attempts', you can view the Hypertrace UI at http://localhost:2020. The UI isn't useful without data. To send data to Hypertrace, run an app, such as the sample app below. 
 
 | ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/dashboard-3.png) | 
 |:--:| 
@@ -37,7 +38,7 @@ This will start all services required for Hypertrace. Once you see the service h
 
 #### Start the Sample App
 
-- The sample app has two services: frontend and backend. They both report trace data to Hypertrace. To setup the sample app, you need to start Frontend, Backend and Hypertrace. You can start the sample app with:
+- The sample app has two services: frontend and backend. They both report trace data to Hypertrace. To setup the sample app, you need to start the sample app with:
 ```
 docker-compose -f docker-compose-zipkin-example.yml up
 ```

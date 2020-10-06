@@ -20,6 +20,7 @@ Now, let's go step by step and see how we can get Hypertrace up and running with
 You can skip this step completely if you have a docker-desktop installed with Hyper-V and Containers Windows features enabled. Otherwise, follow the below steps and refer [docker docs](https://docs.docker.com/docker-for-windows/install/) for more detailed instructions.
 
 - Double-click Docker Desktop Installer.exe to run the installer.
+
   If you haven’t already downloaded the installer (Docker Desktop Installer.exe), you can get it from Docker Hub. It typically downloads to your Downloads folder, or you can run it from the recent downloads bar at the bottom of your web browser.
 - When prompted, ensure the Enable Hyper-V Windows Features option is selected on the Configuration page.
 - Follow the instructions on the installation wizard to authorize the installer and proceed with the install.

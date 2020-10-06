@@ -1,5 +1,5 @@
 ---
-title: Docker compose on windows
+title: Quick start with Hypertrace on windows
 weight: 8
 excerpt: Quickstart with Hypertrace using docker-compose on windows
 template: docs

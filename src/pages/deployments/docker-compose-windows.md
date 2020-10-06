@@ -9,9 +9,9 @@ Hypertrace is an open-source distributed tracing and observability platform and 
 
 ### System Requirements
 - Windows 10 64-bit: Pro, Enterprise, or Education (Build 16299 or later).
-- Hyper-V and Containers Windows features must be enabled. (There are some requirements like the 64-bit processor and 4 GB Ram for Hyper-v including enabling BIOS-level virtualization. More details about it can be found [here](https://docs.docker.com/docker-for-windows/troubleshoot/#virtualization-must-be-enabled).)
+- [Hyper-V and Containers Windows features must be enabled.](https://docs.docker.com/docker-for-windows/troubleshoot/#virtualization) (There are some requirements like the 64-bit processor and 4 GB Ram for Hyper-v including enabling BIOS-level virtualization. More details about it can be found [here](https://docs.docker.com/docker-for-windows/troubleshoot/#virtualization-must-be-enabled).)
 - Docker Desktop
-- We recommend you change the Docker Desktop memory to a minimum of 4 GB and set CPUs to at least 4 CPUs if it's not set to that by default. (Won't be an issue with fairly spec'd machine.)
+- We recommend you change the Docker Desktop memory to a minimum of `4 GB memory` and set CPUs to at least `4 CPUs` if it's not set to that by default. (Won't be an issue with fairly spec'd machine.)
 
 Now, let's go step by step and see how we can get Hypertrace up and running with Docker desktop on windows. 
 
@@ -19,13 +19,12 @@ Now, let's go step by step and see how we can get Hypertrace up and running with
 
 You can skip this step completely if you have a docker-desktop installed with Hyper-V and Containers Windows features enabled. Otherwise, follow the below steps and refer [docker docs](https://docs.docker.com/docker-for-windows/install/) for more detailed instructions.
 
-- Double-click Docker Desktop Installer.exe to run the installer.
-
-  If you haven’t already downloaded the installer (Docker Desktop Installer.exe), you can get it from Docker Hub. It typically downloads to your Downloads folder, or you can run it from the recent downloads bar at the bottom of your web browser.
-- When prompted, ensure the Enable Hyper-V Windows Features option is selected on the Configuration page.
+- Double-click `Docker Desktop Installer.exe` to run the installer.
+If you haven’t already downloaded the installer (Docker Desktop Installer.exe), you can get it from Docker Hub. It typically downloads to your Downloads folder, or you can run it from the recent downloads bar at the bottom of your web browser.
+- When prompted, ensure the `Enable Hyper-V Windows Features option` is selected on the Configuration page.
 - Follow the instructions on the installation wizard to authorize the installer and proceed with the install.
 - When the installation is successful, click Close to complete the installation process.
-- If your admin account is different from your user account, you must add the user to the docker-users group. Run Computer Management as an administrator and navigate to  Local Users and Groups > Groups > docker-users. Right-click to add the user to the group. Log out and log back in for the changes to take effect.
+- If your admin account is different from your user account, you must add the user to the docker-users group. Run Computer Management as an administrator and navigate to `Local Users and Groups > Groups > docker-users`. Right-click to add the user to the group. Log out and log back in for the changes to take effect.
 
 ### Step 2: Enable linux containers
 In order to run Linux containers, you need to make sure Docker is using the Linux daemon. You can toggle this by selecting Switch to Linux Containers from the action menu when clicking on the Docker whale icon in the system tray. If you see Switch to Windows Containers, then you are already targeting the Linux daemon. 

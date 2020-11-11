@@ -76,8 +76,13 @@ Here are the default Hypertrace ports:
 | 9411  | Zipkin collector        |
 
 
-## Running Hypertrace in Kubernetes
-Want to deploy using Helm in Docker Desktop with Kubernetes? View our [Kubernetes Deployment Guide](https://docs.hypertrace.org/getting-started/kubernetes/). The [deployments](https://docs.hypertrace.org/deployments/) section provides step-by-step instructions for deploying Hypertrace in different Kubernetes environments, operating systems and cloud providers. You can find the Helm Charts and installation script along with more details [here](https://github.com/hypertrace/hypertrace).
+## Deploy in production with Kubernetes
+
+We support helm charts to simplify deploying Hypertrace in Kubernetes environment, maybe on your on-premise server or cloud instance! 
+
+Please refer to the [deployments section](https://docs.hypertrace.org/deployments/) in our documentation which lists the steps to deploy Hypertrace on different Kubernetes flavors across different operating systems and cloud providers. You can find the Helm Charts and installation scripts with more details [here](https://github.com/hypertrace/hypertrace/tree/main/kubernetes).
+
+Note: We have created `hypertrace-ingester` and `hypertrace-service` to simplify local deployment and quick-start with Hypertrace. As of now, we don't support them for production because of some limitations and some unreliabiliy with scaling. So, we will encourage you to deploy individual components for staging as well as production deployments. 
 
 ***
 

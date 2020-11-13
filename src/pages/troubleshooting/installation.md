@@ -4,7 +4,7 @@ weight: 1
 template: docs
 ---
 - ## Memory
-If case of services pending, you may need more memory. Set memory to 5 or 6 GB
+In case of services pending, you may need more memory. For Docker Compose, set your Docker Desktop memory to 5 or 6 GB. 
 
 ---
 - ## Port collision

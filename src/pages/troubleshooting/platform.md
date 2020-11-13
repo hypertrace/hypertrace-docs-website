@@ -3,6 +3,8 @@ title: Platform issues
 weight: 2
 template: docs
 ---
+No details yet. <button type="button"><a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/troubleshooting/platform.md">
+Click here to edit</a>.
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/troubleshooting/platform.md">
 <button type="button">Edit</button></a>

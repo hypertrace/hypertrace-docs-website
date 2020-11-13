@@ -1,5 +1,5 @@
 ---
-title: K8s with Helm Deployment
+title: K8s with Helm
 weight: 1
 template: docs
 ---

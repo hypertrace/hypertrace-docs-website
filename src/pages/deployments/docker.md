@@ -4,7 +4,9 @@ weight: 1
 template: docs
 ---
 
-## Deploying Hypertrace on Docker for Desktop using Helm:
+For deploying Hypertrace on Docker Desktop using Docker Compose, see [Getting Started](https://docs.hypertrace.org/getting-started/)
+
+## Deploying Hypertrace on Docker Desktop using Helm:
 - `git clone https://github.com/hypertrace/hypertrace.git`
 - `cd hypertrace/kubernetes`
 - You have to make some changes in config file as per the [configuration](#Configuration) section below.

@@ -4,7 +4,7 @@ weight: 1
 template: docs
 ---
 
-For deploying Hypertrace on Docker Desktop using Docker Compose, see [Getting Started](https://docs.hypertrace.org/getting-started/)
+For deploying Hypertrace with Docker Compose, see [Getting Started](https://docs.hypertrace.org/getting-started/)
 
 ## Deploying Hypertrace on Docker Desktop using Helm:
 - `git clone https://github.com/hypertrace/hypertrace.git`

@@ -12,7 +12,7 @@ template: docs
 <iframe width="680" height="380" src="https://www.youtube.com/embed/85jfOMqlf-w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
 
 ---
-`Note`: This video shows end-to-end installation of Hypertrace on Docker Desktop.
+`Note`: This video shows end-to-end installation of Hypertrace with Docker Compose on Docker Desktop for Mac, but will also work with Windows & many flavors of Unix.
 
 #### Requirements:
 - [docker-engine](https://docs.docker.com/engine/install/) (17.12.0+)

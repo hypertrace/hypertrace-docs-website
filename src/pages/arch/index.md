@@ -8,7 +8,7 @@ Hypertrace is a cloud native distributed tracing and observability platform desi
 Let's take a look at Hypertrace architecture and undestand each component in details.
 
 
-| ![space-1.jpg](https://hypertrace-docs.s3.amazonaws.com/arch/hypertrace-architecture.png) | 
+| ![space-1.jpg](https://hypertrace-docs.s3.amazonaws.com/arch/ht-arch.png) | 
 |:--:| 
 | *Hypertrace Architecture* |
 

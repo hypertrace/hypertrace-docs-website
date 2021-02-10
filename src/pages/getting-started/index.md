@@ -8,12 +8,11 @@ template: docs
 ### Running Hypertrace with Docker Compose
 
 
-
 ---
 <iframe width="680" height="380" src="https://www.youtube.com/embed/85jfOMqlf-w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
 
 ---
-| *How to install Hypertrace on Docker Desktop* |
+`Note`: This video shows end-to-end installation of Hypertrace on Docker Desktop.
 
 #### Requirements:
 - [docker-engine](https://docs.docker.com/engine/install/) (17.12.0+)
@@ -24,9 +23,9 @@ template: docs
 |:--:| 
 | *Docker Desktop resource allocation* |
 
-`Note`: If reporting a problem, please include the output of `docker stats --no-stream`.
-
 #### Start Hypertrace
+
+`Note`: If reporting a problem, please include the output of `docker stats --no-stream`.
 
 Use your terminal window to start Hypertrace with git and docker-compose up:
 
@@ -42,6 +41,8 @@ This will start all services required for Hypertrace. Once you see 'Stack is up 
 | ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/dashboard-3.png) | 
 |:--:| 
 | *Hypertrace Dashboard* |
+
+`Note`: If reporting a problem, please include the output of `docker stats --no-stream`.
 
 #### Start the Sample App
 

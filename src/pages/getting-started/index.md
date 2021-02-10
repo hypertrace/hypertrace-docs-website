@@ -8,7 +8,11 @@ template: docs
 ### Running Hypertrace with Docker Compose
 
 
+
+---
 <iframe width="680" height="380" src="https://www.youtube.com/embed/85jfOMqlf-w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
+
+---
 
 
 #### Requirements:

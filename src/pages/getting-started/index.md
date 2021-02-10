@@ -7,6 +7,8 @@ template: docs
 
 ### Running Hypertrace with Docker Compose
 
+[![space-1.jpg](http://img.youtube.com/vi/85jfOMqlf-w/0.jpg)](http://www.youtube.com/watch?v=85jfOMqlf-w "How to install Hypertrace on Docker Desktop")
+
 #### Requirements:
 - [docker-engine](https://docs.docker.com/engine/install/) (17.12.0+)
 - [docker-compose](https://docs.docker.com/compose/install/) (1.21.0 +)
@@ -18,7 +20,6 @@ template: docs
 |:--:| 
 | *Docker Desktop resource allocation* |
 
-[![](http://img.youtube.com/vi/85jfOMqlf-w/0.jpg)](http://www.youtube.com/watch?v=85jfOMqlf-w "How to install Hypertrace on Docker Desktop")
 
 #### Start Hypertrace
 

@@ -7,6 +7,10 @@ template: docs
 
 ### Running Hypertrace with Docker Compose
 
+
+<iframe width="680" height="380" src="https://www.youtube.com/embed/85jfOMqlf-w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
+
+
 #### Requirements:
 - [docker-engine](https://docs.docker.com/engine/install/) (17.12.0+)
 - [docker-compose](https://docs.docker.com/compose/install/) (1.21.0 +)

@@ -8,7 +8,7 @@ Hypertrace is a cloud native distributed tracing and observability platform desi
 Let's take a look at Hypertrace architecture and undestand each component in details.
 
 
-| ![space-1.jpg](https://hypertrace-docs.s3.amazonaws.com/ht-arch.png) | 
+| ![space-1.jpg](https://hypertrace-docs.s3.amazonaws.com/arch/hypertrace-architecture.png) | 
 |:--:| 
 | *Hypertrace Architecture* |
 
@@ -21,7 +21,7 @@ Hypertrace OC Collector writes spans from this processes/services to Kafka and t
 
 So suppose we have two spans with `traceID:1234` then we will group them into a single trace. 
 
-Trace-enrichers are being used to enrich traces with entity information. [hypertrace-trace-enricher](https://github.com/hypertrace/hypertrace-trace-enricher) service talks to entity-service which fetches entity information from Mongo as required. For example, Let's say we got a span which has http method related attribute method: `/api/v1/user?name`. So, in this case, if we already have Endpoint entity which refers to `/api/v1/user`, we fetch the id of that entity and add it to span. Now, span will have one more attribute like this method:`/api/v1/user?name, api_id:1234`. 
+Trace-enrichers are being used to enrich traces with entity information. [hypertrace-trace-enricher](https://github.com/hypertrace/hypertrace-trace-enricher) service talks to entity-service which fetches entity information from [document store](https://github.com/hypertrace/document-store) (currently we support [mongo](https://github.com/hypertrace/mongodb) and [postgres](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) as document store and you can configure it in helm as well docker-compose setup) as required. For example, Let's say we got a span which has http method related attribute method: `/api/v1/user?name`. So, in this case, if we already have Endpoint entity which refers to `/api/v1/user`, we fetch the id of that entity and add it to span. Now, span will have one more attribute like this method:`/api/v1/user?name, api_id:1234`. 
 
 In parallel we have `Hypertrace view creator` running which is a bootstrap job that runs once and creates required views in pinot - `spanEventView`, `serviceCallView`, `backendEntityView`, `rawServiceView`, `rawTraceView`.
 
@@ -31,7 +31,7 @@ This was whole backend process going on which got our data ready but let's see h
 
 [hypertrace-UI](ttps://github.com/hypertrace/hypertrace-ui) talks to [hypertrace-GraphQL](ttps://github.com/hypertrace/hypertrace-graphql) service which serves the GraphQL API which queries data from downstream services. GraphQL services talks to [gateway service](https://github.com/hypertrace/gateway-service).
 
-[Attribute service](https://github.com/hypertrace/Attributes-service) fetches all attributes relevant to the scope of what is being shown on UI from Mongo, where it also stores attributes. All of this metadata assists the UI and backend to perform things in a generic fashion, like
+[Attribute service](https://github.com/hypertrace/Attributes-service) fetches all attributes relevant to the scope of what is being shown on UI from [document store](https://github.com/hypertrace/document-store), where it also stores attributes. All of this metadata assists the UI and backend to perform things in a generic fashion, like
 - All String attributes in the UI can have a different look at feel and also different operations that can be supported on them(in the explorer).
 - The backend also uses part of the information(like the sources) to figure out where to fetch data from i.e. query-service vs entity-service.
 
@@ -77,7 +77,11 @@ curl -s localhost:2020/graphql -H 'Content-Type: application/graphql' -d \
 
 ```
 
-What it will do is it will send this to Gateway service which will forward this to query service and Query service will check if this traceID is present in `rawTraceView` if it's there it will return 1 or will return 0!
+What it will do is it will send this to Gateway service which will forward this to query service and Query service will check if this traceID is present in `rawTraceView` if it's there it will return 1 or will return 0.
+
+Recently added config service is a place to store configuration data such as user preferences, saved query filters, ingestion config, etc. Many of these use cases have not yet been built out. In general, this service is meant for user-managed configuration that needs to be persisted, and contains support for version history, auditing etc. In the past, we've addressed such things by spinning up individual services (such as attribute service). As new features get built out, we want to avoid that (and eventually to merge older services back into this).
+
+This config service is designed to be a single macroservice, contained in one repo with separate modules defining different GRPC services that expose feature-specific APIs. The query and config logical group separation you see in the architecture is a step towards the next iteration of architecture where you will see 3 logical groups namely, ingestion, config and Query layers. 
 
 This was brief about how User side of Hypertrace communicates with Backend i.e. Tracing and data collection side and both work in sync to provide great insights into the application for users! 
 

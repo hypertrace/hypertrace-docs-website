@@ -5,6 +5,8 @@ template: docs
 ---
 ## Quick start with Docker Desktop
 
+[![space-1.jpg](http://img.youtube.com/vi/85jfOMqlf-w/0.jpg)](http://www.youtube.com/watch?v=85jfOMqlf-w "How to install Hypertrace on Docker Desktop")
+
 ### Running Hypertrace with Docker Compose
 
 #### Requirements:
@@ -17,8 +19,6 @@ template: docs
 | ![space-1.jpg](https://hypertrace-docs.s3.amazonaws.com/docker-desktop.png) | 
 |:--:| 
 | *Docker Desktop resource allocation* |
-
-[![](http://img.youtube.com/vi/85jfOMqlf-w/0.jpg)](http://www.youtube.com/watch?v=85jfOMqlf-w "How to install Hypertrace on Docker Desktop")
 
 #### Start Hypertrace
 

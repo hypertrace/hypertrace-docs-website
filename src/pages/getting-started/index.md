@@ -18,6 +18,7 @@ template: docs
 |:--:| 
 | *Docker Desktop resource allocation* |
 
+[![](http://img.youtube.com/vi/85jfOMqlf-w/0.jpg)](http://www.youtube.com/watch?v=85jfOMqlf-w "How to install Hypertrace on Docker Desktop")
 
 #### Start Hypertrace
 

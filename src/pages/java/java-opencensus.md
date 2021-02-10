@@ -121,7 +121,7 @@ OcAgentTraceExporterConfiguration.builder().setRetryInterval(Duration.create(10,
 
 ### End to end Example
 
-This end to end example exports stats and traces to the agent. It will require you to deploy the [OpenCensus-Agent](/service/components/agent) in order to examine the stats and traces.
+This end to end example exports stats and traces to the agent. It will require you to deploy the [OpenCensus-Agent](https://github.com/census-instrumentation/opencensus-java) in order to examine the stats and traces.
 
 The full code snippet can also be found on the
 [OpenCensus-Java repo](https://github.com/census-instrumentation/opencensus-java/blob/master/examples/src/main/java/io/opencensus/examples/ocagent/OcAgentExportersQuickStart.java).

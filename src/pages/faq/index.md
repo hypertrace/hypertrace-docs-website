@@ -28,7 +28,7 @@ Realizing that Hypertrace was a powerful standalone tracing and observability pl
 
 ## Can we run Hypertrace on any cloud platforms?
 
-Yes! We support cloud as well as local deployments. You can read more about deployments [here.](https://docs.hypertrace.org/docs/deployments/)
+Yes! We support cloud as well as local deployments. You can read more about deployments [here.](https://docs.hypertrace.org/deployments/)
 
 <hr />
 

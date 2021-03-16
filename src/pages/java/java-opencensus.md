@@ -5,7 +5,7 @@ template: docs
 ---
 ### Introduction
 The OpenCensus Agent exporter aka "ocagent-exporter" enables Java applications to send the observability signals
-that they've collected using OpenCensus to the [OpenCensus Agent](https://github.com/census-instrumentation/opencensus-service)
+they've collected using OpenCensus to the [OpenCensus Agent](https://github.com/census-instrumentation/opencensus-service)
 
 This exporter connects and sends observability signals via a single HTTP/2 stream and gRPC with Protocol Buffers
 to the OpenCensus Agent. If unspecified, this exporter tries to connect to the OpenCensus Agent on port `55678`.
@@ -19,12 +19,11 @@ If you have 10,000 microservices that all each export to Prometheus, you already
 at least 10,000 unique ports. Uniquely creating a port will not only exhaust your file descriptors but it also becomes
 cumbersome and error prone to do.
 
-With the ocagent-exporter, instead the stats are uploaded to the OpenCensus Agent and from there,
-the agent is singly scraped by Prometheus.
+With the ocagent-exporter, instead the stats are uploaded to the OpenCensus Agent and from there, the agent is singly scraped by Prometheus.
 
 As you can see from above, this not only scales your application's resource allocation but also scales your development speed
 and liberates you from complex batching deployments. It also ensures that your applications can be kept light, that the agent's
-deployment can safely be restarted flexibly.
+deployment can be restarted safely and flexibly.
 
 The same thing happens for traces.
 
@@ -126,11 +125,11 @@ Resource|URL
 OCAgent Metrics Exporter Javadoc|[io.opencensus.exporter.metrics.ocagent](https://www.javadoc.io/doc/io.opencensus/opencensus-exporter-metrics-ocagent/)
 OCAgent Trace Exporter Javadoc|[io.opencensus.exporter.trace.ocagent](https://www.javadoc.io/doc/io.opencensus/opencensus-exporter-trace-ocagent/)
 Source code|[Metrics exporter on Github](https://github.com/census-instrumentation/opencensus-java/tree/master/exporters/metrics/ocagent), [Trace exporter on Github](https://github.com/census-instrumentation/opencensus-java/tree/master/exporters/trace/ocagent)
-OpenCensus Agent|[Agent homepage](/service/components/agent)
+OpenCensus Agent|[OpenCensus Agent homepage](https://opencensus.io/service/components/agent/)
 gRPC NameResolver|[io.grpc.NameResolver](https://grpc.io/grpc-java/javadoc/io/grpc/NameResolver.html)
 
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/go/java-opencensus.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/java/java-opencensus.md">
 <button type="button">Edit</button></a>
 
 ***

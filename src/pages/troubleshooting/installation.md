@@ -1,10 +1,11 @@
 ---
 title: K8s with Helm
+subtitle: Installing Hypertrace with Helm and Kubernetes
 weight: 1
 template: docs
 ---
 - ## Memory & CPU
-In case of services pending, you may need more memory. For Kubernetes in Docker Desktop, set your memory to 8-10 GB. Set your CPUs to 6.
+In the case of services pending, you may need more memory. For Kubernetes on Docker Desktop, set your memory to at least 4 GB. Set your CPUs to 3.
 
 ---
 - ## Port collision

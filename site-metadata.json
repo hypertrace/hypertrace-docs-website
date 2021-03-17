@@ -48,8 +48,8 @@
                 "new_window": true
             }, 
             {
-                "label": "Know More",
-                "url": "https://hypertrace.org",
+                "label": "Join our Slack Community",
+                "url": "https://join.slack.com/t/hypertrace/shared_invite/zt-mwobjb29-9aGNnH9yBJ8JL79E5mmq_A",
                 "type": "button",
                 "new_window": true
             }

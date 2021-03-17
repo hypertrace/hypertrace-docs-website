@@ -53,14 +53,14 @@ Check out the [UI & Platform overview](https://docs.hypertrace.org/platform-ui/)
 #### Are you facing any issue with this? Let us know in [Slack](https://www.hypertrace.org/get-started).
 
 ### Other sample apps:
-1. [HotROD application](https://github.com/hypertrace/hypertrace-samples/tree/master/hotrod)
-2. [todo-list-application](https://github.com/hypertrace/hypertrace-samples/tree/master/todo-list-application)
+1. [HotROD application](https://github.com/hypertrace/hypertrace-samples/tree/main/hotrod)
+2. [todo-list-application](https://github.com/hypertrace/hypertrace-samples/tree/main/todo-list-application)
 
 Are you still confused with **Instrumentation** jargon? We have you covered! Check out the [Instrumentation](https://docs.hypertrace.org/instrumentation/) section which will help you instrument your application! 
 
 ***
 
-<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/sample-app/index.md">
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/main/src/pages/sample-app/index.md">
 <button type="button">Edit</button></a>
 
 

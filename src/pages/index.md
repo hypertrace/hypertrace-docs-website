@@ -1,5 +1,9 @@
 ---
 title: What is Hypertrace?
+subtitle: >-
+  Hypertrace is an open source, real-time, distributed tracing & observability platform
+excerpt: >-
+  Hypertrace converts distributed trace data into relevant insight for everyone. Infrastructure teams can identify which services are causing overload. Service teams can diagnose why a specific user's request failed, or which applications put their service objectives at risk. Deployment teams can know if a new version is causing a problem.
 template: docs
 
 ---

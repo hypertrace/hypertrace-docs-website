@@ -1,5 +1,5 @@
 ---
-title: Hypertrace Licenses
+title: Licenses
 excerpt: Hypertrace Core is a basic distributed tracing platform. Hypertrace Community Edition, is a combination of Hypertrace Core, plus additional features created by the developers at Traceable Inc. 
 template: docs
 ---

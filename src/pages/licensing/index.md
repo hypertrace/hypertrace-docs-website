@@ -4,7 +4,7 @@ excerpt: Hypertrace Core is a basic distributed tracing platform. Hypertrace Com
 template: docs
 ---
 ## What license does Hypertrace have?
-Hypertrace is two components: Hypertrace Core & Hypertrace Community Edition. Hypertrace Core is a basic distributed tracing platform and data collection agents. Hypertrace Community Edition, is a combination of Hypertrace Core, plus additional features created by the developers at Traceable Inc.  
+Hypertrace is two components: Hypertrace Core & [Hypertrace Community Edition](https://github.com/hypertrace/hypertrace). Hypertrace Core is a basic distributed tracing platform and data collection agents. Hypertrace Community Edition, is a combination of Hypertrace Core, plus additional features created by the developers at Traceable Inc.  
 
 Here is a description of each of their licenses. 
 
@@ -12,7 +12,7 @@ Here is a description of each of their licenses.
 
 ## Hypertrace Core (including data collection agents)
 
-Hypertrace Core is fully licensed under the Apache 2.0 license. As with any software with an Apache 2.0 license, all users have all of [the essential freedoms](https://www.gnu.org/philosophy/free-sw.html.en). In summary, you have:
+Hypertrace Core is fully licensed under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0). As with any software with an Apache 2.0 license, all users have all of [the essential freedoms](https://www.gnu.org/philosophy/free-sw.html.en). In summary, you have:
 The freedom to run the program as you wish, for any purpose (freedom 0).
 The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.
 The freedom to redistribute copies so you can help others (freedom 2).
@@ -27,7 +27,7 @@ Traceable is a SaaS security product built on top of distributed tracing. While 
 
 We wanted to open source  the features in Hypertrace Community Edition as well, but ensure that we can sustain the business investment Traceable built on top of it. The Traceable Community License lets us invest heavily in code that we distribute for free but at the same time protect Traceable. The Confluent Community License is the best example of how this can be achieved and we decided to base our license on it.
 
-Hypertrace Community Edition is licensed under a source available license called the Traceable Community License version 1.0. It is almost a word for word copy of the Confluent Community License version 1.0. The only distinguishable difference between the two licenses is the name of the company offering the license, the products they refer to, and the cities where legal issues must be resolved. 
+Hypertrace Community Edition is licensed under a source available license called the [Traceable Community License version 1.0](https://github.com/hypertrace/hypertrace/blob/main/LICENSE). It is almost a word for word copy of the Confluent Community License version 1.0. The only distinguishable difference between the two licenses is the name of the company offering the license, the products they refer to, and the cities where legal issues must be resolved. 
 
 <hr />
 

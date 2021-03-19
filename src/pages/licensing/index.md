@@ -12,11 +12,11 @@ Here is a description of each of their licenses.
 
 ## Hypertrace Core (including data collection agents)
 
-Hypertrace Core is fully licensed under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0). As with any software with an Apache 2.0 license, all users have all of [the essential freedoms](https://www.gnu.org/philosophy/free-sw.html.en). In summary, you have:
-The freedom to run the program as you wish, for any purpose (freedom 0).
-The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.
-The freedom to redistribute copies so you can help others (freedom 2).
-The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.
+Hypertrace Core is fully licensed under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0). As with any software with an Apache 2.0 license, all users have all of [the essential freedoms](https://www.gnu.org/philosophy/free-sw.html.en). In summary, you have:<br />
+- The freedom to run the program as you wish, for any purpose (freedom 0).<br />
+- The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.<br />
+- The freedom to redistribute copies so you can help others (freedom 2).<br />
+- The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.<br />
 
 We hope and expect that users will find Hypertrace Core useful and that they will build new and innovative solutions with it. 
 

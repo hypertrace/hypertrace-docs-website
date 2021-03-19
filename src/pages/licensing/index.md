@@ -94,3 +94,14 @@ This may be easier to understand with a specific example. Say “the software”
 “Making available any software-as-a-service, platform-as-a-service, infrastructure-as-a-service or other similar online service that competes with Traceable products or services that provide [Hypertrace Community]”.
 
 In other words, it’s a limitation on your use of [Hypertrace Community] to compete with our [Hypertrace Community] offering. You are not forbidden from competing with other products Traceable has or may have in the future that you have not licensed under the Traceable Community License.
+
+<hr />
+
+We feel this approach is best practice for an Open Core software project. If you believe norms have changed or there is a better alternative, please let us know on <a href="https://twitter.com/HypertraceOrg">Twitter</a> or in our <a href="https://join.slack.com/t/hypertrace/shared_invite/zt-mwobjb29-9aGNnH9yBJ8JL79E5mmq_A">Hypertrace Community workspace</a> on Slack. 
+
+<hr />
+
+<a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/licensing/index.md">
+<button type="button">Edit</button></a>
+
+***

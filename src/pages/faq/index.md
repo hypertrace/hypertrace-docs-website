@@ -39,6 +39,12 @@ The best part in getting started with Hypertrace is that it's really quick! If y
 
 <hr />
 
+## What software license does Hypertrace use?
+
+Hypertrace is two components: Hypertrace Core, including the data collection agents, is licenced under the Apache 2.0 open source license. Hypertrace Community Edition, which is built on top of Hypertrace Core, is licenced under the Traceable Community source available license. You'll find many details in the <a href="https://docs.hypertrace.org/licensing/"> Hypertrace licensing page</a>.
+
+<hr />
+
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/faq/index.md">
 <button type="button">Edit</button></a>
 

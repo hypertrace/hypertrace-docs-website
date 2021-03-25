@@ -10,6 +10,10 @@ Here is a description of each of their licenses.
 
 <hr />
 
+![Alt](components-by-license.png "Hypertrace Diagram")
+
+<hr />
+
 ## Hypertrace Core (including data collection agents)
 
 Hypertrace Core is fully licensed under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0). As with any software with an Apache 2.0 license, all users have all of [the essential freedoms](https://www.gnu.org/philosophy/free-sw.html.en). In summary, you have:<br />

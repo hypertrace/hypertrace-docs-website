@@ -10,7 +10,7 @@ Here is a description of each of their licenses.
 
 <hr />
 
-![Alt](components-by-license.png "Hypertrace Diagram")
+![Alt](/hypertrace-docs-website/blob/main/static/images/hypertrace-components-by-license.png "Hypertrace Diagram")
 
 <hr />
 

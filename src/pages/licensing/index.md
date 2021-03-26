@@ -8,13 +8,9 @@ Hypertrace is two components: Hypertrace Core & [Hypertrace Community Edition](h
 
 Here is a description of each of their licenses. 
 
-<hr />
-
 | ![space-1.jpg](https://raw.githubusercontent.com/hypertrace/hypertrace-docs-website/4445a39b36ff521c83f85600185cd5b0b4054988/static/images/hypertrace-components-by-license.png) | 
-|:--:| 
-| *Hypertrace Diagram* |
 
-<hr />
+| *Hypertrace Diagram* |
 
 ## Hypertrace Core (including data collection agents)
 

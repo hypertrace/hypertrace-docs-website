@@ -6,7 +6,7 @@ template: docs
 ## What license does Hypertrace use?
 Hypertrace is two components: Hypertrace Core & [Hypertrace Community Edition](https://github.com/hypertrace/hypertrace). Hypertrace Core is a basic distributed tracing platform and data collection agents. Hypertrace Community Edition, is a combination of Hypertrace Core, plus additional features created by the developers at Traceable Inc.  
 
-![space-1.jpg](https://raw.githubusercontent.com/hypertrace/hypertrace-docs-website/4445a39b36ff521c83f85600185cd5b0b4054988/static/images/hypertrace-components-by-license.png)
+![space-1.jpg](https://github.com/hypertrace/hypertrace-docs-website/blob/main/static/images/hypertrace-components-by-license.png?raw=true)
 
 Here is a description of each of their licenses. 
 

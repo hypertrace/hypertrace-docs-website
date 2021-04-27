@@ -4,88 +4,153 @@ weight: 2
 template: docs
 ---
 
-## Receivers
+# OpenTelemetry Collector Architecture
 
-This receiver receives spans from instrumented applications and translates them into the internal span types that are then sent to the collector/exporters.
+This document describes the architecture design and implementation of OpenTelemetry Collector. As [Hypertrace collector](https://github.com/hypertrace/hypertrace-collector) is based on [OpenTelemetry collector](), the basic configurations and architecture for collector remains the same. 
 
-### 1. OpenCensus Receiver:
-The OpenCensus receiver for the agent can receive trace export calls via HTTP/JSON in addition to gRPC. The HTTP/JSON address is the same as gRPC as the protocol is recognized and processed accordingly.
+## Summary
 
-The HTTP/JSON endpoint can also optionally CORS, which is enabled by specifying a list of allowed CORS origins in the cors_allowed_origins field:
+OpenTelemetry Collector is an executable that allows to receive telemetry data, optionally transform it and send the data further.
+
+The Collector supports several popular open-source protocols for telemetry data receiving and sending as well as offering a pluggable architecture for adding more protocols.
+
+Data receiving, transformation and sending is done using Pipelines. The Collector can be configured to have one or more Pipelines. Each Pipeline includes a set of Receivers that receive the data, a series of optional Processors that get the data from receivers and transform it and a set of Exporters which get the data from the Processors and send it further outside the Collector. The same receiver can feed data to multiple Pipelines and multiple pipelines can feed data into the same Exporter.
+
+## Pipelines
+
+Pipeline defines a path the data follows in the Collector starting from reception, then further processing or modification and finally exiting the Collector via exporters.
+
+Pipelines can operate on 2 telemetry data types: traces and metrics. The data type is a property of the pipeline defined by its configuration. Receivers, exporters and processors used in a pipeline must support the particular data type otherwise `ErrDataTypeIsNotSupported` will be reported when the configuration is loaded. A pipeline can be depicted the following way:
+
+![Pipelines](https://raw.githubusercontent.com/open-telemetry/opentelemetry-collector/main/docs/images/design-pipelines.png)
+
+There can be one or more receivers in a pipeline. Data from all receivers is pushed to the first processor, which performs a processing on it and then pushes it to the next processor (or it may drop the data, e.g. if it is a “sampling” processor) and so on until the last processor in the pipeline pushes the data to the exporters. Each exporter gets a copy of each data element. The last processor uses a `FanOutConnector` to fan out the data to multiple exporters.
+
+The pipeline is constructed during Collector startup based on pipeline definition in the config file.
+
+A pipeline configuration typically looks like this:
+
+```yaml
+service:
+  pipelines: # section that can contain multiple subsections, one per pipeline
+    traces:  # type of the pipeline
+      receivers: [otlp, jaeger, zipkin]
+      processors: [memory_limiter, batch]
+      exporters: [otlp, jaeger, zipkin]
 ```
+
+The above example defines a pipeline for “traces” type of telemetry data, with 3 receivers, 2 processors and 3 exporters.
+
+### Receivers
+
+Receivers typically listen on a network port and receive telemetry data. Usually one receiver is configured to send received data to one pipeline, however it is also possible to configure the same receiver to send the same received data to multiple pipelines. This can be done by simply listing the same receiver in the “receivers” key of several pipelines:
+
+```yaml
 receivers:
   opencensus:
-    address: "localhost:55678"
-    cors_allowed_origins:
-    - http://test.com
-    # Origins can have wildcards with *, use * by itself to match any origin.
-    - https://*.example.com  
+    endpoint: "0.0.0.0:55678"
+
+service:
+  pipelines:
+    traces:  # a pipeline of “traces” type
+      receivers: [opencensus]
+      processors: [memory_limiter, batch]
+      exporters: [jaeger]
+    traces/2:  # another pipeline of “traces” type
+      receivers: [opencensus]
+      processors: [batch]
+      exporters: [opencensus]
 ```
 
-### 2. Jaeger
-This receiver receives spans from Jaeger collector HTTP and Thrift uploads and translates them into the internal span types that are then sent to the collector/exporters.
+In the above example “opencensus” receiver will send the same data to pipeline “traces” and to pipeline “traces/2”. (Note: the configuration uses composite key names in the form of `type[/name]` as defined in [this document](https://docs.google.com/document/d/1NeheFG7DmcUYo_h2vLtNRlia9x5wOJMlV4QKEK05FhQ/edit#)).
 
-Its address can be configured in the YAML configuration file under section "receivers", subsection "jaeger" and fields "collector_http_port", "collector_thrift_port".
+When the Collector loads this config the result will look like this (part of processors and exporters are omitted from the diagram for brevity):
 
-Here, Thrift is an interface definition language and binary communication protocol used for defining and creating services for numerous languages. It forms a remote procedure call (RPC) framework and was developed at Facebook for "scalable cross-language services development".
 
-For example:
-```
-receivers:
-  jaeger:
-    collector_thrift_port: 14267
-    collector_http_port: 14268
-```
+![Receivers](https://raw.githubusercontent.com/open-telemetry/opentelemetry-collector/main/docs/images/design-receivers.png)
 
-### 3. Zipkin
-This receiver receives spans from Zipkin (V1 and V2) HTTP uploads and translates them into the internal span types that are then sent to the collector/exporters.
+Important: when the same receiver is referenced in more than one pipeline the Collector will create only one receiver instance at runtime that will send the data to `FanOutConnector` which in turn will send the data to the first processor of each pipeline. The data propagation from receiver to `FanOutConnector` and then to processors is via synchronous function call. This means that if one processor blocks the call the other pipelines that are attached to this receiver will be blocked from receiving the same data and the receiver itself will stop processing and forwarding newly received data.
 
-Its address can be configured in the YAML configuration file under section "receivers", subsection "zipkin" and field "address". The syntax of the field "address" is `[address|host]:<port-number>.`
+### Exporters
 
-For example:
-```
-receivers:
-  zipkin:
-    address: "127.0.0.1:9411"
-```
+Exporters typically forward the data they get to a destination on a network (but they can also send it elsewhere, e.g “logging” exporter writes the telemetry data to a local file).
 
-## [Exporters](https://hypertrace-docs.netlify.app/exporters/)
-An exporter is how you send data to one or more backends/destinations. One or more exporters can be configured. By default, no exporters are configured on the Service (either the Agent or Collector).
+The configuration allows to have multiple exporters of the same type, even in the same pipeline. For example one can have 2 “opencensus” exporters defined each one sending to a different opencensus endpoint, e.g.:
 
-A basic example of all available exporters is provided below. For detailed exporter configuration, please see the exporter README.md.
 ```yaml
 exporters:
-  opencensus:
-    headers: {"X-test-header": "test-header"}
-    compression: "gzip"
-    cert-pem-file: "server_ca_public.pem" # optional to enable TLS
-    endpoint: "127.0.0.1:55678"
-    reconnection-delay: 2s
-
-  jaeger:
-    collector_endpoint: "http://127.0.0.1:14268/api/traces"
-
-  kafka:
-    brokers: ["127.0.0.1:9092"]
-    topic: "opencensus-spans"
-
-  stackdriver:
-    project: "my-project-id" # optional, defaults to agent project if run on GCP
-    enable_tracing: `true`
-
-  zipkin:
-    endpoint: "http://127.0.0.1:9411/api/v2/spans"
-
-  aws-xray:
-    region: "us-west-2"
-    default_service_name: "verifiability_agent"
-    version: "latest"
-    buffer_size: 200
-
-  honeycomb:
-    write_key: "739769d7-e61c-42ec-82b9-3ee88dfeff43"
-    dataset_name: "dc8_9"
+  opencensus/1:
+    endpoint: "example.com:14250"
+  opencensus/2:
+    endpoint: "0.0.0.0:14250"
 ```
+
+Usually an exporter gets the data from one pipeline, however it is possible to configure multiple pipelines to send data to the same exporter, e.g.:
+
+```yaml
+exporters:
+  jaeger:
+    protocols:
+      grpc:
+        endpoint: "0.0.0.0:14250"
+
+service:
+  pipelines:
+    traces:  # a pipeline of “traces” type
+      receivers: [zipkin]
+      processors: [memory_limiter]
+      exporters: [jaeger]
+    traces/2:  # another pipeline of “traces” type
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [jaeger]
+```
+
+In the above example “jaeger” exporter will get data from pipeline “traces” and from pipeline “traces/2”. When the Collector loads this config the result will look like this (part of processors and receivers are omitted from the diagram for brevity):
+
+
+![Exporters](https://raw.githubusercontent.com/open-telemetry/opentelemetry-collector/main/docs/images/design-exporters.png)
+
+### Processors
+
+A pipeline can contain sequentially connected processors. The first processor gets the data from one or more receivers that are configured for the pipeline, the last processor sends the data to one or more exporters that are configured for the pipeline. All processors between the first and last receive the data strictly only from one preceding processor and send data strictly only to the succeeding processor.
+
+Processors can transform the data before forwarding it (i.e. add or remove attributes from spans), they can drop the data simply by deciding not to forward it (this is for example how “sampling” processor works), they can also generate new data (this is how for example how a “persistent-queue” processor can work after Collector restarts by reading previously saved data from a local file and forwarding it on the pipeline).
+
+The same name of the processor can be referenced in the “processors” key of multiple pipelines. In this case the same configuration will be used for each of these processors however each pipeline will always gets its own instance of the processor. Each of these processors will have its own state, the processors are never shared between pipelines. For example if “batch” processor is used in several pipelines each pipeline will have its own batch processor (although the batch processor will be configured exactly the same way if the reference the same key in the config file). As an example, given the following config:
+
+```yaml
+processors:
+  batch:
+    send_batch_size: 10000
+    timeout: 10s
+
+service:
+  pipelines:
+    traces:  # a pipeline of “traces” type
+      receivers: [zipkin]
+      processors: [batch]
+      exporters: [jaeger]
+    traces/2:  # another pipeline of “traces” type
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [otlp]
+```
+
+When the Collector loads this config the result will look like this:
+
+
+![Processors](https://raw.githubusercontent.com/open-telemetry/opentelemetry-collector/main/docs/images/design-processors.png)
+
+Note that each “batch” processor is an independent instance, although both are configured the same way, i.e. each have a send_batch_size of 10000.
+
+To read more infromation about how you can run collector as Agent or Standalone collector please read the documentation [here](https://github.com/open-telemetry/opentelemetry-collector/blob/main/docs/design.md).
+
+#### References
+- [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector/)
+- [OpenTelemetry Collector documentation](https://github.com/open-telemetry/opentelemetry-collector/blob/main/docs/)
+
+***
 
 <a href="https://github.com/hypertrace/hypertrace-docs-website/tree/master/src/pages/arch/data-collection.md">
 <button type="button">Edit</button></a>

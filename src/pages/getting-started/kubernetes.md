@@ -38,7 +38,7 @@ Hypertrace installation script uses Helm Charts to deploy Hypertrace on Kubernet
 
 ### Ports
 
-Here are the default Hypertrace ports: (You can notice that you don't need to change anything to get started with Zipkin, Jaeger and OpenCensus collector to get started with Hypertrace.)
+Here are the default Hypertrace ports: (You can notice that you don't need to change anything to get started with Zipkin, Jaeger and OpenTelemetry collector to get started with Hypertrace.)
 
 | Port  | Service                 |
 |-------|-------------------------|

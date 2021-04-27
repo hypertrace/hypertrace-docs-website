@@ -9,17 +9,12 @@ template: docs
 
 Hypertrace Python agent is the Hypertrace's distribution of [OpenTelemetry Python agent](https://github.com/open-telemetry/opentelemetry-python).
 
-| ![space-1.jpg](https://raw.githubusercontent.com/hypertrace/pythonagent/main/images/HyperTrace%20Agent%20Architecture.jpg) | 
-|:--:| 
-| *Hypertrace Python Agent* |
-
-
 ### Supported frameworks and modules
 This agent supports these frameworks and adds following capabilities:
 
-* capture request and response headers
-* capture request and response bodies
-* context propagation/tracing
+- capture request and response headers
+- capture SQL queries
+- tracing context propagation
 
 | Module/Framework | Description | Python Versions Tested/Supported|
 |------|-------------| ---------------|
@@ -31,58 +26,33 @@ This agent supports these frameworks and adds following capabilities:
 | [aiohttp](https://docs.aiohttp.org/en/stable/)|Python async HTTP client library.| Python 3.7, 3.8, 3.9|
 
 ### Geting started
+
+#### Instrument code
 Currently, this agent does not support auto-instrumentation. That will be available in a future release. In the meantime, the following code snippet must be added to the entry point of your python application.
 
 - Install the hypertrace python agent:
 ```
-pip install git+https://github.com/hypertrace/pythonagent.git@main
+pip install git+https://github.com/hypertrace/pythonagent.git@main#egg=hypertrace
 ```
-- Enter your github.com username and password when prompted.
+
 - Add the following to your app's entrypoint python file:
 
 ```python
 from hypertrace.agent import Agent
 
-# Code snippet here represents the current initialization logic
-# 
-# Only add the register functions for instrumentation modules your
-# application uses
+...
 
-logger.info('Initializing agent.')
-agent = Agent()
-agent.registerFlaskApp(app) # app is your Flask application object
-agent.registerMySQL()
-agent.registerPostgreSQL()
-agent.registerRequests()
-agent.registerAioHttp()
-agent.registerGrpcServer()
-
-# End initialization logic for Python Agent
+agent = Agent() # initialize the agent
+agent.registerFlaskApp(app) # instrument a flask application
+agent.registerMySQL() # instrument the MySQL client
+...
 ```
 
-### Configure using Environment Variables
+For further examples, check our [examples section](https://github.com/hypertrace/pythonagent/blob/main/examples)
 
-| Name | Description |
-|------|-------------|
-| HT_SERVICE_NAME | Identifies the service/process running e.g. "my service" |
-| HT_REPORTING_ENDPOINT | Represents the endpoint for reporting the traces For ZIPKIN reporter type use http://api.traceable.ai:9411/api/v2/spans For OTLP reporter type use http://api.traceable.ai:4317 |
-| HT_REPORTING_SECURE | When `true`, connects to endpoints over TLS. |
-| HT_REPORTING_TOKEN | User specific token to access Traceable API |
-| HT_DATA_CAPTURE_HTTP_HEADERS_REQUEST | When `false` it disables the capture for the request in a client/request operation |
-| HT_DATA_CAPTURE_HTTP_HEADERS_RESPONSE | When `false` it disables the capture for the response in a client/request operation |
-| HT_DATA_CAPTURE_HTTP_BODY_REQUEST | When `false` it disables the capture for the request in a client/request operation |
-| HT_DATA_CAPTURE_HTTP_BODY_RESPONSE | When `false` it disables the capture for the response in a client/request operation |
-| HT_DATA_CAPTURE_RPC_METADATA_REQUEST | When `false` it disables the capture for the request in a client/request operation |
-| HT_DATA_CAPTURE_RPC_METADATA_RESPONSE | When `false` it disables the capture for the response in a client/request operation |
-| HT_DATA_CAPTURE_RPC_BODY_REQUEST | When `false` it disables the capture for the request in a client/request operation |
-| HT_DATA_CAPTURE_RPC_BODY_RESPONSE | When `false` it disables the capture for the response in a client/request operation |
-| HT_DATA_CAPTURE_BODY_MAX_SIZE_BYTES | Maximum size of captured body in bytes. Default should be 131_072 (128 KiB). |
-| HT_PROPAGATION_FORMATS | List the supported propagation formats e.g. `HT_PROPAGATION_FORMATS="B3,TRACECONTEXT"`. |
-| HT_ENABLED | When `false`, disables the agent. |
-| HT_LOG_LEVEL | Represents log level. |
-| HT_TRACES_EXPORTER | Collector to export traces to e.g `Zipkin`. |
-| HT_ENABLE_CONSOLE_SPAN_EXPORTER| Enable the Console Span Exporter for debugging purposes.|
-| HT_CONFIG_FILE | When `HT_CONFIG_FILE` is specified in the environment configuartion information is loaded from that location. |
+#### Configuration
+
+Pythonagent can be configured using a config file (e.g. env `HT_CONFIG_FILE=./config.yaml`) or passing env vars directly as described in [this list](https://github.com/hypertrace/agent-config/blob/main/ENV_VARS.md)
 
 ## Instrument your Python application with OpenTelemetry Python 
 

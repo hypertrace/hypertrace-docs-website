@@ -6,7 +6,7 @@ template: docs
 ---
 
 ## Instrument your Golang application with Hypertrace Go agent
-Hypertrace Go Agent is built on top of OpenTelemetry, and hence, supports [all the frameworks and libraries](https://github.com/open-telemetry/opentelemetry-go-contrib/tree/main/instrumentation) that it supports. Hypertrace Go agent not only enriches all the features brought by OpenTelemetry but also hides the complexity around configuration so developers can focus on the features that matter for them.
+[Hypertrace Go Agent](https://github.com/hypertrace/goagent) is built on top of OpenTelemetry, and hence, supports [all the frameworks and libraries](https://github.com/open-telemetry/opentelemetry-go-contrib/tree/main/instrumentation) that it supports. Hypertrace Go agent not only enriches all the features brought by OpenTelemetry but also hides the complexity around configuration so developers can focus on the features that matter for them.
 
 ### Getting started
 As a part of the great user experience we want to provide comes from the fact that we want to support those applications that are already instrumented without asking them to change the entire instrumentation. In that sense, Go Agent can perfectly work with applications already instrumented with [OpenTelemetry](https://github.com/hypertrace/goagent/tree/main/instrumentation/opentelemetry/google.golang.org/hypergrpc/examples) and [OpenCensus](https://github.com/hypertrace/goagent/tree/main/instrumentation/opencensus/net/hyperhttp/examples) (and there are more to come!)

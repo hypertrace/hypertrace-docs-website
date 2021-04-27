@@ -7,7 +7,7 @@ template: docs
 
 ## Instrument your Java application with Hypertrace Java agent
 
-Hypertrace Java agent is Hypertrace's distribution of [OpenTelemetry Java agent](https://github.com/open-telemetry/opentelemetry-java-instrumentation).
+[Hypertrace Java agent](https://github.com/hypertrace/javaagent) is Hypertrace's distribution of [OpenTelemetry Java agent](https://github.com/open-telemetry/opentelemetry-java-instrumentation).
 
 ### Supported Libraries and Frameworks
 
@@ -93,7 +93,7 @@ or they might want to manually create spans for their own custom code.
 
 [See here for detailed instructions](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/manual-instrumentation.md).
 
-### Run and Configure
+### Run & Configure
 
 Download the [latest version](https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent-all.jar).
 
@@ -123,3 +123,7 @@ java -javaagent:path/to/opentelemetry-javaagent-all.jar \
 ```
 
 The agent is [highly configurable](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/agent-config.md)!  Many aspects of the agent's behavior can be configured for your needs, such as exporter choice, exporter config (like where data is sent), trace context propagation headers, and much more. [Click here to see the detailed list of configuration environment variables and system properties](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/agent-config.md).
+
+
+#### References
+- 

@@ -67,3 +67,10 @@ Visit Hypertrace dashboard on `http://<Hypertrace IP Address>:2020` to see trace
 ### Instrument Browser application with OpenTelemetry JS
 
 If you want to instrument your application in HTML & javascript, follow the steps in OpenTelemetry JS browser app instrumentation documentation [here](https://opentelemetry.io/docs/js/getting_started/browser/).
+
+#### References
+- [OpenTelemetry JS](https://github.com/open-telemetry/opentelemetry-js)
+- [OpenTelemtry JS documentation](https://opentelemetry.io/docs/js/)
+- [OpenTelemetry JS for Browser applications](https://opentelemetry.io/docs/js/getting_started/browser/)
+- [OpenTelemtry JS for NodeJS applications](https://opentelemetry.io/docs/js/getting_started/nodejs/)
+- [OpenTelemetry JS examples](https://github.com/open-telemetry/opentelemetry-js/tree/main/examples)

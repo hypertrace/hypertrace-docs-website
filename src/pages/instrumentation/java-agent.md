@@ -126,4 +126,7 @@ The agent is [highly configurable](https://github.com/open-telemetry/opentelemet
 
 
 #### References
-- 
+- [Introducing Hypertrace Java agent](https://blog.hypertrace.org/blog/introducing-hypertrace-java-agent/)
+- [OpenTelemetry Java](https://github.com/open-telemetry/opentelemetry-java)
+- [OpenTelemetry Java Instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation)
+- [OpenTelemetry Java documentation](https://opentelemetry.io/docs/java/)

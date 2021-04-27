@@ -63,3 +63,10 @@ Now that your application is instrumented to collect telemetry, it needs an expo
 
 You can find officially supported exporters [here](.https://github.com/open-telemetry/opentelemetry-go/blob/main/exporters) and in the
 companion [contrib repository](https://github.com/open-telemetry/opentelemetry-go-contrib/tree/main/exporters/metric). Additionally, there are many vendor specific or 3rd party exporters for OpenTelemetry. These exporters are broken down by [trace](https://pkg.go.dev/go.opentelemetry.io/otel/sdk/export/trace?tab=importedby) and [metric](https://pkg.go.dev/go.opentelemetry.io/otel/sdk/export/metric?tab=importedby) support.
+
+
+#### References
+- [Yet another Go Agent](https://blog.hypertrace.org/blog/yet-another-go-agent/)
+- [OpenTelemetry Go](https://github.com/open-telemetry/opentelemetry-go)
+- [OpenTelemetry Go Documentation](https://opentelemetry.io/docs/go/)
+- [Go Examples](https://github.com/jcchavezs/hypertrace-goagent-example)

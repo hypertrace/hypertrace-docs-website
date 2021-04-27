@@ -158,3 +158,8 @@ Auto-instrumentation is simple, easy, and doesn't require many code changes so i
 
 You can find more details as well as examples around Python OpenTelemetry auto-instrumentation [here](https://github.com/open-telemetry/opentelemetry-python/tree/main/docs/examples/auto-instrumentation). 
 
+#### References
+- [Hypertrace python agent](https://github.com/hypertrace/pythonagent)
+- [OpenTelemetry Python](https://github.com/open-telemetry/opentelemetry-python)
+- [OpenTelemtry Python documentation](https://opentelemetry-python.readthedocs.io/en/latest/getting-started.html)
+- [OpenTelemetry Python examples](https://github.com/open-telemetry/opentelemetry-python/tree/main/docs/examples)

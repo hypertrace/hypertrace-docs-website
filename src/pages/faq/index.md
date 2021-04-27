@@ -33,7 +33,7 @@ Yes! We support cloud as well as local deployments. You can read more about depl
 <hr />
 
 
-## What changes do I need to make in my application if I am already using Jaeger, Zipkin or OpenCensus?
+## What changes do I need to make in my application if I am already using Jaeger, Zipkin or OpenTelemetry?
 
 The best part in getting started with Hypertrace is that it's really quick! If you are already using a tracing system, you can start today. Hypertrace accepts all major data formats: Jaeger, OpenTracing, Zipkin, you name it. Even if you aren’t tracing yet, we have a bunch of [sample apps](https://github.com/hypertrace/hypertrace-samples) you can start with, and a [chat room](https://www.hypertrace.org/get-started) of excited people who want to meet you. If you want to get quickly started with one of our sample app please visit our [quick-start](https://docs.hypertrace.org/sample-app/) guide.
 

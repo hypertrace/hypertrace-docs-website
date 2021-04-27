@@ -2,11 +2,10 @@ root_folder: /
 sections:
   - getting-started
   - platform-ui 
-  - arch
-  - exporters
+  - architecture
+  - instrumentation
   - deployments
   - use-cases
-  - instrumentation
   - sample-app
   - troubleshooting
   - community

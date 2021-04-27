@@ -33,15 +33,15 @@ This agent supports these frameworks and adds following capabilities:
 ### Geting started
 Currently, this agent does not support auto-instrumentation. That will be available in a future release. In the meantime, the following code snippet must be added to the entry point of your python application.
 
-* Install the hypertrace python agent:
+- Install the hypertrace python agent:
 ```
 pip install git+https://github.com/hypertrace/pythonagent.git@main
 ```
-* Enter your github.com username and password when prompted.
-* Add the following to your app's entrypoint python file:
-``` python
-from hypertrace.agent import Agent
+- Enter your github.com username and password when prompted.
+- Add the following to your app's entrypoint python file:
 
+```python
+from hypertrace.agent import Agent
 
 # Code snippet here represents the current initialization logic
 # 
@@ -58,7 +58,6 @@ agent.registerAioHttp()
 agent.registerGrpcServer()
 
 # End initialization logic for Python Agent
-
 ```
 
 ### Configure using Environment Variables
@@ -94,6 +93,7 @@ You will need to install OpenTelemetry API and SDK to get started with instrumen
 pip install opentelemetry-api
 pip install opentelemetry-sdk
 ```
+
 - The API package provides the interfaces required by the application owner, as well as some helper logic to load implementations.
 
 - The SDK provides an implementation of those interfaces. The implementation is designed to be generic and extensible enough that in many situations, the SDK is sufficient.

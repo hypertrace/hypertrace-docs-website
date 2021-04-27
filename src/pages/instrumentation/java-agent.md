@@ -19,6 +19,7 @@ and adds following capabilities:
     The filter implementation will be pluggable.
 
 List of supported frameworks with additional capabilities:
+
 | Library/Framework                                                                                      | Versions        |
 |--------------------------------------------------------------------------------------------------------|-----------------|
 | [Apache HttpAsyncClient](https://hc.apache.org/index.html)                                             | 4.1+            |
@@ -79,12 +80,12 @@ OpenTelemetry and Hypertrace.
 ### Supported Libraries and Frameworks
 
 We support an impressively huge number of [libraries and frameworks](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/supported-libraries.md#libraries---frameworks) and
-a majority of the most popular [application servers](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/supported-libraries.md#application-servers)...right out of the box!
+a majority of the most popular [application servers](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/supported-libraries.md#application-servers) right out of the box!
 [Click here to see the full list](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/supported-libraries.md) and to learn more about
 [disabled instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/supported-libraries.md#disabled-instrumentations)
 and how to [suppress unwanted instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/suppressing-instrumentation.md).
 
-## Manually instrumenting
+### Manually instrumenting
 
 For most users, the out-of-the-box instrumentation is completely sufficient and nothing more has to
 be done.  Sometimes, however, users wish to add attributes to the otherwise automatic spans,

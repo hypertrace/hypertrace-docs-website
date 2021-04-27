@@ -2,8 +2,8 @@ root_folder: /
 sections:
   - getting-started
   - platform-ui 
+  - architecture
   - instrumentation
-  - arch
   - deployments
   - use-cases
   - sample-app

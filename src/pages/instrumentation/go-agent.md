@@ -70,3 +70,10 @@ companion [contrib repository](https://github.com/open-telemetry/opentelemetry-g
 - [OpenTelemetry Go](https://github.com/open-telemetry/opentelemetry-go)
 - [OpenTelemetry Go Documentation](https://opentelemetry.io/docs/go/)
 - [Go Examples](https://github.com/jcchavezs/hypertrace-goagent-example)
+
+***
+
+<a href="https://github.com/hypertrace/hypertrace-docs-website/blob/master/src/pages/instrumentation/go-agent.md">
+<button type="button">Edit</button></a>
+
+***

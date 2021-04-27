@@ -163,3 +163,10 @@ You can find more details as well as examples around Python OpenTelemetry auto-i
 - [OpenTelemetry Python](https://github.com/open-telemetry/opentelemetry-python)
 - [OpenTelemtry Python documentation](https://opentelemetry-python.readthedocs.io/en/latest/getting-started.html)
 - [OpenTelemetry Python examples](https://github.com/open-telemetry/opentelemetry-python/tree/main/docs/examples)
+
+***
+
+<a href="https://github.com/hypertrace/hypertrace-docs-website/blob/master/src/pages/instrumentation/python-agent.md">
+<button type="button">Edit</button></a>
+
+***

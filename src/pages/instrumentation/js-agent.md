@@ -74,3 +74,10 @@ If you want to instrument your application in HTML & javascript, follow the step
 - [OpenTelemetry JS for Browser applications](https://opentelemetry.io/docs/js/getting_started/browser/)
 - [OpenTelemtry JS for NodeJS applications](https://opentelemetry.io/docs/js/getting_started/nodejs/)
 - [OpenTelemetry JS examples](https://github.com/open-telemetry/opentelemetry-js/tree/main/examples)
+
+***
+
+<a href="https://github.com/hypertrace/hypertrace-docs-website/blob/master/src/pages/instrumentation/js-agent.md">
+<button type="button">Edit</button></a>
+
+***

@@ -10,9 +10,9 @@ Instrumentation assists you in monitoring or measuring the performance and state
 Hypertrace also provides open-source OpenTelemetry based agents for some popular languages and we are adding more languages going ahead. These agents can work with any platform that supports OpenTelemetry.
 
 If you want to learn more about Hypertrace agents, please follow the guides below. 
-- [Java Agent](https://github.com/hypertrace/javaagent)
-- [Go Agent](https://github.com/hypertrace/goagent)
-- [Python Agent](https://github.com/hypertrace/pythonagent)
+- [Java Agent](https://docs.hypertrace.org/instrumentation/java-agent/)
+- [Go Agent](https://docs.hypertrace.org/instrumentation/go-agent/)
+- [Python Agent](https://docs.hypertrace.org/instrumentation/python-agent/)
 
 Though we recommend using Hypertrace Agent if you are getting started with Hypertrace and want best experience but it's not necessary. As long as you are using any open-standard for instrumentation, Hypertrace will be help you understand your application. 
 

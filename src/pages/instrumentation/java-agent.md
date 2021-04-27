@@ -130,3 +130,10 @@ The agent is [highly configurable](https://github.com/open-telemetry/opentelemet
 - [OpenTelemetry Java](https://github.com/open-telemetry/opentelemetry-java)
 - [OpenTelemetry Java Instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation)
 - [OpenTelemetry Java documentation](https://opentelemetry.io/docs/java/)
+
+***
+
+<a href="https://github.com/hypertrace/hypertrace-docs-website/blob/master/src/pages/instrumentation/java-agent.md">
+<button type="button">Edit</button></a>
+
+***

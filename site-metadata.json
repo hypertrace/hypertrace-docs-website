@@ -35,21 +35,21 @@
         "nav_links": [
             {
                 "label": "GitHub",
-                "url": "https://github.com/hypertrace",
+                "url": "https://github.com/hypertrace/hypertrace",
                 "type": "icon",
                 "icon_class": "fa-github",
                 "new_window": true
             },
             {
                 "label": "Slack",
-                "url": "https://hypertrace.slack.com",
+                "url": "https://join.slack.com/t/hypertrace/shared_invite/zt-oln0psj9-lm1CSkXE1vsWdcw6YKWGDg",
                 "type": "icon",
                 "icon_class": "fa-slack",
                 "new_window": true
             }, 
             {
-                "label": "Join our Slack Community",
-                "url": "https://join.slack.com/t/hypertrace/shared_invite/zt-mwobjb29-9aGNnH9yBJ8JL79E5mmq_A",
+                "label": "Like Hypertrace? Give us a star on GitHub",
+                "url": "https://github.com/hypertrace/hypertrace",
                 "type": "button",
                 "new_window": true
             }
@@ -68,6 +68,13 @@
         "has_social": true,
         "social_links": [
             {
+                "label": "Slack",
+                "url": "https://join.slack.com/t/hypertrace/shared_invite/zt-oln0psj9-lm1CSkXE1vsWdcw6YKWGDg",
+                "type": "icon",
+                "icon_class": "fa-slack",
+                "new_window": true
+            }, 
+            {
                 "label": "Twitter",
                 "url": "https://twitter.com/hypertraceorg",
                 "type": "icon",
@@ -76,7 +83,7 @@
             },
             {
                 "label": "GitHub",
-                "url": "https://github.com/hypertrace",
+                "url": "https://github.com/hypertrace/hypertrace",
                 "type": "icon",
                 "icon_class": "fa-github",
                 "new_window": true

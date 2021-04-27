@@ -8,12 +8,14 @@ Hypertrace is a cloud native distributed tracing and observability platform desi
 Let's take a look at Hypertrace architecture and undestand each component in details.
 
 
-| ![space-1.jpg](https://hypertrace-docs.s3.amazonaws.com/arch/ht-arch.png) | 
+| ![space-1.jpg](https://raw.githubusercontent.com/hypertrace/hypertrace-docs-website/main/static/images/ht-architecture.png) | 
 |:--:| 
 | *Hypertrace Architecture* |
 
 
-Working of Hypertrace starts with developers instrumenting their applications with tracing libraries (For ex., Zipkin, Jaeger). So the Hypertrace pipeline starts with Hypertrace OC Collector which is implementation based on OpenCensus Service. The Hypertrace OC Collector is a component that runs “nearby” (e.g. in the same VPC, AZ, etc.) a user’s application components and receives trace spans and metrics emitted by the tasks instrumented with Tracing libraries. 
+Working of Hypertrace starts with developers instrumenting their applications with tracing libraries or agents. Hypertrace supports all the major tracing formats including OpenTelemetry, Jaeger and Zipkin. You can also use Hypertrace [Java agent](https://github.com/hypertrace/javaagent), [Go agent](https://github.com/hypertrace/goagent), [Python agent](https://github.com/hypertrace/pythonagent) to instrument your applications without making any code changes. 
+
+Hypertrace pipeline starts with Hypertrace Collector which is based on OpenTelemetry collector. The Hypertrace Collector is a component that runs “nearby” (e.g. in the same VPC, AZ, etc.) a user’s application components and receives trace spans and metrics emitted by the tasks instrumented with tracing libraries or agents.  
 
 Hypertrace OC Collector writes spans from this processes/services to Kafka and then will be processed further by Hypertrace ingestion pipeline. Different tracers can have different span formats and as we support tracers like zipkin and jaeger the spans coming via [hypertrace-oc-collector](https://github.com/hypertrace/opencensus-service) to kafka can have different fields in them. [span-normalizer](https://github.com/hypertrace/span-normalizer) reads spans from kafka and adds more first class fields to span object like http url, http method, http status code, grpc method, grpc status message etc. so that platform downstream can access the values from the span. We call this normalized span `raw-span` which will be further processed by [raw-spans-grouper](https://github.com/hypertrace/raw-spans-grouper). You can find the first class fields [here]().
 

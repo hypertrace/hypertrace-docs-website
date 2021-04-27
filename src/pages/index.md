@@ -45,7 +45,7 @@ The below features are available by default in Hypertrace, but are not usually i
 | Dashboard UI            | Global health including most frequently called endpoints, services and backends              |
 | Services UI             | Service owners see health and latency overview of their endpoints and dependencies           |
 | Backends UI             | Owners of backends like MySQL or Redis can quickly identify slow queries and identify trends |
-| Built-in Rosetta Stone  | Natively understands all major trace data formats like Jaeger and Zipkin |
+| Built-in Rosetta Stone  | Natively understands all major trace data formats like OpenTelemetry, Jaeger and Zipkin |
 | Sampling unnecessary    | Designed to ingest 100% of request traces natively. No need for a sampling collector.        |
 | Real-time processing    | Application flow and metrics aggregate automatically, using stream processing.               |
 

@@ -100,6 +100,7 @@
   }
 
   .menu-item {
+    display: flex;
     margin-left: 20px;
     padding-bottom: 0.1875em;
     padding-top: 0.1875em;
@@ -301,7 +302,7 @@
 
   .menu-item {
     border-top: 1px solid _palette(border);
-    display: flex;
+    display: block;
     margin: 0;
 
     &:not(.menu-button):last-child {

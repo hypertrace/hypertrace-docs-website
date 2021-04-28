@@ -293,7 +293,7 @@
     border-top: 1px solid _palette(border);
     display: none;
     padding-left: 15px;
-  
+
     &.active {
       display: block;
     }
@@ -301,7 +301,7 @@
 
   .menu-item {
     border-top: 1px solid _palette(border);
-    display: block;
+    display: flex;
     margin: 0;
 
     &:not(.menu-button):last-child {
@@ -345,7 +345,7 @@
       right: 0;
       top: 0;
       width: 30px;
-  
+
       &.active .icon-angle-right {
         -webkit-transform: rotate(135deg);
         transform: rotate(135deg);
@@ -358,7 +358,7 @@
       margin-bottom: 1em;
       margin-top: 1em;
     }
- 
+
     & + .menu-button {
       border-top: 0;
     }

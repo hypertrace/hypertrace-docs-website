@@ -37,14 +37,14 @@
                 "label": "GitHub",
                 "url": "https://github.com/hypertrace/hypertrace",
                 "type": "icon",
-                "icon_class": "fa-github",
+                "icon_class": "fa-github fa-2x",
                 "new_window": true
             },
             {
                 "label": "Slack",
                 "url": "https://join.slack.com/t/hypertrace/shared_invite/zt-oln0psj9-lm1CSkXE1vsWdcw6YKWGDg",
                 "type": "icon",
-                "icon_class": "fa-slack",
+                "icon_class": "fa-slack fa-2x",
                 "new_window": true
             }
         ]

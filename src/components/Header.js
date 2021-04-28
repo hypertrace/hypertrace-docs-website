@@ -18,6 +18,9 @@ export default class Header extends React.Component {
                     <p className="site-title"><Link to={safePrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.url') || '/')}>{_.get(this.props, 'pageContext.site.siteMetadata.header.title')}</Link></p>
                     }
                   </div>
+                  <div class="star">
+                    <iframe src="https://ghbtns.com/github-btn.html?user=hypertrace&repo=hypertrace&type=star&count=true&size=large" frameborder="0" scrolling="0" width="150" height="30" title="GitHub"></iframe>
+                  </div>
                   {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav') && <React.Fragment>
                   <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">
                     <div className="site-nav-inside">
@@ -31,7 +34,7 @@ export default class Header extends React.Component {
                           }
                         </li>
                         ))}
-                        <li class="menu-item menu-button">
+                        <li class="menu-item menu-button star">
                           <iframe src="https://ghbtns.com/github-btn.html?user=hypertrace&repo=hypertrace&type=star&count=true&size=large" frameborder="0" scrolling="0" width="150" height="30" title="GitHub"></iframe>
                         </li>
                       </ul>

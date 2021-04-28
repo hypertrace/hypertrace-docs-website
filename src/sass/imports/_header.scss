@@ -99,6 +99,11 @@
     display: flex;
   }
 
+  .site-header-inside > .star {
+    display: none;
+  }
+
+
   .menu-item {
     display: flex;
     margin-left: 20px;
@@ -223,6 +228,13 @@
     }
   }
 
+  .site-header-inside > .star {
+    display: block;
+    position: absolute;
+    right: 5vw;
+    top: 1.3rem;
+  }
+
   #menu-open {
     display: block;
     margin-left: auto;
@@ -289,6 +301,10 @@
 
   .menu {
     padding: 4.5rem 3vw 3rem;
+  }
+
+  .menu > .star {
+    display: none;
   }
 
   .submenu {

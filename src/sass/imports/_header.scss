@@ -99,6 +99,12 @@
     display: flex;
   }
 
+  .site-header-inside {
+    .star {
+      display: none;
+    }
+  }
+
   .menu-item {
     display: flex;
     margin-left: 20px;
@@ -289,6 +295,10 @@
 
   .menu {
     padding: 4.5rem 3vw 3rem;
+
+    .star {
+      display: none;
+    }
   }
 
   .submenu {

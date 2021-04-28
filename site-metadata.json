@@ -46,12 +46,6 @@
                 "type": "icon",
                 "icon_class": "fa-slack",
                 "new_window": true
-            }, 
-            {
-                "label": "Like Hypertrace? Give us a star on GitHub",
-                "url": "https://github.com/hypertrace/hypertrace",
-                "type": "button",
-                "new_window": true
             }
         ]
     },
@@ -73,7 +67,7 @@
                 "type": "icon",
                 "icon_class": "fa-slack",
                 "new_window": true
-            }, 
+            },
             {
                 "label": "Twitter",
                 "url": "https://twitter.com/hypertraceorg",

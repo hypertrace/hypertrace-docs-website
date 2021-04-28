@@ -100,11 +100,13 @@
   }
 
   .menu-item {
+    display: flex;
     margin-left: 20px;
     padding-bottom: 0.1875em;
     padding-top: 0.1875em;
 
     a {
+      font-size: 1.5em;
       padding-bottom: 0.5em;
       padding-top: 0.5em;
 
@@ -293,7 +295,7 @@
     border-top: 1px solid _palette(border);
     display: none;
     padding-left: 15px;
-  
+
     &.active {
       display: block;
     }
@@ -309,6 +311,7 @@
     }
 
     a {
+      font-size: 1.5em;
       &:not(.button),
       &.button-icon {
         padding: 1em 0;
@@ -345,7 +348,7 @@
       right: 0;
       top: 0;
       width: 30px;
-  
+
       &.active .icon-angle-right {
         -webkit-transform: rotate(135deg);
         transform: rotate(135deg);
@@ -358,7 +361,7 @@
       margin-bottom: 1em;
       margin-top: 1em;
     }
- 
+
     & + .menu-button {
       border-top: 0;
     }

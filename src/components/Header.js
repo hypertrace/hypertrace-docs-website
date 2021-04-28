@@ -12,9 +12,9 @@ export default class Header extends React.Component {
               <div className="inner">
                 <div className="site-header-inside">
                   <div className="site-branding">
-                    {_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img') ? 
+                    {_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img') ?
                     <p className="site-logo"><Link to={"https://hypertrace.org"}><img src={safePrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img'))} alt={_.get(this.props, 'pageContext.site.siteMetadata.header.title')} /></Link></p>
-                     : 
+                     :
                     <p className="site-title"><Link to={safePrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.url') || '/')}>{_.get(this.props, 'pageContext.site.siteMetadata.header.title')}</Link></p>
                     }
                   </div>
@@ -26,11 +26,14 @@ export default class Header extends React.Component {
                         {_.map(_.get(this.props, 'pageContext.site.siteMetadata.header.nav_links'), (action, action_idx) => (
                         <li key={action_idx} className={classNames('menu-item', {'has-children': _.get(action, 'has_subnav') && _.get(action, 'subnav_links'), 'current': _.get(this.props, 'pageContext.url') === _.get(action, 'url'), 'menu-button': _.get(action, 'type') !== 'link'})}>
                           <ActionLink {...this.props} action={action} />
-                          {(_.get(action, 'has_subnav') && _.get(action, 'subnav_links')) && 
+                          {(_.get(action, 'has_subnav') && _.get(action, 'subnav_links')) &&
                             <Submenu {...this.props} submenu={_.get(action, 'subnav_links')} menu_class={'submenu'} page={this.props.pageContext} />
                           }
                         </li>
                         ))}
+                        <li>
+                          <iframe src="https://ghbtns.com/github-btn.html?user=hypertrace&repo=hypertrace&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+                        </li>
                       </ul>
                     </div>
                   </nav>

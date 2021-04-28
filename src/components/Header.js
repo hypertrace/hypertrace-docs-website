@@ -31,8 +31,8 @@ export default class Header extends React.Component {
                           }
                         </li>
                         ))}
-                        <li>
-                          <iframe src="https://ghbtns.com/github-btn.html?user=hypertrace&repo=hypertrace&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+                        <li class="menu-item menu-button">
+                          <iframe src="https://ghbtns.com/github-btn.html?user=hypertrace&repo=hypertrace&type=star&count=true&size=large" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
                         </li>
                       </ul>
                     </div>

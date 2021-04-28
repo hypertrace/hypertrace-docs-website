@@ -228,6 +228,13 @@
     }
   }
 
+  .site-header-inside > .star {
+    display: block;
+    position: absolute;
+    right: 5vw;
+    top: 1.3rem;
+  }
+
   #menu-open {
     display: block;
     margin-left: auto;

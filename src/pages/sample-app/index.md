@@ -54,7 +54,6 @@ Check out the [UI & Platform overview](https://docs.hypertrace.org/platform-ui/)
 
 ### Other sample apps:
 1. [HotROD application](https://github.com/hypertrace/hypertrace-samples/tree/main/hotrod)
-2. [todo-list-application](https://github.com/hypertrace/hypertrace-samples/tree/main/todo-list-application)
 
 Are you still confused with **Instrumentation** jargon? We have you covered! Check out the [Instrumentation](https://docs.hypertrace.org/instrumentation/) section which will help you instrument your application! 
 

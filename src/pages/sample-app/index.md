@@ -33,7 +33,7 @@ Use pre-built Docker images and a release manifest that is easy to deploy to an 
 
 **Online Boutique** is composed of microservices written in multiple languages that talk to each other over gRPC.
 
-| ![space-1.jpg](https://raw.githubusercontent.com/hypertrace/hypertrace-docs-website/main/static/image/online-boutique-architecture-diagram.png) | 
+| ![space-1.jpg](https://raw.githubusercontent.com/hypertrace/hypertrace-docs-website/main/static/images/online-boutique-architecture-diagram.png) | 
 |:--:| 
 | *Microservices Architecture* |
 
@@ -42,7 +42,7 @@ Use pre-built Docker images and a release manifest that is easy to deploy to an 
 
 | Home Page                                                                                                         | Checkout Screen                                                                                                    |
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| [![Screenshot of store homepage](https://s3.amazonaws.com/fininity.tech/online-boutique-frontend-1-min.png)]() | [![Screenshot of checkout screen](https://s3.amazonaws.com/fininity.tech/DT/online-boutique-frontend-2.png)]() |
+| [![Screenshot of store homepage](https://raw.githubusercontent.com/hypertrace/hypertrace-docs-website/main/static/images/online-boutique-frontend-1.png)]() | [![Screenshot of checkout screen](https://raw.githubusercontent.com/hypertrace/hypertrace-docs-website/main/static/images/online-boutique-frontend-2.png)]() |
 
 
 #### This is how your tracing data will look like on Hypertrace! 

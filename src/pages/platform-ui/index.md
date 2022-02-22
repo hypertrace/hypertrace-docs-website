@@ -5,11 +5,7 @@ template: docs
 ---
 ## Hypertrace Dashboard
 
-| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/dashboard-3.png) | 
-|:--:| 
-
-
-| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/dashboard-2.png) | 
+| ![space-1.jpg](https://raw.githubusercontent.com/hypertrace/hypertrace-docs-website/main/static/images/dashboard-2.png) | 
 |:--:| 
 | *Hypertrace Dashboard* |
 
@@ -26,7 +22,7 @@ Then if you scroll down you will get lists of top assets including top endpoints
 
 ## Application flow 
 
-| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/flow.png) | 
+| ![space-1.jpg](https://raw.githubusercontent.com/hypertrace/hypertrace-docs-website/main/static/images/flow.png) | 
 |:--:| 
 | *Application Flow with Hypertrace* |
 
@@ -36,7 +32,7 @@ Of course this does normal controls like zoom and refresh which you can find in 
 
 
 ## Services
-| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/services.png) | 
+| ![space-1.jpg](https://raw.githubusercontent.com/hypertrace/hypertrace-docs-website/main/static/images/services.png) | 
 |:--:| 
 | *List of all services in application with Hypertrace* |
 
@@ -44,7 +40,7 @@ Services section in hypertrace shows you all the services your application has a
 
 ## Service details
 
-| ![space-1.jpg](https://hypertrace-docs.s3.amazonaws.com/services.gif) | 
+| ![space-1.jpg](https://raw.githubusercontent.com/hypertrace/hypertrace-docs-website/main/static/images/frontend-service.png) | 
 |:--:| 
 | *Frontend microservice details with Hypertrace* |
 
@@ -56,7 +52,7 @@ At the same time, there can be millions of traces, so search is an important fea
 
 ## Traces
 
-| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/traces.png) | 
+| ![space-1.jpg](https://raw.githubusercontent.com/hypertrace/hypertrace-docs-website/main/static/images/traces.png) | 
 |:--:| 
 | *Tracing with Hypertrace* |
 
@@ -67,7 +63,7 @@ At the same time, there can be millions of traces, so search is an important fea
 
 ## Backends
 
-| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/backends.png) | 
+| ![space-1.jpg](https://raw.githubusercontent.com/hypertrace/hypertrace-docs-website/main/static/images/backends.png) | 
 |:--:| 
 | *Backends with Hypertrace* |
 
@@ -75,7 +71,7 @@ Backends are typically databases, like MySQL and Redis. Insights here are derive
 
 ## Explorer
 
-| ![space-1.jpg](https://s3.amazonaws.com/hypertrace-docs/explore.png) | 
+| ![space-1.jpg](https://raw.githubusercontent.com/hypertrace/hypertrace-docs-website/main/static/images/explorer.png) | 
 |:--:| 
 | *Hypertrace Explorer* |
 

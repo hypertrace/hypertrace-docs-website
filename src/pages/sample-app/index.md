@@ -33,7 +33,7 @@ Use pre-built Docker images and a release manifest that is easy to deploy to an 
 
 **Online Boutique** is composed of microservices written in multiple languages that talk to each other over gRPC.
 
-| ![space-1.jpg](https://s3.amazonaws.com/fininity.tech/DT/architecture-diagram.png) | 
+| ![space-1.jpg](https://raw.githubusercontent.com/hypertrace/hypertrace-docs-website/main/static/image/online-boutique-architecture-diagram.png) | 
 |:--:| 
 | *Microservices Architecture* |
 

@@ -5,7 +5,7 @@ template: docs
 ---
 Developed by Traceable as a highly scalable distributed tracing platform, Hypertrace collects rich, granular production application usage data and trains machine learning algorithms for Traceable’s cloud-native application security platform. 
 ‍
-Realizing that Hypertrace was a powerful standalone tracing and observability platform, Traceable created this open source project for the software development community to use with their applications.
+Realizing that Hypertrace was a powerful standalone tracing and observability platform, Traceable created this open project for the software development community to use with their applications.
 
 If you are already using a tracing system, you can start using Hypertrace today. Hypertrace accepts all major data formats: Jaeger, OpenTracing, Zipkin, you name it. Even if you aren’t tracing yet, we have a bunch of sample apps you can start with.
 
@@ -14,7 +14,7 @@ We have an active Slack channel full of excited people to answer your Distribute
 
 ## GitHub
 
-Being an open source project, our source code is available under Hypertrace organization on [GitHub](https://github.com/hypertrace/hypertrace). We welcome contributions from everyone to make Hypertrace a best open source tracing platform in the galaxy. 
+Being an open project, our source code is available under Hypertrace organization on [GitHub](https://github.com/hypertrace/hypertrace). We welcome contributions from everyone to make Hypertrace a best open source tracing platform in the galaxy. 
 
 ## Twitter
 

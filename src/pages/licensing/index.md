@@ -25,7 +25,7 @@ We hope and expect that users will find Hypertrace Core useful and that they wil
 ## Hypertrace Community Edition
 Traceable is a SaaS security product built on top of distributed tracing. While building Traceable, we ended up building a complete distributed tracing platform, including data collection agents. We didn’t see any projects that offered the features we had so we decided to release it so others could benefit from it too. And thus Hypertrace was born. 
 
-We wanted to open source  the features in Hypertrace Community Edition as well, but ensure that we can sustain the business investment Traceable built on top of it. The Traceable Community License lets us invest heavily in code that we distribute for free but at the same time protect Traceable. The Confluent Community License is the best example of how this can be achieved and we decided to base our license on it.
+We wanted to open the features in Hypertrace Community Edition as well, but ensure that we can sustain the business investment Traceable built on top of it. The Traceable Community License lets us invest heavily in code that we distribute for free but at the same time protect Traceable. The Confluent Community License is the best example of how this can be achieved and we decided to base our license on it.
 
 Hypertrace Community Edition is licensed under a source available license called the [Traceable Community License version 1.0](https://github.com/hypertrace/hypertrace/blob/main/LICENSE). It is almost a word for word copy of the Confluent Community License version 1.0. The only distinguishable difference between the two licenses is the name of the company offering the license, the products they refer to, and the cities where legal issues must be resolved. 
 

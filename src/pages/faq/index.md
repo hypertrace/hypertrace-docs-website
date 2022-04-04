@@ -21,7 +21,7 @@ Distributed tracing requires the software developers to add instrumentation to t
 ## Who created Hypertrace?
 Hypertrace was originally developed by Traceable as a highly scalable distributed tracing platform. It collects rich, granular production application usage data and trains machine learning algorithms for Traceable’s cloud-native application security platform. 
 ‍
-Realizing that Hypertrace was a powerful standalone tracing and observability platform, Traceable created this open source project for the software development community to use in their applications.
+Realizing that Hypertrace was a powerful standalone tracing and observability platform, Traceable created this open project for the software development community to use in their applications.
 
 <hr />
 

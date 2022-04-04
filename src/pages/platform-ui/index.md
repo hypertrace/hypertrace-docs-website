@@ -9,7 +9,7 @@ template: docs
 |:--:| 
 | *Hypertrace Dashboard* |
 
-Even compared to commercial products, we think this will delight you.. and to think this is free and open source!. The goal of Dashboard is less guessing. Instead of knowing search parameters, dashboard tries to present you with relevant things 
+Even compared to commercial products, we think this will delight you.. and to think this is free and open!. The goal of Dashboard is less guessing. Instead of knowing search parameters, dashboard tries to present you with relevant things 
 It shows you the Latency rate and Error rates along with P99 and P50 Latency and Calls per second matrix. 
  
 If you haven’t seen this before, this chart on the top right is a radar chart. Radar charts help visualize multivariate data, showing error rate and call rate along with total errors and calls. By default, it compares current time range (here we selected 15 minutes) with data from the last hour. In other words, you can see how the current performance or error count compares with requests from the last hour. You can also change the comparison factor to the last day, week or even month!

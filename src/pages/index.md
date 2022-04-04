@@ -16,7 +16,7 @@ team can diagnose why a specific user's request failed, or which applications
 put their service objectives at risk. Deployment teams can know if a new
 version is causing a problem.
 
-Hypertrace is an open source licensed product that accepts all major tracing data formats. This would help you to try it without changing your application.
+Hypertrace is an Open product that accepts all major tracing data formats. This would help you to try it without changing your application.
 
 
 # Features

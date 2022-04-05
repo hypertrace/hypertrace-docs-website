@@ -21,8 +21,7 @@ Hypertrace is an Open product that accepts all major tracing data formats. This 
 
 # Features
 
-Hypertrace is open source and includes features commonly present in distributed
-tracing systems such as a cloud-native backend and a UI. Hypertrace goes beyond and 
+Hypertrace is an open distributed tracing platform that includes features commonly present in distributed tracing systems such as a cloud-native backend and a UI. Hypertrace goes beyond and 
 includes features that are usually available in commercial products. Hypertrace, for example, provides you with no additional configuration, service graph and metrics aggregation in real time, custom dashboards, and sophisticated path-based analysis. 
 
 The following tables provides a high-level overview of the basic and some important features that Traceable provides.

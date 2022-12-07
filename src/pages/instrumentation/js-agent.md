@@ -5,7 +5,7 @@ weight: 4
 template: docs
 ---
 
-## Instrument you JS application with OpenTelemetry JS
+## Instrument your JS application with OpenTelemetry JS
 
 To get started with instrumenting your JS application, you have to do following three steps. 
 - Install the required OpenTelemetry libraries

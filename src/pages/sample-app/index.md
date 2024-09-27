@@ -1,10 +1,10 @@
 ---
 title: Sample App
-excerpt: The Online Boutique sample app will help you get started with Hypertrace. 
+excerpt: Some sample apps that will help you get started with Hypertrace. 
 template: docs
 ---
 
-The best part in getting started with Hypertrace is that it's really quick! If you are already using a tracing system, you can start today. Hypertrace accepts all major data formats: Jaeger, OpenTracing, Zipkin, you name it. Even if you aren’t tracing yet, we have a bunch of sample apps you can start with, and a [chat room](https://www.hypertrace.org/get-started) on Slack) of excited people who want to meet you. Here we will tell you how you can get started with Online Boutique sample app which is one of our trace enabled sample applications.
+The best part in getting started with Hypertrace is that it's really quick! If you are already using a tracing system, you can start today. Hypertrace accepts all major data formats: Jaeger, OpenTracing, Zipkin, you name it. Even if you aren’t tracing yet, we have a bunch of sample apps you can start with, and a [chat room](https://www.hypertrace.org/get-started) on Slack) of excited people who want to meet you. Here we will tell you how you can get started with Online Boutique sample app and Campsite which are some of our trace enabled sample applications.
 
 ### Sample app: Online Boutique (created by Google Cloud)
 
@@ -44,6 +44,38 @@ Use pre-built Docker images and a release manifest that is easy to deploy to an 
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | [![Screenshot of store homepage](https://raw.githubusercontent.com/hypertrace/hypertrace-docs-website/main/static/images/online-boutique-frontend-1.png)]() | [![Screenshot of checkout screen](https://raw.githubusercontent.com/hypertrace/hypertrace-docs-website/main/static/images/online-boutique-frontend-2.png)]() |
 
+
+### Sample app: Campsite
+
+The Campsite is another tracing enabled sample app to quickly demonstrate some of the basic functionalities of Hypertrace. It has a number of services: API, auth, event, session and speaker, all of them in Go sharing a similar structure. It has a ReactJS based UI with a very simplistic interface.
+
+#### Deployment instructions
+
+There are 2 ways deploy the app, using docker-compose or locally.
+
+1. `git clone https://github.com/dnielsen/campsite.git and https://github.com/dnielsen/campsite-ui.git`.
+2. `cd campsite`.
+
+**Locally**:
+
+**Prerequisite**: Golang is installed in the system and GOPATH and GOROOT is properly set.
+
+3. `./scripts/dev dbstart` to start the database. You can stop the database later using `./scripts/dev dbstop`.
+4. `cd services/api` and then `go run main.go`. 
+5. Alternatively, to start the services you can run `make local`.
+
+**Docker Compose**:
+
+3. `docker-compose -f docker-compose.yml down && docker-compose -f docker-compose.yml up --build --force-recreate`
+4. You can configure the environment variables by editing the `docker.env` file.
+
+To start the UI:
+
+**Locally**:
+
+1. `cd campsite-ui`.
+2. `yarn install`.
+3. `yarn dev`.
 
 #### This is how your tracing data will look like on Hypertrace! 
 
